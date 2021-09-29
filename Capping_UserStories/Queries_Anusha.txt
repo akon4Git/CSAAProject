@@ -1,0 +1,144 @@
+1. Difference between Capping/ Conv?
+2. No. of resources?
+
+
+
+Technical-
+1. What are the User stories linked to rating algo?
+2. how manay tests will we be running as part of it?
+3. Where to start from?
+4. what is the format of the configuration table? How to read the table? is the Auto framework supportive of it?
+5. do you have any documentation around the calculation unit?
+6. Will the emply cell values of this table  be null/ ""?
+7. Will CF be always whole number or decimal?
+8. DB connection details
+9. Need additional details on the configuration table
+10. states?
+
+
+how do we learn about restart trigger?
+Need to know the table name and meta data of the table for the select query inorrder to check the dB value for CFactor.
+Also, what do we mean by Capping factor is blank?. Is the value considered to be Empty/ NULL/ space
+1. figure out how to run converted tests
+
+
+
+
+
+1.get current CF for the policy# after establishing JDBC connection
+2. 
+
+
+String_DB="|,|,"
+
+minipolicy asyn job
+
+customer data and legacy premium, pilocy term
+
+DD0- policy#
+R-45 , tweak xml then run the job
+
+
+
+
+PAS6
+
+10- every state * 5
+
+
+
+
+Few Conversion links-
+
+Mounaguruswamy, Ravisangar (C) <Ravisangar.Mounaguruswamy@csaa.com> 
+http://dev2aaa3jnk301.eqxdev.exigengroup.com:8080/view/Deloitte/job/AAA-Deloitte_Timepoint_tests_Conversion_part1/ 
+[‎1/‎28/‎2016 6:54 PM] Vaswani, Ritesh (US - Mumbai): 
+_http://dev2aaa3jnk301.eqxdev.exigengroup.com:8080/view/Deloitte/job/AAA-Deloitte_Timepoint_tests_Conversion_part2/ 
+_http://dev2aaa3jnk301.eqxdev.exigengroup.com:8080/view/Deloitte/job/AAA-Deloitte_Timepoint_tests_Conversion_part3/ 
+_http://dev2aaa3jnk301.eqxdev.exigengroup.com:8080/view/Deloitte/job/AAA-Deloitte_Timepoint_tests_Conversion_part4/ 
+
+Gowthami's analysis report-
+http://dev2aaa3jnk301.eqxdev.exigengroup.com:8080/job/AAA-Deloitte_Conversion_Calendar_tests_PEF/265/HTML_Report/?
+
+
+-DsuiteFile=testSuites/deloitte/conversion/conversion_tests_suite_2.xml
+
+
+Installer-
+C:\AAA_Tests\aaa-testng-maven_PAS07\aaa-testng-tests\src\test\resources\data 
+http://dev5aaa3jnk601.eqxdev.exigengroup.com:8080/view/Deloitte/job/AAA-Deloitte-Calendar_Prepare_instance/ws/aaa-testng-tests/src/test/resources/data/installment_due_dates-setter.txt 
+
+
+After adding job, run this-
+http://dev2aaa3jnk301.eqxdev.exigengroup.com:8080/job/AAA-Job_Preparation_test_Param/
+
+
+DD0
+
+016355742
+
+DD0=R-45
+
+
+importMiniPolicyAsyncTaskJob:importFolder=/ipb/import/Deloitte;processedFolder=/ipb/import/Deloitte;responseFolder=/ipb/result/Deloitte;importFileFilter=.*;responseFileName={0}  
+
+
+
+PraveenM- 9867012829
+
+
+performance-  
+
+
+Common patterns-
+C_AU_SS_CP_01.xml
+
+PASS107000001
+
+hmm. ______http://stackoverflow.com/questions/8345023/need-to-get-current-timestamp-in-java 
+ye check karo ek baar
+
+
+3531 PEAK DR
+
+ QPASS927616289
+ 
+ system out 
+ error
+ 
+ PASS927616289
+ 
+ 
+ 
+
+
+
+
+
+http://dev5aaa3mon601.eqxdev.exigengroup.com:9081/was/build_history.html
+
+
+
+
+PILOT-
+
+
+http://dev2aaa3jnk301.eqxdev.exigengroup.com:8080/view/Deloitte/job/AAA-Deloitte_Calendar_ConversionCapping_PEF/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

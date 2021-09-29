@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Policy version="1" name="AAA_SS" xmlns="http://www.exigeninsurance.com/eis/data/product/AAA_SS/1.0">
+    <AAACSAAutoPolicy state="Created">
+        <agentCd>500010147</agentCd>
+       	<effective>2015-09-08T00:00:00</effective>
+        <expiration>2016-03-19T00:00:00</expiration>
+        <importedFrom>SIS</importedFrom>
+      	<inceptionDate>2009-03-17T00:00:00</inceptionDate>
+        <productCd>AAA_SS</productCd>
+		 <riskStateCd>OK</riskStateCd>
+		 <producerCd>500001005</producerCd>
+		 <subProducerCd>500005456</subProducerCd>
+        <sourcePolicyNum>OKS 3000929</sourcePolicyNum>
+       
+        <AAADriver state="Created" oid="4303624">
+        	 <firstName>MILDREDdd</firstName>
+               <lastName>PLATOdd</lastName>
+    
+           
+        </AAADriver>
+        <AAADriver state="Created" oid="4303626">
+        	<firstName>RONALD</firstName>
+               <lastName>PLATO</lastName>
+           
+        </AAADriver>
+      
+        <AAAInsured state="Created" oid="4303622">
+        	 <firstName>MILDREDD</firstName>
+                 <lastName>PLATO</lastName>
+               	 <principalRoleCd>policyHolder</principalRoleCd>        
+     <mainInsured>true</mainInsured>
+	   <principalRoleCd>policyHolder</principalRoleCd>
+            <AAAInsuredPrimaryAddress state="Created">
+               <addressDisplayValue>8729 N ROXBURY BLVD,OKLAHOMA CITY,OK,73132</addressDisplayValue>
+                <addressLine1>8729 N ROXBURY BLVD </addressLine1>
+                <city>OKLAHOMA CITY</city>
+                <countryCd>US</countryCd>
+                <postalCode>73132</postalCode>
+                <stateProvCd>OK</stateProvCd>
+                <usageType>living</usageType>
+            </AAAInsuredPrimaryAddress>
+        </AAAInsured>
+ 
+         
+        <AAAInsured state="Created" oid="4303625">
+        	<firstName>RONALDD</firstName>
+                 <lastName>PLATOO</lastName>
+              <mainInsured>false</mainInsured>
+	    <AAAInsuredPrimaryAddress state="Created">
+                <addressDisplayValue>8729 N ROXBURY BLVD,OKLAHOMA CITY,OK,73132</addressDisplayValue>
+                <addressLine1>8729 N ROXBURY BLVD </addressLine1>
+                <city>OKLAHOMA CITY</city>
+                <countryCd>US</countryCd>
+                <postalCode>73132</postalCode>
+                <stateProvCd>OK</stateProvCd>
+                <usageType>living</usageType>
+            </AAAInsuredPrimaryAddress>
+        </AAAInsured>              
+           
+
+        <AAAVehicle state="Created">
+        <PremiumEntry premiumCd="GWT">
+            <actualAmt>280</actualAmt>
+            <annualAmt>280</annualAmt>
+            <changeAmt>280</changeAmt>
+        </PremiumEntry>
+        <PremiumEntry premiumCd="NWT">
+            <actualAmt>280</actualAmt>
+            <annualAmt>280</annualAmt>
+            <changeAmt>280</changeAmt>
+        </PremiumEntry>
+        <PremiumEntry premiumCd="NWT/R">
+            <actualAmt>280</actualAmt>
+            <annualAmt>280</annualAmt>
+            <changeAmt>280</changeAmt>
+        </PremiumEntry>
+        <PremiumEntry premiumCd="RAW">
+            <actualAmt>280</actualAmt>
+            <annualAmt>280</annualAmt>
+            <changeAmt>280</changeAmt>
+        </PremiumEntry>
+
+        </AAAVehicle>
+		 <agentCd>500001597</agentCd>
+		 <agentName>Rhonda McAtee</agentName>
+		 <officeType>AZ Independent Agent</officeType>
+        <OtherOrPriorPolicy>
+            <insurerCd>Yes</insurerCd>
+            <insurerName>MILDREDD  PLATOO</insurerName>
+            <policyNumber>2855156</policyNumber>
+            <productCd>condo</productCd>
+        </OtherOrPriorPolicy>
+        <OtherOrPriorPolicy>
+            <insurerCd>Yes</insurerCd>
+            <insurerName>MILDREDD  PLATOO</insurerName>
+            <policyNumber>3555398</policyNumber>
+            <productCd>condo</productCd>
+        </OtherOrPriorPolicy>
+        <OtherOrPriorPolicy>
+            <insurerCd>Yes</insurerCd>
+            <insurerName>MILDREDD  PLATOO</insurerName>
+            <policyNumber>3799995</policyNumber>
+            <productCd>condo</productCd>
+        </OtherOrPriorPolicy>
+        <OtherOrPriorPolicy>
+            <insurerCd>Yes</insurerCd>
+            <insurerName>MILDREDD  PLATOO</insurerName>
+            <policyNumber>4381762040955404</policyNumber>
+            <productCd>membership</productCd>
+        </OtherOrPriorPolicy>
+       <paidInFull>Y</paidInFull>
+	   	
+	<AAAPaymentOption state="Created" oid="7313224">
+	 <paymentPlanCd>annualSS</paymentPlanCd>
+	  <billingMethodCd>DIR</billingMethodCd>
+	</AAAPaymentOption>
+	<!--  <PaymentOption state="Created" oid="7313223">
+            <billingMethodCd>DIR</billingMethodCd>
+            <paymentPlanCd>annualCA_R</paymentPlanCd>
+        </PaymentOption> -->
+	
+      </AAACSAAutoPolicy>
+
+
+   	
+</Policy>

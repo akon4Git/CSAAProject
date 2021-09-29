@@ -1,0 +1,183 @@
+Test instance: http://dev5aaa3was802.eqxdev.exigengroup.com:9081/aaa-app/
+Build: EIS_5.2.31.2-AAA_PAS06-20150828-68715
+
+[TestNG] Running:
+  C:\AAA_Property_Code\aaa-testng-maven_PAS06\aaa-property-tests\testSuites\regression\POC\CP116.xml
+
+Test 'preconditions.SetTodayDate.setTimeToToday(OK)' has STARTED
+Current application date: 06/10/2016 21:36:00
+HTTP TimeSetter: +++++ Application date is set to 09/01/2015 21:48:40 +++++
+
+Test 'preconditions.SetTodayDate.setTimeToToday(OK)' has PASSED
+
+Test 'regression.CommonPatterns.CP116.TC_CreatePolicy(OK)' has STARTED
+-------> Selenuim Server Started
+
+
+
+============================
+OK Customer is created: 700032185
+============================
+==========================================
+OK Home policy is created: OKH4910087096
+==========================================
+-----> Incoming date is: 09/01/2015 <-----
+-----> Delta to be added is: 0 <-----
+-----> Returning shifted date is: 09/01/2015 <-----
+Test 'regression.CommonPatterns.CP116.TC_CreatePolicy(OK)' has PASSED
+
+Test 'regression.CommonPatterns.CP116.TC_Cancellation(OK)' has STARTED
+-----> Incoming date is: 10/01/2015 <-----
+-----> Delta to be added is: -20 <-----
+-----> Returning shifted date is: 09/11/2015 <-----
+HTTP TimeSetter: +++++ Application date is set to 09/11/2015 21:48:40 +++++
+
+
+Test 'regression.CommonPatterns.CP116.TC_Cancellation(OK)' has PASSED
+
+Test 'regression.CommonPatterns.CP116.TC_ReinstatementwithoutLapse(OK)' has STARTED
+HTTP TimeSetter: +++++ Application date is set to 10/01/2015 21:48:40 +++++
+
+
+Can't find row by specified parameters: {Type=Fee, Subtype/Reason=Reinstatement Fee}
+Test 'regression.CommonPatterns.CP116.TC_ReinstatementwithoutLapse(OK)' has PASSED
+
+Test 'regression.CommonPatterns.CP116.TC_Bill_DD6(OK)' has STARTED
+-----> Incoming date is: 03/01/2016 <-----
+-----> Delta to be added is: -20 <-----
+-----> Returning shifted date is: 02/10/2016 <-----
+HTTP TimeSetter: +++++ Application date is set to 02/10/2016 21:48:40 +++++
+
+HTTP Job: ---> Started Job 'aaaBillingInvoiceAsyncTaskJob' execution
+HTTP Job: <--- Job 'aaaBillingInvoiceAsyncTaskJob' was executed successfully
+
+Test 'regression.CommonPatterns.CP116.TC_Bill_DD6(OK)' has PASSED
+
+Test 'regression.CommonPatterns.CP116.TC_PayDD6(OK)' has STARTED
+-----> Incoming date is: 03/01/2016 <-----
+-----> Delta to be added is: 0 <-----
+-----> Returning shifted date is: 03/01/2016 <-----
+HTTP TimeSetter: +++++ Application date is set to 03/01/2016 21:48:40 +++++
+
+
+Test 'regression.CommonPatterns.CP116.TC_PayDD6(OK)' has PASSED
+
+Test 'regression.CommonPatterns.CP116.TC_Endorsement_DD10(OK)' has STARTED
+-----> Incoming date is: 07/01/2016 <-----
+-----> Delta to be added is: -20 <-----
+-----> Returning shifted date is: 06/10/2016 <-----
+HTTP TimeSetter: +++++ Application date is set to 06/10/2016 21:48:40 +++++
+
+
+Test 'regression.CommonPatterns.CP116.TC_Endorsement_DD10(OK)' has PASSED
+
+Test 'regression.CommonPatterns.CP116.TC_R_R1(OK)' has STARTED
+-----> Incoming date is: 09/01/2016 <-----
+-----> Delta to be added is: -73 <-----
+-----> Returning shifted date is: 06/20/2016 <-----
+HTTP TimeSetter: +++++ Application date is set to 06/20/2016 21:48:40 +++++
+
+SSH: Files from folder '/home/mp2/pas/sit/PAS_B_EXGPAS_PASHUB_4004_D/inbound' were removed.
+SSH: Files from folder '/home/mp2/pas/sit/PAS_B_EXGPAS_PASHUB_4004_D/outbound' were removed.
+SSH: Files from folder '/home/mp2/pas/sit/PAS_B_EXGPAS_DMVFED_3051_D/inbound' were removed.
+SSH: Files from folder '/home/mp2/pas/sit/PAS_B_EXGPAS_DMVFED_3051_D/outbound' were removed.
+SSH: Files from folder '/home/mp2/pas/sit/PAS_B_EXGPAS_PASHUB_4001_D/inbound' were removed.
+SSH: Files from folder '/home/mp2/pas/sit/PAS_B_EXGPAS_PASHUB_4001_D/outbound' were removed.
+HTTP Job: ---> Started Job 'Renewal_Offer_Generation_Part1' execution
+HTTP Job: <--- Job 'Renewal_Offer_Generation_Part1' was executed successfully
+HTTP Stub: 'Offline ChoicePoint (MVR) batch' execution finished with result: Success
+HTTP Stub: 'Offline AAA claims batch' execution finished with result: Success
+HTTP Stub: 'Offline AAA membership summary batch' execution finished with result: Success
+HTTP Stub: 'Offline AAA credit score batch' execution finished with result: Success
+HTTP Stub: 'Offline AAA E.A.R.S. batch' execution finished with result: Error preparing response
+HTTP Job: ---> Started Job 'Renewal_Offer_Generation_Part2' execution
+HTTP Job: <--- Job 'Renewal_Offer_Generation_Part2' was executed successfully
+
+Test 'regression.CommonPatterns.CP116.TC_R_R1(OK)' has PASSED
+
+Test 'regression.CommonPatterns.CP116.TC_R_R5(OK)' has STARTED
+-----> Incoming date is: 09/01/2016 <-----
+-----> Delta to be added is: -45 <-----
+-----> Returning shifted date is: 07/18/2016 <-----
+HTTP TimeSetter: +++++ Application date is set to 07/18/2016 21:48:40 +++++
+
+HTTP Job: ---> Started Job 'Renewal_Offer_Generation_Part2' execution
+HTTP Job: <--- Job 'Renewal_Offer_Generation_Part2' was executed successfully
+
+Test 'regression.CommonPatterns.CP116.TC_R_R5(OK)' has PASSED
+
+Test 'regression.CommonPatterns.CP116.TC_R_R7(OK)' has STARTED
+-----> Incoming date is: 09/01/2016 <-----
+-----> Delta to be added is: -35 <-----
+-----> Returning shifted date is: 07/28/2016 <-----
+HTTP TimeSetter: +++++ Application date is set to 07/28/2016 21:48:40 +++++
+
+HTTP Job: ---> Started Job 'Renewal_Offer_Generation_Part2' execution
+HTTP Job: <--- Job 'Renewal_Offer_Generation_Part2' was executed successfully
+SSH: Files from folder '/home/mp2/pas/sit/PAS_B_EXGPAS_DCMGMT_6500_D/outbound/' were removed.
+HTTP Job: ---> Started Job 'aaaDocGenBatchJob' execution
+HTTP Job: <--- Job 'aaaDocGenBatchJob' was executed successfully
+
+SSH: Session is created
+SSH: File '/home/DocGen/document_dev5aaa3was802.eqxdev.exigengroup.com_1441090800000_4.xml' was downloaded to 'C:\AAA_Property_Code\aaa-testng-maven_PAS06\aaa-property-tests\src\test\resources\xmls\DocGen\temp\document_dev5aaa3was802.eqxdev.exigengroup.com_1441090800000_4.xml'.
+SSH: File was deleted'/home/DocGen/document_dev5aaa3was802.eqxdev.exigengroup.com_1441090800000_4.xml
+SSH: File '/home/DocGen/document_dev5aaa3was802.eqxdev.exigengroup.com_1465542000000_5.xml' was downloaded to 'C:\AAA_Property_Code\aaa-testng-maven_PAS06\aaa-property-tests\src\test\resources\xmls\DocGen\temp\document_dev5aaa3was802.eqxdev.exigengroup.com_1465542000000_5.xml'.
+SSH: File was deleted'/home/DocGen/document_dev5aaa3was802.eqxdev.exigengroup.com_1465542000000_5.xml
+SSH: Session is closed
+
+Test has FAILED by the following reason: 
+java.lang.AssertionError: Couldn't find DocGen xml file with policy number:OKH4910087096,form:,xpathInforTag:/Policy/Miscellaneous
+	at com.exigen.automation.helper.ExtendedAssert.fail(ExtendedAssert.java:128)
+	at docgen.RetrieveDocumentXml.retrieveDocumentXml(RetrieveDocumentXml.java:94)
+	at docgen.DocGenHelper.downloadAndRemoveXMLToLocalFolder(DocGenHelper.java:47)
+	at docgen.DocGenHelper.downloadAndRemoveXMLToLocalFolder(DocGenHelper.java:29)
+	at docgen.DocGenHelper.downloadAndRemoveXMLToLocalFolder(DocGenHelper.java:24)
+	at regression.CommonPatterns.CP116.TC_R_R7(CP116.java:364)
+Caused by: java.io.FileNotFoundException: Couldn't find DocGen xml file with policy number:OKH4910087096,form:,xpathInforTag:/Policy/Miscellaneous
+	at docgen.RetrieveDocumentXml.retrieveDocumentXml(RetrieveDocumentXml.java:90)
+	... 4 common frames omitted
+Screenshot: target/test-output/ScreenShots/OK_CP116.TC_R_R7.png
+
+Test 'regression.CommonPatterns.CP116.TC_R_R7(OK)' has FAILED. 
+
+Test 'regression.CommonPatterns.CP116.TC_Renewals(OK)' has STARTED
+HTTP TimeSetter: +++++ Application date is set to 09/01/2016 21:48:40 +++++
+
+
+Test 'regression.CommonPatterns.CP116.TC_Renewals(OK)' has PASSED
+
+Test 'regression.CommonPatterns.CP116.TC_R_1_Update_PolicyStatus(OK)' has STARTED
+-----> Incoming date is: 09/01/2016 <-----
+-----> Delta to be added is: 1 <-----
+-----> Returning shifted date is: 09/02/2016 <-----
+HTTP TimeSetter: +++++ Application date is set to 09/02/2016 21:48:40 +++++
+
+HTTP Job: ---> Started Job 'policyStatusUpdateJob' execution
+HTTP Job: <--- Job 'policyStatusUpdateJob' was executed successfully
+
+Test 'regression.CommonPatterns.CP116.TC_R_1_Update_PolicyStatus(OK)' has PASSED
+
+Test 'regression.CommonPatterns.CP116.TC_R_R12_Refund(OK)' has STARTED
+HTTP TimeSetter: +++++ Application date is set to 09/11/2016 21:48:40 +++++
+
+HTTP Job: ---> Started Job 'refundGenerationJob' execution
+HTTP Job: <--- Job 'refundGenerationJob' was executed successfully
+
+Test 'regression.CommonPatterns.CP116.TC_R_R12_Refund(OK)' has PASSED
+
+Test 'regression.CommonPatterns.CP116.TC_R_R14(OK)' has STARTED
+HTTP TimeSetter: +++++ Application date is set to 10/01/2016 21:48:40 +++++
+
+HTTP Job: ---> Started Job 'policyStatusUpdateJob' execution
+HTTP Job: <--- Job 'policyStatusUpdateJob' was executed successfully
+HTTP Job: ---> Started Job 'policyLapsedRenewalProcessAsyncJob' execution
+HTTP Job: <--- Job 'policyLapsedRenewalProcessAsyncJob' was executed successfully
+
+Test 'regression.CommonPatterns.CP116.TC_R_R14(OK)' has PASSED
+
+
+===============================================
+CL-CP-116
+Total tests run: 14, Failures: 1, Skips: 0
+===============================================
+

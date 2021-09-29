@@ -1,0 +1,241 @@
+<?xml version="1.0" ?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://www.aaancnuit.com.AAANCNU_WSDL_GetConvertedPolicyInfo_version2" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" xmlns:ns1="http://www.aaancnuit.com.AAANCNU_Common_version2" name="GetConvertedPolicyInfo" targetNamespace="http://www.aaancnuit.com.AAANCNU_WSDL_GetConvertedPolicyInfo_version2">
+  <wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.aaancnuit.com.AAANCNU_WSDL_GetConvertedPolicyInfo_version2" xmlns:ns2="http://www.aaancnuit.com.AAANCNU_GetConvertedPolicyInfo_version2" xmlns:ns1="http://www.aaancnuit.com.AAANCNU_Common_version2" targetNamespace="http://www.aaancnuit.com.AAANCNU_WSDL_GetConvertedPolicyInfo_version2" version="1.0">
+
+  <xs:import namespace="http://www.aaancnuit.com.AAANCNU_Common_version2"></xs:import>
+
+  <xs:import namespace="http://www.aaancnuit.com.AAANCNU_GetConvertedPolicyInfo_version2"></xs:import>
+
+  <xs:element name="getConvertedPolicyInfoRequest" nillable="true" type="tns:getConvertedPolicyInfoRequest"></xs:element>
+
+  <xs:element name="getConvertedPolicyInfoResponse" nillable="true" type="tns:getConvertedPolicyInfoResponse"></xs:element>
+
+  <xs:complexType name="getConvertedPolicyInfoRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="applicationContext" type="ns1:ApplicationContext"></xs:element>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="policy" nillable="true" type="ns2:PolicySource"></xs:element>
+      <xs:element default="false" minOccurs="0" name="returnOnlyWhenActive" type="xs:boolean"></xs:element>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="messageExtension" nillable="true" type="xs:anyType"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getConvertedPolicyInfoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="applicationContext" type="ns1:ApplicationContext"></xs:element>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="convertedPolicyInfo" nillable="true" type="ns2:ConvertedPolicyInfo"></xs:element>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="messageExtension" nillable="true" type="xs:anyType"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.aaancnuit.com.AAANCNU_GetConvertedPolicyInfo_version2" elementFormDefault="qualified" targetNamespace="http://www.aaancnuit.com.AAANCNU_GetConvertedPolicyInfo_version2" version="1.0">
+
+  <xs:complexType name="PolicySource">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="policyNumber" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="productCode" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="riskState" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="dataSource" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="type" type="xs:string"></xs:element>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="policySourceExtension" nillable="true" type="xs:anyType"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="PolicyProductSource">
+    <xs:complexContent>
+      <xs:extension base="tns:PolicySource">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="writingCompany" type="xs:string"></xs:element>
+          <xs:element minOccurs="0" name="lineOfBusiness" type="xs:string"></xs:element>
+          <xs:element minOccurs="0" name="policyPrefix" type="xs:string"></xs:element>
+          <xs:element minOccurs="0" name="zipCode" type="xs:string"></xs:element>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="policyProductSourceExtension" nillable="true" type="xs:anyType"></xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="ConvertedPolicy">
+    <xs:complexContent>
+      <xs:extension base="tns:PolicyProductSource">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="inceptionDate" type="xs:date"></xs:element>
+          <xs:element minOccurs="0" name="billingAccountId" type="xs:string"></xs:element>
+          <xs:element minOccurs="0" name="renewalEffectiveDate" type="xs:date"></xs:element>
+          <xs:element minOccurs="0" name="conversionDate" type="xs:date"></xs:element>
+          <xs:element minOccurs="0" name="status" type="xs:string"></xs:element>
+          <xs:element minOccurs="0" name="conversionEffectiveDate" type="xs:date"></xs:element>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="convertedPolicyExtension" nillable="true" type="xs:anyType"></xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="ConvertedPolicyInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="returnCode" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="returnMessage" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="requestedPolicy" type="tns:PolicySource"></xs:element>
+      <xs:element minOccurs="0" name="convertedPolicy" type="tns:ConvertedPolicy"></xs:element>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="convertedPolicyInfoExtension" nillable="true" type="xs:anyType"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.aaancnuit.com.AAANCNU_Common_version2" elementFormDefault="qualified" targetNamespace="http://www.aaancnuit.com.AAANCNU_Common_version2" version="1.0">
+
+  <xs:element name="ErrorInfo" nillable="true" type="tns:ErrorInfo"></xs:element>
+
+  <xs:complexType name="ApplicationContext">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="userId" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="transactionType" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="application" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="subSystem" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="address" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="correlationId" type="xs:string"></xs:element>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="applicationContextExtension" nillable="true" type="xs:anyType"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ErrorInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="errorTimeStamp" type="xs:dateTime"></xs:element>
+      <xs:element minOccurs="0" name="errorCode" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="severity" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="errorMessageText" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="friendlyErrorMessage" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="vendorMessageText" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="stackTrace" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="sqlState" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="serviceName" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="sourceSystem" type="xs:string"></xs:element>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="RuleResponse" type="tns:RuleResponse"></xs:element>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="errorInfoExtension" nillable="true" type="xs:anyType"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="RuleResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="timestamp" type="xs:dateTime"></xs:element>
+      <xs:element minOccurs="0" name="ruleDecision" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="ruleScore" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="service" type="xs:string"></xs:element>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="ruleScorecard" nillable="true" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="ruleResults" type="tns:RuleResults"></xs:element>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="ruleResponseExtension" nillable="true" type="xs:anyType"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="RuleResults">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="ruleResult" nillable="true" type="tns:RuleResult"></xs:element>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="ruleResultsExtension" nillable="true" type="xs:anyType"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="RuleResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ruleId" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="ruleDescription" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="action" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="severity" type="tns:RuleSeverity"></xs:element>
+      <xs:element minOccurs="0" name="isOverridable" type="xs:boolean"></xs:element>
+      <xs:element minOccurs="0" name="overrideAuthorityLevel" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="instanceId" type="xs:integer"></xs:element>
+      <xs:element minOccurs="0" name="sourceSystem" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="timestamp" type="xs:dateTime"></xs:element>
+      <xs:element minOccurs="0" name="category" type="tns:RuleCategory"></xs:element>
+      <xs:element minOccurs="0" name="correlationId" type="xs:integer"></xs:element>
+      <xs:element minOccurs="0" name="ruleAttributes" type="tns:RuleAttributes"></xs:element>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="ruleResultExtension" nillable="true" type="xs:anyType"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="RuleAttributes">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="ruleattribute" nillable="true" type="tns:RuleAttribute"></xs:element>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="ruleAttributesExtension" nillable="true" type="xs:anyType"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="RuleAttribute">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="stringRef" nillable="true" type="xs:string"></xs:element>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="ruleAttributeExtension" nillable="true" type="xs:anyType"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="RuleResponses">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="ruleResponse" nillable="true" type="tns:RuleResponse"></xs:element>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="ruleResponsesExtension" nillable="true" type="xs:anyType"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="RuleSeverity">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Informational"></xs:enumeration>
+      <xs:enumeration value="High"></xs:enumeration>
+      <xs:enumeration value="Medium"></xs:enumeration>
+      <xs:enumeration value="Low"></xs:enumeration>
+      <xs:enumeration value="Error"></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="RuleCategory">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Product Constraint"></xs:enumeration>
+      <xs:enumeration value="Mandatory Data"></xs:enumeration>
+      <xs:enumeration value="Eligibility"></xs:enumeration>
+      <xs:enumeration value="Underwriting"></xs:enumeration>
+      <xs:enumeration value="Informational"></xs:enumeration>
+      <xs:enumeration value="Clerical"></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="GetConvertedPolicyInfoResponse">
+    <wsdl:part element="tns:getConvertedPolicyInfoResponse" name="getConvertedPolicyInfo">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ErrorInfo">
+    <wsdl:part element="ns1:ErrorInfo" name="ErrorInfo">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetConvertedPolicyInfo">
+    <wsdl:part element="tns:getConvertedPolicyInfoRequest" name="getConvertedPolicyInfo">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="GetConvertedPolicyInfo">
+    <wsdl:operation name="GetConvertedPolicyInfo">
+      <wsdl:input message="tns:GetConvertedPolicyInfo" name="GetConvertedPolicyInfo">
+    </wsdl:input>
+      <wsdl:output message="tns:GetConvertedPolicyInfoResponse" name="GetConvertedPolicyInfoResponse">
+    </wsdl:output>
+      <wsdl:fault message="tns:ErrorInfo" name="ErrorInfo">
+    </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="GetConvertedPolicyInfoSoapBinding" type="tns:GetConvertedPolicyInfo">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"></soap:binding>
+    <wsdl:operation name="GetConvertedPolicyInfo">
+      <soap:operation soapAction="http://www.aaancnuit.com.getConvertedPolicyInfo" style="document"></soap:operation>
+      <wsdl:input name="GetConvertedPolicyInfo">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="GetConvertedPolicyInfoResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+      <wsdl:fault name="ErrorInfo">
+        <soap:fault name="ErrorInfo" use="literal"></soap:fault>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="GetConvertedPolicyInfo">
+    <wsdl:port binding="tns:GetConvertedPolicyInfoSoapBinding" name="GetConvertedPolicyInfoSOAPPort">
+      <soap:address location="http://dev5aaa3was601.eqxdev.exigengroup.com:9082/aaa-admin/services/getConvertedPolicyInfo"></soap:address>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

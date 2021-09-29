@@ -1,0 +1,10 @@
+1.Navigate to Billing Tab
+2.Validate the Billing General Information Section
+3.Validate the Bills and Statements Section
+4.Validate the Installment Schedule	
+
+1.The Billing Consolidated View Page opens and displays
+2.The Total due amount are updated with the changed amount and min Due amount is NOT changed (since RP amount > Total due - Past due).
+3.The Minimum due, Past Due and the Total due amount is not changed for the bill that has been issued
+4. System reflects an updated installment schedule in which ALL future installments  are decreased equally to reflect the impact of the RP endorsement. 
+5. The uneven change that cannot be spread equally is billed in the next scheduled installment.

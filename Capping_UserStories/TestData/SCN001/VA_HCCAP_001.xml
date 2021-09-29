@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Policy xmlns="http://www.exigeninsurance.com/eis/data/product/AAA_SS/1.0" name="AAA_SS" version="1">
+	<AAACSAAutoPolicy state="Created">
+		<aaaProgramCode>LegacyConv</aaaProgramCode>
+		<agentCd>500013270</agentCd>
+		<effective>2015-10-26T00:00:00</effective>
+		<expiration>2016-10-26T00:00:00</expiration>
+		<importedFrom>MAIG</importedFrom>
+		<inceptionDate>2005-10-21T00:00:00</inceptionDate>
+		<preConversionPolicyNumber>005334941</preConversionPolicyNumber>
+		<preConversionPolicyPremium>1218</preConversionPolicyPremium>
+		<producerCd>500001003</producerCd>
+		<productCd>AAA_SS</productCd>
+		<riskStateCd>VA</riskStateCd>
+		<sourcePolicyNum>005334941</sourcePolicyNum>
+		<subProducerCd>500013270</subProducerCd>
+		<OtherOrPriorPolicy>
+			<productCd>membership</productCd>
+		</OtherOrPriorPolicy>
+		<AAAPaymentOption state="Created">
+			<paymentPlanCd>standartSS_R</paymentPlanCd>
+		</AAAPaymentOption>
+		<AAAInsured oid="109467" state="Created">
+			<firstName>MEDLEY</firstName>
+			<lastName>RILEY</lastName>
+			<mainInsured>true</mainInsured>
+			<middleName>L</middleName>
+			<AAAInsuredPrimaryAddress state="Created">
+				<addressDisplayValue>17004 GLEN ELLA RD , CULPEPER, VA, 22701</addressDisplayValue>
+				<addressLine1>17004 GLEN ELLA RD</addressLine1>
+				<city>CULPEPER</city>
+				<countryCd>US</countryCd>
+				<postalCode>22701</postalCode>
+				<stateProvCd>VA</stateProvCd>
+				<usageType>mailing</usageType>
+			</AAAInsuredPrimaryAddress>
+		</AAAInsured>
+	</AAACSAAutoPolicy>
+	<billingAccount>
+		<paymentDetailsEFT>
+			<profileId>19B2375B-1E47-43AD-27DF-A</profileId>
+			<accountNumber>7890</accountNumber>
+			<accountTypeCd>checking</accountTypeCd>
+			<bankAccountHolderName>hua min shen</bankAccountHolderName>
+			<bankName>PNCBANK, NATIONAL ASSOCIATION</bankName>
+			<signedAuthorizationOnFile>TRUE</signedAuthorizationOnFile>
+			<transitNumber>031000053</transitNumber>
+		</paymentDetailsEFT>
+	</billingAccount>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2005-09-30T00:00:00</updatedOn>
+		<userText>UNDISCLOSED DRIVER MEDLEY       RILEY          DOB: 00000000 ADDRESS:    17004 GLEN ELLA RD                      POLICY OWNER CULPEPER             VA 22701 CLAIM LIC: NOT AVAILABLE       ACTIVITY DT: 20040910 ACTIVITY CD: 198 VIN: 1GCCS195048285 INSURANCE CO: VA FARM BUR INS CO     POL#: APV1465838 PAYMENTS: PD 000000898 OPERATOR NAME:    REBECCA       RILEY          (OTHER THAN CLAIMT). UPDATE OF DVR HISTORY MAY BE REQUIRED</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2005-10-03T00:00:00</updatedOn>
+		<userText>RELEASED APP IN QUE- LOSS ON 9/10/04 IS FOR A REBECCA RILEY NOT OUR INSURED - REMOVED FROM DD SCREEN</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2005-10-04T00:00:00</updatedOn>
+		<userText>VA AUD NOTICE SENT TO INSD. DUE TO CREDIT SCORE</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2005-10-18T00:00:00</updatedOn>
+		<userText>1.51PM MEDLEY CALLED TO REPLACE 94 CHEVY WITH 92 JEEP CHEROKEE LIAB ONLY.  EFF 10/21/05.  HE SAID HE WILL HAVE THE TAGS TURNED IN BY 9/21/05. HE WILL CALL BACK WITH VIN. 540 399 1110 MR CALLD TO REPLACE 94'ASTRO VAN HE WILL TRY TO SELL TAGS ARE ON VAN HE IS AWARE THAT TAGS NEED TO BE RETURNED TO MVA. HE WILL RETURN THEM 10/21/05 ON THAT SAME DAY HE WIL GET 92' JEEP LIMITED ODOMETER 106K PRICE $3495   VIN  1J4FJ78S6NL200208  REQD COPY OF REGSTARTION FAXED TO MY ATTN  540 399 1110  FORWARD TO DEB ED. TO UPDATE PENDING CHANGE</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2005-11-02T00:00:00</updatedOn>
+		<userText>RECVD SIGNED APP, MVR, CLUE, AND ADDS -- 1 LOSS SHOWING ON CLUE FOR REBECCA... THIS IS INSDS EX-WIFE NOT IN HOUSEHOLD.. NO ACTION NEEDED. NO COMPANION.. SENT TO FILE.</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2006-01-17T00:00:00</updatedOn>
+		<userText>12:25 TOOK CC PMT $5.00 REC 025337 QUOTED ADDING COMP/COLL $250/250 TO 92 JEEP $396.00/YR ADD'L PREM $159 540-399-1110 ADV INSD WE REQUIRE PHOTOS OF VEH FRONT/BACK/SIDES BEFORE ADDING COMP/COLL TO 92 JEEP DUE TO VEHICLE AGE</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2006-05-26T00:00:00</updatedOn>
+		<userText>VA AUDIT ASKING DAWN MILLER TO SEND INSD. REQUEST FOR COPIES OF REGISTRATIONS FOR ALL VEHICLES.</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2006-05-31T00:00:00</updatedOn>
+		<userText>PER PRIOR NOTES.. SENDING LETTER TO INSD REQUESTING COPIES OF ALL VEH REGS.</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2006-06-21T00:00:00</updatedOn>
+		<userText>RECVD INFORMATION FROM INSD... SHOWING ALL VEHS REG TO MEDLEY.. TWO VEH REGS FOR THE 00 CHEVY &amp;amp 88 MERCURY -- WERE CO-TITLED W/EX WIFE REBECCA... BUT, REBECCA'S SIGNATURES SHOW ON BOTH TITLES RELEASING VEHS TO MEDLEY... REVIEWED W/DEBBIE ON THIS... NO FURTHER ACTION NEEDED.</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2007-08-10T00:00:00</updatedOn>
+		<userText>OK TO RENEW</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2008-07-07T00:00:00</updatedOn>
+		<userText>INSURANCE SCORE ORDERED &amp;amp UPDATED</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2008-08-12T00:00:00</updatedOn>
+		<userText>OK TO RENEW</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2009-06-09T00:00:00</updatedOn>
+		<userText>6/9/09 STIBERI MR CLLD TO REPLACE VEH... 9:13 REPLACED THE 88 MERC W/94 CHEV ASTRO SAME COVERAGE..JUST LIAB, VEH REG TO INSURED.. NO OTHER DRIVERS... CHANGE EFF 6/9/09 DONE</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2009-08-15T00:00:00</updatedOn>
+		<userText>OK TO RENEW</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2010-08-18T00:00:00</updatedOn>
+		<userText>OK TO RENEW</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2011-01-20T00:00:00</updatedOn>
+		<userText>8:55AM MR RILEY CALLED TO ADD 4TH CAR TO THIS POLICY. 1989 HONDA CIVIC VIN#1HGED3559KA013182 LIABLITY ONLY. NO OTHER DRIVERS IN THE HH. EFFECTIVE 1/19/2011.</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2013-02-07T00:00:00</updatedOn>
+		<userText>8:30 MEDLEY CALLED TO DEL 94 CHEV AND REPL 00 CHEV 2013 CH 1FTFX1CF1DFA72498 SAME USE AND COV -REG TO INSD ALL VEH PLEASE USE NO OTHER OPER IN HOUSEHOLD  NO MAIL *INSD TO CALL BACK W/BANK INFO 12:11 DEALER CALLED THEY NEEDED TO UPDATE THE LEINHOLDER FOR THE 13 FORD- TO BANK OF AMERICA-UPDATED SAME</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2013-06-18T00:00:00</updatedOn>
+		<userText>1229PM S/W MR. RILEY INS HAS KNEE TROUBLE, HE CAN DRIVE BUT CANNOT GO TO THE STORE AND WALK AROUND.  INS IS GOING TO GIVE PERMISSION TO OTHER DRIVERS TO USE HIS VEHICLE.  THEY HAVE THEIR OWN VEHS, BUT WILL USE HIS NOT REGULARLY.</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2013-07-03T00:00:00</updatedOn>
+		<userText>4.29 S/W MEDLEY CALLED TO REMOVE 89 HONDA EFF 07/03/2013</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2013-09-19T00:00:00</updatedOn>
+		<userText>3:07P S.W INSURED WANTED TO KNOW IF HE CAN GO ON EFT TO AVOID THE PROCESSING FEES EACH MONTH. HASNT BEEN ON IT BEFORE READ EFT SCRIPT AND SET UP EFT AT RNWL IN CARPS, EMAILED DL MAR EFT TO UPDATE THE PAYPLAN     540-399-1110 NO EMAIL</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2014-02-12T00:00:00</updatedOn>
+		<userText>2:52 /  540-399-1110 / NO EMAIL  / EFF TODAY / S/W MEDLEY TO ADD A 98 FORD RANGER V# 1FTYR11X0WTA01134 / ODO-150K/ REG TO INSD / / GARG@HOME / COST-2500/ CASH PURCHASE / LIAB ONLY / INSD STATES THERE ARE SOME PEOPLE WHO DRIVE HIS CAR OCCIASIONALLY BUT THEY HAVE THEIR OWN INSD AS PREVIOUSLY DISCUSSED. A WOMAN, GEORGIA, TRIED TO GET ON THE PHONE TO SPEAK FOR HIM. SHE STATES SHES HIS POWER OF ATTORNEY, ADVSD HE GAVE THE PHONE TODAY TO TALK TO HER BUT HE WOULD NEED TO AUTHORIZE FURTHER DISCUSSION EMAILED U/W TO ADVSD THIS IS 3RD VEH ON FILE WITH ONE DRIVER</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2014-02-18T00:00:00</updatedOn>
+		<userText>MAIL LTR REQ INFO ON REG. DRIVRS IN HH AND BUSINESS USE, SET FOLLOW UP</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2014-02-27T00:00:00</updatedOn>
+		<userText>NBASHIR 4:52 S/W ROBERT MCULLEY (FRIEND OF INSURED W/ PERMISSION)  STATED THEY RECD A LETTER REQUESTING TITLE, REG, PROOF OF INS FOR OTHER DRIVERS, AND QUESTIONAIRE.  STATED THAT THE PEOPLE WHO WERE DRIVING THE INSURED AROUND DID NOT WANT TO PROVIDED THEIR INSURANCE INFO. U/W KBOATMEN ADV HE WILL SET THE POLICY TO NTBR. ADV MR MCULLEY HE STATED THE INSURED WOULD BE CALLING BACK TO CANCEL THE POLICY.</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2014-03-06T00:00:00</updatedOn>
+		<userText>5:45 SPK W/ DEALER RICK STATED THT THE INSURE IS REPLACEING 13 FORD F-150 W/ 10 MAZDA 3 VIN# JM1BL1SG3A1270366/MILES 26,055/ FIANANCE TD AUTO BANK        SAME COVERAGE PO BOX 901921        JOYCE ANDERSON MAYBE AN OCCASIONAL DRIVER LOUIEVILLE KY 40290 FAX# 540-812-2445  DECLINE QUOTE NO EMAIL OR NUMBER</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2014-09-04T00:00:00</updatedOn>
+		<userText>**UW NOTE**DON REINST IS CX FOR NONPAY NTBR SET FOR LACK OF COOPERATION -FAILED TO RESPOND TO UW LTR FOR INFO ON DRVRS AND VEH IN HH</userText>
+	</userNote>
+</Policy>

@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 290.128 sec <<< FAILURE!
+testAssDocGenDataGathering(com.deloitte.automation.poc.PolicyCreator)  Time elapsed: 89.91 sec  <<< FAILURE!
+java.lang.AssertionError: Verification failures:
+java.lang.AssertionError: Element: 'producContextInfoForm:policyDetail_policyStatusCdText' text expected [Policy Active] but found [Policy Expired]
+	at com.exigen.automation.helper.SoftAssert.verifyEquals(SoftAssert.java:133)
+	at com.exigen.automation.helper.ExtendedAssert.verifyEquals(ExtendedAssert.java:100)
+	at com.exigen.automation.helper.SeleniumUtils.verifyTextOfElementEquals(SeleniumUtils.java:1722)
+	at com.exigen.automation.helper.SeleniumUtils.verifyTextOfElementEquals(SeleniumUtils.java:1712)
+	at com.deloitte.automation.poc.PolicyCreator.testAssDocGenDataGathering(PolicyCreator.java:133)
+
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.exigen.automation.helper.SoftAssert.checkForVerificationErrors(SoftAssert.java:218)
+	at com.exigen.automation.helper.ExtendedAssert.checkForVerificationErrors(ExtendedAssert.java:120)
+	at com.deloitte.automation.poc.PolicyCreator.testAssDocGenDataGathering(PolicyCreator.java:147)
+

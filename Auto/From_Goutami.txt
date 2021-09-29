@@ -1,0 +1,25 @@
+
+
+create a xml- text xml
+have a  suite tag and have test tags under them.
+
+any customised value needs to be mentioned in the xml.
+
+
+
+Sameeran .R. Mirajkar
+Deloitte Consulting India Pvt Ltd
+Tel/Direct: +1 678 299 7577 |  Mobile: +91 9372724646
+smirajkar@deloitte.com | www.deloitte.com
+ 
+
+ 
+ Varun Kashyap
+Deloitte Consulting India Pvt Ltd
+Mobile: +91-8008811183
+varkashyap@deloitte.com | www.deloitte.com
+
+
+
+
+

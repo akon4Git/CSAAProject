@@ -1,0 +1,37 @@
+<settings
+  xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                      http://maven.apache.org/xsd/settings-1.0.0.xsd">
+<localRepository>C:/apache-maven-2.2.1/repo</localRepository>
+
+  <profiles>
+    <profile>
+		<activation>
+			<activeByDefault>true</activeByDefault>
+		</activation>
+		<repositories>	  
+			<repository>
+				<id>AAA</id>
+				<name>AAA group</name>
+				<url>https://eqxaaanexus01.exigengroup.com/nexus/content/groups/AAA</url>
+				<snapshots>
+					<enabled>true</enabled>
+				</snapshots>
+				<releases>
+					<enabled>true</enabled>
+				</releases>
+			</repository>
+		</repositories>
+    </profile>
+  </profiles>
+
+  <servers>
+    <server>
+      <id>AAA</id>
+      <username>aaa_svn_acc</username>
+      <password>{19qr+/zc3QsH94Vv1Zn53vMyLN9pyqZ/Ju5/PKMPmtw=}</password>
+    </server>
+  </servers>
+
+</settings>

@@ -1,0 +1,211 @@
+Insurance basic
+
+Indemnity- coompensation
+
+claimant- 3rd party adminstrator
+
+producer- who are authorised and independent to sell one or more insurances
+
+underwriter- underwrite the risk; receipient of actuary's data
+decides the premium amt.
+
+actuary=who studies data of(risk facts/ cause of death); gives a risk score.
+
+investigator/ adjuster/ surveyor- people who validate the claim.; survey reports r sent to insurance claim.
+
+3rd party Vendor- ex, garage- tie up with insurance comp.
+
+recovery specialists- who help is recovering claim.
+
+
+
+Marketing / Business procurement- mkting to increase sales.
+Rate Making- how to rate a customer to come up with a claim
+
+Product Development life may have 30 products; constant operational work to avoid overselling of one product.
+
+Underwriting - underwrite the risk
+Claims Management- principle of indemnity; to validate the claim conditions.
+Re-insurance - insuring the insurance itself. the company transfers the risk to another company= reinsurance
+Policy Servicing - cancellation of policy/add stuff
+Finance / Collection & Disbursement- disbursement of premium amt.
+Distribution Channel Management- channels that distribute ins policies on behalf of Ins companies
+Regulatory Compliance -IRDA in India; Accord in US. govt. bodies that what kind of investments that the ins companies r making.; it cannot be too risky.
+They maintain a pool on safe side.
+
+"Endorsement"- any change in the policy that the insured gets done is endorsement.
+
+
+
+
+
+
+Subrogation - eg
+
+Coverage / Benefit / Peril- coverage- add additional coverages.some may be mandatory. in US coliision cov is mandatory in auto.
+
+Insured Object- house/ car/ life 
+
+Exclusion- excluded things from base policy. ex. windshields in car. IRDA decides the one that can be excluded.
+deductible-share the risk with ins comapany.. so that the premium amt goes down. there is a limit on deductible.
+
+Underwriting-
+
+Deductible  / Limits 
+
+Co-pay - any kind of claim; co-pay, you may have to pay.
+
+Co – Insurance -
+
+Underinsurance-  when we dont insure .IRDA dictates a limit upto which u can insure. <limit is underinsurance.
+
+Reserving - 
+
+Legal adjustment reserving -
+
+
+
+
+Quote Issuance- quote which is given by insu company.. nobody is obliged to it; it has a time limit to stay valid.
+
+Policy Issuance-buying of policy.
+
+Policy Administration- activities post policy is issued.
+reinstate policy/ endorse.
+
+Post Issuance
+
+Claims Management- FNOL-first notice of loss
+
+Re-insurance
+
+Agency Management- employees of company, outside comp.. premium varies.
+
+
+
+places where u can buy insurance-careers
+icici lombard, tata AIG,
+
+
+eligibility criteria- underwriting the process which a career runs.
+
+coverage-
+
+
+insured can select a limit.
+
+deductibles/ coverage- but deductibles need to be configured.
+
+
+quote- has premium only monthyly/ quateryly/ one time pay based.
+bank details.
+ quotes is acquired to compare and get the best policy.
+ 
+ activated date/ expired date.
+ 
+ eligibility question- precondition to decide on the policy.
+ 
+ underwriting question- precondition to decide the premium.
+ 
+ 
+ 
+ 
+ 
+ 2. after purchasing plolicy-
+ 
+ midterm Endorsement 
+ eg. 
+ - change the policy.
+ -optional coverages may be taken off.
+ - no coverage needed for next 6 months.
+ 
+ At any point in change.. a question is asked and premium can up and down.
+ 
+ Renewal-
+ 
+ Cancellation-
+  advance cancellation
+  notice period
+  anytime in the lifecycle
+  
+  
+  reinstate the policy within the notice period of cancellation
+  
+  re-write the policy- getting a new policy.
+  
+  
+  
+  Billing/ payments-
+  
+  
+ 
+ From Vikas--
+ 
+ stock based/ mutual based companies-
+ 
+ AAA mutual unit based org,
+ 
+ 
+ 
+ 
+ salvage buyers-
+ 
+ 
+ 
+ Industry Print- to capture the business processes
+ 
+
+riders- enahnced policy wto cover expensive property.
+
+
+
+
+
+split and spin
+
+split policies
+
+so these policies will be tagged to same account.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

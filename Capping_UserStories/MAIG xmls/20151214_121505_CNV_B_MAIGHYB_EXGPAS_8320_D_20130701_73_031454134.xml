@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Policy xmlns="http://www.exigeninsurance.com/eis/data/product/AAA_SS/1.0" name="AAA_SS" version="1">
+	<AAACSAAutoPolicy state="Created">
+		<aaaProgramCode>LegacyConv</aaaProgramCode>
+		<agentCd>500013270</agentCd>
+		<effective>2015-10-26T00:00:00</effective>
+		<expiration>2016-10-26T00:00:00</expiration>
+		<importedFrom>MAIG</importedFrom>
+		<inceptionDate>2012-08-02T00:00:00</inceptionDate>
+		<preConversionPolicyNumber>031454134</preConversionPolicyNumber>
+		<preConversionPolicyPremium>535</preConversionPolicyPremium>
+		<producerCd>500001003</producerCd>
+		<productCd>AAA_SS</productCd>
+		<riskStateCd>PA</riskStateCd>
+		<sourcePolicyNum>031454134</sourcePolicyNum>
+		<subProducerCd>500013270</subProducerCd>
+		<OtherOrPriorPolicy>
+			<productCd>membership</productCd>
+		</OtherOrPriorPolicy>
+		<AAAPaymentOption state="Created">
+			<paymentPlanCd>standartSS_R</paymentPlanCd>
+		</AAAPaymentOption>
+		<AAAInsured oid="109402" state="Created">
+			<firstName>DEBORAH</firstName>
+			<lastName>SEARFOSS</lastName>
+			<mainInsured>true</mainInsured>
+			<middleName>A</middleName>
+			<AAAInsuredPrimaryAddress state="Created">
+				<addressDisplayValue>198 FAITH CIR , CARLISLE, PA, 17013</addressDisplayValue>
+				<addressLine1>198 FAITH CIR</addressLine1>
+				<city>CARLISLE</city>
+				<countryCd>US</countryCd>
+				<postalCode>17013</postalCode>
+				<stateProvCd>PA</stateProvCd>
+				<usageType>mailing</usageType>
+			</AAAInsuredPrimaryAddress>
+		</AAAInsured>
+	</AAACSAAutoPolicy>
+	<billingAccount>
+		<paymentDetailsEFT>
+			<profileId>98A1EB57-5121-92E9-D5E8-C</profileId>
+			<accountNumber>7890</accountNumber>
+			<accountTypeCd>checking</accountTypeCd>
+			<bankAccountHolderName>Tracy Raub</bankAccountHolderName>
+			<bankName>WELLS FARGO BANK</bankName>
+			<signedAuthorizationOnFile>TRUE</signedAuthorizationOnFile>
+			<transitNumber>053207766</transitNumber>
+		</paymentDetailsEFT>
+	</billingAccount>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2013-05-30T00:00:00</updatedOn>
+		<userText>NTBR  - DONT REINST IF CX FOR NON PAY/CLAIMS FREQ OED 08/02/11    HO/MBR 10/12/12 KACC 118 INSURED STRUCK FIXED OBJECT COLL $3655.47 01/05/13 KACC 108 PASSING  PD $3418.64  COLL $2043.48 NOTICE MAILED</userText>
+	</userNote>
+</Policy>

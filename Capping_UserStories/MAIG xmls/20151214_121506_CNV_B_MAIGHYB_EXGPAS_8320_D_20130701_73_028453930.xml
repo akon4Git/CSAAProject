@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Policy xmlns="http://www.exigeninsurance.com/eis/data/product/AAA_SS/1.0" name="AAA_SS" version="1">
+	<AAACSAAutoPolicy state="Created">
+		<aaaProgramCode>LegacyConv</aaaProgramCode>
+		<agentCd>500013270</agentCd>
+		<effective>2015-10-26T00:00:00</effective>
+		<expiration>2016-10-26T00:00:00</expiration>
+		<importedFrom>MAIG</importedFrom>
+		<inceptionDate>2010-07-13T00:00:00</inceptionDate>
+		<preConversionPolicyNumber>028453930</preConversionPolicyNumber>
+		<preConversionPolicyPremium>3445</preConversionPolicyPremium>
+		<producerCd>500001003</producerCd>
+		<productCd>AAA_SS</productCd>
+		<riskStateCd>NJ</riskStateCd>
+		<sourcePolicyNum>028453930</sourcePolicyNum>
+		<subProducerCd>500013270</subProducerCd>
+		<OtherOrPriorPolicy>
+			<productCd>membership</productCd>
+		</OtherOrPriorPolicy>
+		<AAAPaymentOption state="Created">
+			<paymentPlanCd>standartSS_R</paymentPlanCd>
+		</AAAPaymentOption>
+		<AAAInsured oid="109185" state="Created">
+			<firstName>BARBARA</firstName>
+			<lastName>ABDUR-RAZZAQ</lastName>
+			<mainInsured>true</mainInsured>
+			<middleName>F</middleName>
+			<AAAInsuredPrimaryAddress state="Created">
+				<addressDisplayValue>1224 WOODLAND AVE , PLAINFIELD, NJ, 07060</addressDisplayValue>
+				<addressLine1>1224 WOODLAND AVE</addressLine1>
+				<city>PLAINFIELD</city>
+				<countryCd>US</countryCd>
+				<postalCode>07060</postalCode>
+				<stateProvCd>NJ</stateProvCd>
+				<usageType>mailing</usageType>
+			</AAAInsuredPrimaryAddress>
+		</AAAInsured>
+	</AAACSAAutoPolicy>
+	<billingAccount>
+		<paymentDetailsEFT>
+			<profileId>67E29117-E75C-D45B-B1B2-0</profileId>
+			<accountNumber>7890</accountNumber>
+			<accountTypeCd>checking</accountTypeCd>
+			<bankAccountHolderName>CORINNE BUDDY</bankAccountHolderName>
+			<bankName>TD BANK, NA</bankName>
+			<signedAuthorizationOnFile>TRUE</signedAuthorizationOnFile>
+			<transitNumber>031201360</transitNumber>
+		</paymentDetailsEFT>
+	</billingAccount>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2010-07-14T00:00:00</updatedOn>
+		<userText>1 NAF ACC FOR MR. RAZZAQ..RECIEVED LETTER FROM ALL STATE CONFIRMING NAF ACC ON 09/10/09..NO OTHER ACTIVITY 17 MILES WORK AVALON, PLS CAMRY NO OTHER HH MEM W.DRI LIC CARCO EXPLAINED POL EFF 07/13/2010 HO3 POL# 28359451</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2010-07-15T00:00:00</updatedOn>
+		<userText>MAILED ID CARDS</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2010-07-20T00:00:00</updatedOn>
+		<userText>CARCO IS REQUIRED</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2010-07-22T00:00:00</updatedOn>
+		<userText>ARSK/PAPER APPLICATION REVIEW MVRS ATTACHED - BOTH CLEAR CLUE ATTACHED - LISTS DISCLOSED 9/10/09 NAF LOSS WITH OPEN PMTS PER ATTACHED LETTER FROM ALLSTATE - NAF LOSS - DOES NOT INDICATE ANY PAYMENT - ADDING PAYMENT AMOUNT TO LOSS IN DU VEH'S QUOTED IN TIER 6 &amp;amp 5  EMAIL TO AGENT - PRIOR CARRIER LISTED AS LIBERTY MUTUAL FOR PRIOR 5 YEARS - POL # ENTERED AS 111111 - THIS IS INCONSISTANT WITH LETTER FROM ALLSTATE! RESPONSE FROM AGENT ALLSTATE PRIOR CARRIER LIBERTY MUTUAL - SYSTEM PROBLEM ADVISE TO ALERT JILL N OF SYSTEM ISSUE CONFIRMED ON QUTOE CALL RECORDING THAT CUSTOMER STATED ALL STATE FOR PRIOR CARRIER</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2010-08-21T00:00:00</updatedOn>
+		<userText>MS CALLED MONEY HAD COME FOR EFT OUT OF WRONG ACCOUNT STATES THAT SHE HAD CALLED AND GIVEN REP INFORMATION OVER THE PHONE . PER NOTES REP TOOK BANK INFORMATION AND EMAILED EFT WHICH IS NOT PROCEDURE ADVISED CUSTOMER THAT SHE SHOULD SEND HER REQUEST IN WRITING GAVE HER EFT FAX NUMBER. AUGUST WAS PAID AND ADVISED TO CALL AND CHECK TO SEE IF LETTER RECVD AND SWITCHED TO OTHER ACCOUNT LET ALLIE KNOW ABOUT INFORMATION IN NOTES .</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2010-08-25T00:00:00</updatedOn>
+		<userText>RECVD LETTER FROM INSRD, TO UPDATE THE CHECKIN ACCT # ON THE EFT AMENDED THE ACCT #  SENT LETTER TO FILE.</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2010-08-30T00:00:00</updatedOn>
+		<userText>S/W REP FROM NEWARK BOARD OF ED ECU WILL NEED TO VER W/INSURED ON TO THE 2005 TOYOTA.  908-757-7017  LEFT MESSAGE FOR INSURED 4:40 FIN FOR 2005 TOYOTA NEWARK BOARD OF ED ECU PO BOX 924323 FT WORTH, TX 76124 4:50 S/W BARBARA ADDING LEIN ON 2005 TOYTOA PLEASE FAX TO 877-891-2196 REF 14298043 EMAIL VSS PROCESS AUTO</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2010-09-21T00:00:00</updatedOn>
+		<userText>9/20/2010 6:08:13 PM BILLER AAA MID-ATLANTIC INSURANCE ACCOUNT NUMBER 28453930 PAYMENT METHOD ACH AMOUNT $213.75 STATUS  AUTHORIZED PAYMENT TYPE BILL PAYMENT TRANSACTION SOURCE IVR (INTERACTIVE VOICE RESPONSE) INCOMING PHONE NUMBER 9087577017 CONFIRMATION CODE 263207</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2010-09-22T00:00:00</updatedOn>
+		<userText>REP FROM NBECCU CALLED (LEIN ON THE 2005 TO) FOR POLICY EFFT DATE 8:51</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2010-10-12T00:00:00</updatedOn>
+		<userText>10/11/10 CARPS TRANSACTION UNSUCCESSFUL MESSAGE- UNABLE TO LOCATE ECHECK INFO TOKEN 1001540204 INSD WILL NEED TO MAKE PAYMENT MANUALLY AND PROVIDE CORRECT ACCOUNT IN FO ON NEW AUTHORIZATION FORM CALLED INSURED @ 908-727-7017 AND LEFT MESSAGE TO CALL ME BACK INSURED'S NEEDS TO MAKE PAYMENT FOR $213.75 MANUALLY AND THEN HE WILL BE SET UP FOR THE REMAINING INSTALLMENTS ROUTING NUMBER PROVIDED FOR EFT WAS INVALID  WE NEED TO VERIFY ROUTING &amp;amp ACCT NUMBER TO UPDATE IN CARPS REFER TO PRIOR NOTES</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2010-10-15T00:00:00</updatedOn>
+		<userText>AUTHORIZATION CODE:  115779 RECEIPT NUMBER:  531158-58068-65 MESSAGE FROM BANK:  APPROVAL POLICY ID:  28453930 CUSTOMER NAME:  ABDUR RAZZAQ, CHARGE DATE:  10/15/2010 11:11:58 AM CREDIT CARD TYPE:  VISA CREDIT CARD EXPIRATION:  07/1/2013 CREDIT CARD:  ****-2028 AMOUNT:  $213.75</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2010-10-19T00:00:00</updatedOn>
+		<userText>CARPS INFO UPDATED AND NEXT WITHDRAWAL EFF 11/10/10</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2010-11-12T00:00:00</updatedOn>
+		<userText>4:32 S/W BARBARA-VERIFIED PYMNT WAS TAKEN ON 11/10/10 IN THE AMT OF $213.75</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2011-04-26T00:00:00</updatedOn>
+		<userText>RENEW</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2012-06-25T00:00:00</updatedOn>
+		<userText>3:53PM MS. ABDUR RAZZAQ CALLED//RECEIVED RENEWAL REMINDER LETTER/ON EF T//ADVISED WILL CONTINUE WITH EFT  HAS HO/MEMBERSHIP</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2013-01-17T00:00:00</updatedOn>
+		<userText>PEDRO OF LEXUS OF RT.10 TEL: 973 319 7900. FAX: 973 319 1003.  VIN: JTHBJ46G282245575. 2008, LEXUS 350....ADDED TO POLICY 01/17/2013 FULL COVERAGE/ COMP COLL 250/500 (SAME DEDUCTIBLES). PLEASE FAX EOI TO: 973 319 1003 ....NO REPLACEMENT OF VEHICLE. ADVISED DEALER OF CARCO INSPECTION...HE WILL HAVE CUSTOMER CALL WHEN THEY COME OVER TO PICK UP THE VEHICLE.  FAXED EOI 12:55</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2013-01-23T00:00:00</updatedOn>
+		<userText>\ECD CALL FROM BARBARA 1:54 RECD AMENDED DEC PAGE AND NOTICE THERE WERE 3 CARS TO 02 WAS SUPPOSED TO BE REMOVED WAS TOTALED IN AN ACCIDENT INSURED SENT IN TITLE AND KEYS 01/22/13 REMOVED 02 TO EFF 1/23 QUOTED $2828 INSURED NO LONGER WORKS CHANGED USAGES FROM W 17MILES TO PLEASURE USE QUOTED $2716 INSURED WANTS TO MAKE SURE THAT PMT UPDATES. ADVISED WILL KEEP EYE ON POL. DIARY TO CALL CLOSER TO PMT DATE 908 757 7017</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2013-01-24T00:00:00</updatedOn>
+		<userText>3:41 MAILED CARCO INSPECTION NOTICE TO MS. ABDUR-RAZZAQ, AFTER TRYING TO REACH HER BY PHONE.</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2013-01-25T00:00:00</updatedOn>
+		<userText>MAILED CARCO FOLLOW UP LETTER FOR THE 08 LE. CALLED BARBARA 4:16</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2013-01-28T00:00:00</updatedOn>
+		<userText>908 757 7017/1206PM INSURED CALLED ABOUT CARCO ADVISED THAT THEY WILL TAKE PIC OF THE OUTSIDE OF THE VEH AND SEND US THE FORMS SO THAT COMP AND COLL IS NOT REMOVED ADVISED MONTHLY PAYMENTS AS WELL</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2013-07-08T00:00:00</updatedOn>
+		<userText>1237PM VALERIE FROM AAA NJ CLD TO GET RECENT DEC PAGE FAXED TO HER FAX#973-377-5447</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2013-08-05T00:00:00</updatedOn>
+		<userText>11:11 JOANNA CALLED FROM BRANCH -REQ COPY OF POLICY THIS WAS TO BE NON RENEWED-074 EMAIL TO HER AT JMARON@NJAC.AAA.COM 908 757 7017 BCHOCOLATE2@MSN.COM 11:24 S/W BARBARA CONFUSED ABOUT THE RENEWAL/EFT TOOK A PAYMENT 074- AGENCY GAVE HER AMERICAN COMMERCE POLICY ADV INCREASE WAS BASED ON AFA FOR HUSBAND S/W JOSH FROM UW ADV THAT SINCE WE DIDNT SEND OUT NRN AND SHE'S ACCEPTED THE OFFER ON RENEWAL PER EFT, WE KEEP ON IT FOR THE NEXT YEAR 8/5/13. JLEMONDS. REFERRAL RCVD CALL FROM DAWN IN SVC, WHO INQD ABOUT WHETHER NON-RENEWAL NOTICE WAS SENT OUT.  THE CLUB IS TERMINATING CONTRACT W/US, AND IS NON- RENEWING MOST AUTO POLICIES DUE TO THIS.  HOWEVER, NO RECORD OF THIS BEING SENT TO INSD, NOR OF NTBR BEING SET.  WE HAVE ALREADY SENT RENEWAL OFFER, AND INSD HAS ACCEPTED.  THEREFORE WE MUST HONOR POLICY FOR THIS TERM UNLESS INSD REQ TO CXL IT.</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2013-08-19T00:00:00</updatedOn>
+		<userText>SPOKE WITH NJAC AND ACKNOWLEDGED THAT THIS POLICY WILL BE TERMINATED BY NJAC CLUB 7/2014 RENEWAL</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2014-04-04T00:00:00</updatedOn>
+		<userText>4/4/2014 KWILLIAMS NON-RENEWAL *****DO NOT REINSTATE***** NTBR SET DUE TO NJ AUTO CLUB AGENCY TERMINATION FOR QUESTIONS PLEASE CONTACT THE AGENCY AT 1-888-390-4547</userText>
+	</userNote>
+</Policy>

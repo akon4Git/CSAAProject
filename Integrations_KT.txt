@@ -1,0 +1,161 @@
+agent intranet- payment
+usha cTS
+broker agent feed ETL
+challenges-
+types of policies
+
+PAM-
+
+
+2. 
+
+
+AMIG- special product- watercraft info -connect PAS
+
+anti redlining- maintain stats, say how many CA ppl raise policy
+
+SR22-
+
+AVS
+
+blackline-
+
+bluecod- CEA policies bind
+
+blcoker defect
+
+CAS- claims admin sys
+
+
+CIS-inspection system- property inspection  (Anusha)
+ feed file ( pdf)
+ 
+ Reliable- other states
+ 
+ customer master- OR MDM- master data mgmnt
+ customer( driver)
+ 
+ basic demoraphic + primary info + basic policy info
+ 
+ MRM- record mgmnt
+ 
+ EARS: license info  (Anusha)
+ violations are brought out at renewals
+ ( validate DB)
+ 
+ PAS  EARS  Lexis Nexis
+ 
+ 
+ Enterprise Commission:
+ 
+agent code + commission
+
+)Channel types)
+
+comm is distributed
+
+-> policy 
+
+
+EZY link- comparative rater
+
+( agent does)
+
+ISO-  (Anusha)
+fireline-
+PPC
+360
+
+IVANs (Anusha)  
+
+agency load
+
+DW for aganecies
+
+Lexis nexis-
+clue - claims external
+mvr- violations / hit no hit
+current carrier - U/W 
+insurance score - score based on history
+
+
+Riskmeter
+coast/ elevation
+
+membership- AAA discount
+
+Multi co- comp rater
+NPS- net promoter score- 
+endorse AAA insurance ( score)
+ 
+
+ PAM- agency DB
+ (PAS)
+ 
+payment central- billing ( payment transaction history lies here)
+
+
+
+SAM- CRM ( via SFDC)
+
+service- SOA , real time- SEARCH
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

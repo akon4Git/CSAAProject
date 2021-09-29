@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Policy xmlns="http://www.exigeninsurance.com/eis/data/product/AAA_SS/1.0" name="AAA_SS" version="1">
+	<AAACSAAutoPolicy state="Created">
+		<aaaProgramCode>LegacyConv</aaaProgramCode>
+		<agentCd>500013270</agentCd>
+		<effective>2015-10-26T00:00:00</effective>
+		<expiration>2016-10-26T00:00:00</expiration>
+		<importedFrom>MAIG</importedFrom>
+		<inceptionDate>2009-04-28T00:00:00</inceptionDate>
+		<preConversionPolicyNumber>016355742</preConversionPolicyNumber>
+		<preConversionPolicyPremium>1601</preConversionPolicyPremium>
+		<producerCd>500001003</producerCd>
+		<productCd>AAA_SS</productCd>
+		<riskStateCd>PA</riskStateCd>
+		<sourcePolicyNum>016355742</sourcePolicyNum>
+		<subProducerCd>500013270</subProducerCd>
+		<OtherOrPriorPolicy>
+			<productCd>membership</productCd>
+		</OtherOrPriorPolicy>
+		<AAAPaymentOption state="Created">
+			<paymentPlanCd>standartSS_R</paymentPlanCd>
+		</AAAPaymentOption>
+		<AAAInsured oid="109349" state="Created">
+			<firstName>VIRGINIA</firstName>
+			<lastName>BARBOUR-HARRISON</lastName>
+			<mainInsured>true</mainInsured>
+			<AAAInsuredPrimaryAddress state="Created">
+				<addressDisplayValue>3531 PEAK DR , TOBYHANNA, PA, 18466</addressDisplayValue>
+				<addressLine1>3531 PEAK DR</addressLine1>
+				<city>TOBYHANNA</city>
+				<countryCd>US</countryCd>
+				<postalCode>18466</postalCode>
+				<stateProvCd>PA</stateProvCd>
+				<usageType>mailing</usageType>
+			</AAAInsuredPrimaryAddress>
+		</AAAInsured>
+	</AAACSAAutoPolicy>
+	<billingAccount>
+		<paymentDetailsEFT>
+			<profileId>CF85C06F-98F4-1302-2C75-D</profileId>
+			<accountNumber>7890</accountNumber>
+			<accountTypeCd>checking</accountTypeCd>
+			<bankAccountHolderName>Larry Brown</bankAccountHolderName>
+			<bankName>WELLS FARGO BANK</bankName>
+			<signedAuthorizationOnFile>TRUE</signedAuthorizationOnFile>
+			<transitNumber>055003201</transitNumber>
+		</paymentDetailsEFT>
+	</billingAccount>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2009-04-28T00:00:00</updatedOn>
+		<userText>RATED WITH 1 NONFAULT LOSS/ 04/07...INSURDS DAUGHTER WAS HIT IN PARKIN G LOT..OPTHER PERSONS INSURANCE PAID FULL CLAIM. INSUREDS DAUGHETRS SONN TO BE EX BOYFIEND LIVES WITH THEM..HE DOES NOT HAVE A DRIVER SLIC//HE HAD HIS OWN VEH AND INSUR,,,LIC SUSPENDED FOR F-STOP...REGISTRATION WASNT PAID.....HE IS MOVING OUT....I GOT A EXCLU SION SIGNED BY INSURED,,,AND GAVE FORM FOR HIM TO SIGN..SINCE HE WILL BE IN THE HOUSEHOLD UNTIL HE FINDS A PLACE TO LIVE.</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2009-05-05T00:00:00</updatedOn>
+		<userText>AAA MEMBER #222-0587721  H}570-972-4054</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2009-05-08T00:00:00</updatedOn>
+		<userText>ARSK-MVRS LIST NO VIOLS, AND CLUE LISTS A LOSS ON 4/13/07 $1,008 MEDICAL. AGENT INDICATED THAT DAUGHTER WAS HIT IN PARKING LOT. ALSO AGENT ADVISED THAT THE DAUGHTERS BOYFRIEND NOW LIVES IN THE H/H, BUT WILL SOON BE MOVING. CURRENTLY HIS LICENSE IS SUSPENDED FOR FAILURE TO PAY HIS REGISTRATION. AGENT GAVE THE INSURED AN EXCLUSION FORM TO SIGN SINCE HE STILL RESIDES IN THE H/H. POLICY WAS QUOTED IN TIER 1. DIARIED FILE TO CHECK IF DAUGHTER IS EMPLOYED.</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2009-05-21T00:00:00</updatedOn>
+		<userText>MARK ESOLEN E-MAILED A COPY OF DRIVER EXCLUSION TO EXCLUDE THE INSURED'S DAUGHTERS BOYFRIEND OTIS PACE WHOSE LICENSE IS CURRENTLY SUSPENDED DUE TO REGISTRATION PROBLEM. OTIS WILL SOON BE MOVING PER PRIOR SCR. I ADDED THE EXCLUSION ENDORSEMENT.</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2009-05-28T00:00:00</updatedOn>
+		<userText>NBC PA NEW BUSINESS REVIEW COMPLETE AND COMPLIANT</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2009-06-10T00:00:00</updatedOn>
+		<userText>PYMT EC $219.73 CONF #161227</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2009-06-29T00:00:00</updatedOn>
+		<userText>RECVD AUTO NEW BUSINESS DRIVER QUESTIONAIRE NO CHANGES SENT TO FILE</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2009-08-31T00:00:00</updatedOn>
+		<userText>9:56AM...REV'D.BILLING...NXT.PYMT.DUE 9/10/09...</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2009-11-10T00:00:00</updatedOn>
+		<userText>I SENT THE INSURED A WORK USE QUESTIONNAIRE TO CHECK IF HER DAUGHTER IS EMPLOYED</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2009-12-01T00:00:00</updatedOn>
+		<userText>INSURED RETURNED THE WORK USE QUESTIONNIARE AND INDICATED THAT SHE DRIVES THE 1999 MERCURY 20 MILES TO WORK. POLICY IS ALREADY RATED AT USE 2</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2010-01-25T00:00:00</updatedOn>
+		<userText>1:04 VIRGINIA CALLED TO VERIFY JANUARY PAYMENT RECVD ADVISED YES BALANCE IS ZERO</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2010-04-29T00:00:00</updatedOn>
+		<userText>RENEWAL PYMT THROUGH BILL MATRIX $323.20 ELECTRONIC CHECK AUTH #119327</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2011-02-08T00:00:00</updatedOn>
+		<userText>RENEWAL REFERRAL RECEIVED FOR CODED END. STILL APPLICABLE FOR OTIS PACE. NOTED 10/22/09 203 NAF 1277.  RENEW.</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2011-03-24T00:00:00</updatedOn>
+		<userText>4:51 VIRGINIA CALLED TO VERIFY PAYMENT AMOUNT ADVISED $301.70, SHE WILL MAKE PAYMENT</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2012-03-21T00:00:00</updatedOn>
+		<userText>RECD POLICY SERVICE EMAIL FRM MARK ESOLEN EFF 03/21/12 REMOVED THE 1995 SATURN</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2012-03-30T00:00:00</updatedOn>
+		<userText>224 CELL: 570-972-4094 S/W VIRGINA WHO WANTED TO ADD 2003 MITZUBISHI GALANT, ODO 122K,$3500 VIN: 4A3AA36G63E182220, TITILED TO VIRGINA AND PRIM DRIVER, NO UNLISTED DRIVERS, MIN LIAB, NO FINANCE, PLEASURE, NO ANTI-THEFT, KEPT AT ADDRESS, EFFT 3/31.</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2012-04-16T00:00:00</updatedOn>
+		<userText>1:04 VIRGINIA IS CALLING TO REMOVE THE 99 MERCURY MOUNTAINEER EFF TODAY - 04/16/12 ENGINE BLEW       PH# 570 972 4094</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2012-04-25T00:00:00</updatedOn>
+		<userText>1:23PM...REV'D.BILLING...NXT.PYMT.DUE 4/27/12...PH.#570-972-4094...OFF ERED H/O'S,SHE H/U...</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2012-05-07T00:00:00</updatedOn>
+		<userText>AS PER MEIAL REQ FROM AGENT RE-ADDED 1999 MERC 4M2DU55P1XUJ19181 LIAB ONLY EFF TODAY</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2012-06-14T00:00:00</updatedOn>
+		<userText>OPN REPORT  OPN ISSUED FOR  5.00  REMOVED THE OPN</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2012-06-21T00:00:00</updatedOn>
+		<userText>INSURED CALLED TO GO OVER BILLING 1245</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2012-08-16T00:00:00</updatedOn>
+		<userText>12:15 VIRGINIA CALLED TO REMOVE THE 03 MI SHE IS BUYING ANOTHER CAR BUT IS NOT SURE WHAT IT IS YET</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2012-08-21T00:00:00</updatedOn>
+		<userText>11:22 VIRGINIA CALLED TO REVIEW CONSEQUENCES OF HAVING AN UNINSURED DRIVER DRIVE ONE OF HER VEHICLES AND PIP COVERAGE ON 03 MIT</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2012-08-30T00:00:00</updatedOn>
+		<userText>8/27/12  C50 K.SHETLEY POLICY NUMBER: 016355742 CLAIMS OCCURENCE : 016355742370002 LOSS DATE:  8/3/2012 CONDITION THAT EXIST: OTIS PACE LIVES IN HOME AND DRIVES INSURED VEHICLE DOB 12-7-82 PA LICENSE UNKNOWN ADDED TO POLICY</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2012-09-04T00:00:00</updatedOn>
+		<userText>MVR NO HIT FOR OTIS PACE LETTER SENT FOR CORRECT DL# 9-4-2012</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2012-10-19T00:00:00</updatedOn>
+		<userText>MAILED 2ND NOTICE FOR OTIS PACE FOR DL #</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2012-10-24T00:00:00</updatedOn>
+		<userText>10/15/12 COMMUNICATION RECEIVED FROM INSURED UPDATED LICENSE INFO FOR OTIS PACE PA LIC 27314112 DOB 12/07/1982</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2013-02-04T00:00:00</updatedOn>
+		<userText>NTBR , DONT REINSTATE IF CX FOR NONPAY/LOSS FREQ OED 4/28/09   NO HO/MBR SINCE 2004  HIGH L/R, OTIS PACE: VIOL 3/20/12 DRIVING WHILE UNDER DRUGS VIOL 9/12/12 LICENSE SUSPENDED FREQ/SEVER PAST LOSS HISTORY, ALREADY HAD EXCLUSION ON FILE FOR OTIS PACE AND STILL HE WAS ADDED TO POLICY</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2013-02-14T00:00:00</updatedOn>
+		<userText>REC'D A REQ FROM BLEWIS TO CHANGE ADDRESS TO 3531 PEAK DR TOBYHANNA, PA 18466  DUE TO 911 CHANGE</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2013-02-22T00:00:00</updatedOn>
+		<userText>2:15 VIRGINIA CALLED TO VERF UNTIL WHEN SHE IS COVRD WITH THE LAST PYMT ADVSD UNTIL 4/28/13 WHEN THE POL WILL NOT BE RENEWED DUE TO ACTIVITY ( FREQ/SEVER PAST LOSS HISTORY)    CELL: 570-972-4094 VHARRISON1@LIVE.COM</userText>
+	</userNote>
+</Policy>

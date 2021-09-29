@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - DD0, AZ Create Policy</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>DD0, AZ Create Policy</h1>
+<p>
+  Test duration: 232.564s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.deloitte.automation.poc.PolicyCreator</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  testAssDocGenDataGathering
+      </td>
+  <td class="duration">
+    89.839s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"1", "DC_OkFunctionalTests_2.xls", "dc_policy-numbers.txt", "OK_active_policy_1", "BrokerFillData1", "PrefillFillSmoke", "PrefillValidateSmoke", "InsuredFillSmoke", "GeneralFillSmoke", "DriverFillSmoke", "VehicleFillSmoke", "PolicyLvLCoveragesFillSmoke", "", "DocumentsFillSmoke", "false", null</span><br />
+    
+            <div class="testOutput">
+                        ==========================================
+<br/>
+                                AZ Account created with number: 800036034
+<br/>
+                                ==========================================
+<br/>
+                                Verification failed: Element: 'producContextInfoForm:policyDetail_policyStatusCdText' text expected [Policy Active] but found [Policy Expired]<br/>
+                                Verify Screenshot created: <a href="../ScreenShots/PolicyCreator.testAssDocGenDataGathering(133)_98414.png">PolicyCreator.testAssDocGenDataGathering(133)_98414.png</a><br/>
+                                <br/>
+                                OK_active_policy_1--OKSS910091960is created.
+<br/>
+                                Unable to create policy for the sequence 1
+<br/>
+                  </div>
+    
+        
+            <div class="testOutput">
+      Error Screenshot created: <a href="../ScreenShots/AZ_testAssDocGenDataGathering_Error.png">AZ_testAssDocGenDataGathering_Error.png</a>
+    </div>
+    	
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: Verification failures:<br/>
+java.lang.AssertionError: Element: &apos;producContextInfoForm:policyDetail_policyStatusCdText&apos; text expected [Policy Active] but found [Policy Expired]<br/>
+	at com.exigen.automation.helper.SoftAssert.verifyEquals(SoftAssert.java:133)<br/>
+	at com.exigen.automation.helper.ExtendedAssert.verifyEquals(ExtendedAssert.java:100)<br/>
+	at com.exigen.automation.helper.SeleniumUtils.verifyTextOfElementEquals(SeleniumUtils.java:1722)<br/>
+	at com.exigen.automation.helper.SeleniumUtils.verifyTextOfElementEquals(SeleniumUtils.java:1712)<br/>
+	at com.deloitte.automation.poc.PolicyCreator.testAssDocGenDataGathering(PolicyCreator.java:133)<br/>
+</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              com.exigen.automation.helper.SoftAssert.checkForVerificationErrors(SoftAssert.java:218)<br />
+              com.exigen.automation.helper.ExtendedAssert.checkForVerificationErrors(ExtendedAssert.java:120)<br />
+              com.deloitte.automation.poc.PolicyCreator.testAssDocGenDataGathering(PolicyCreator.java:147)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.deloitte.automation.poc.PolicyCreator</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  testAssDocGenDataGathering
+      </td>
+  <td class="duration">
+    64.563s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"4", "DC_UtFunctionalTests_2.xls", "dc_policy-numbers.txt", "UT_active_policy_1", "BrokerFillData1", "PrefillFillSmoke", "PrefillValidateSmoke", "InsuredFillSmoke", "GeneralFillSmoke", "DriverFillSmoke", "VehicleFillSmoke", "PremiumFillData2", "", "DocumentsFillSmoke", "false", null</span><br />
+    
+            <div class="testOutput">
+                        ==========================================
+<br/>
+                                AZ Account created with number: 800036035
+<br/>
+                                ==========================================
+<br/>
+                                UT_active_policy_1--UTSS910091961is created.
+<br/>
+                                Unable to create policy for the sequence 4
+<br/>
+                  </div>
+    
+        
+        	
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  testAssDocGenDataGathering
+      </td>
+  <td class="duration">
+    68.929s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"5", "DC_PaCalendarTests.xls", "dc_policy-numbers.txt", "PA_active_policy_1", "AgencyFillData1", "PrefillFillData1", "PrefillValidateAddress1", "InsuredFillData1", "GeneralFillData1", "DriverFillData1", "VehicleFillData1", "PremiumPolicyFillData9", "", "DocumentsFillData1", "false", null</span><br />
+    
+            <div class="testOutput">
+                        ==========================================
+<br/>
+                                AZ Account created with number: 800036036
+<br/>
+                                ==========================================
+<br/>
+                                PA_active_policy_1--PASS910091962is created.
+<br/>
+                                Unable to create policy for the sequence 5
+<br/>
+                  </div>
+    
+        
+        	
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>

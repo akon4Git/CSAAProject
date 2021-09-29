@@ -1,0 +1,776 @@
+<?xml version="1.0" ?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://exigenservices.com/aaa/billing/integration" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="AAABillingService" targetNamespace="http://exigenservices.com/aaa/billing/integration">
+  <wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://exigenservices.com/aaa/billing/integration" elementFormDefault="qualified" targetNamespace="http://exigenservices.com/aaa/billing/integration" version="1.0">
+
+  <xs:element name="alterPaymentMethod">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="paymentMethod" type="tns:PaymentMethodType"></xs:element>
+        <xs:element name="policyNumber" type="xs:string"></xs:element>
+        <xs:element name="action" type="tns:ActionFlagType"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="alterPaymentMethodFault">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="alterPaymentMethodFault" type="xs:string"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="alterPaymentMethodResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="alterPaymentMethodResponse" type="tns:AlterPaymentMethodResponseType"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="autoPayOptionOnPolicy">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="autoPayDetails" type="tns:AutoPayDetailsType"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="autoPayOptionOnPolicyFault">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="autoPayOptionOnPolicyFault" type="xs:string"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="autoPayOptionOnPolicyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="autoPayOptionResponse" type="tns:AutoPayOptionResponseType"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="declinePaymentOnPolicy">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="referenceNumber" type="xs:string"></xs:element>
+        <xs:element name="userInfo" type="tns:UserInfoType"></xs:element>
+        <xs:element name="declineReasonCd" type="xs:string"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="declinePaymentOnPolicyFault">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="declinePaymentOnPolicyFault" type="xs:string"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="declinePaymentOnPolicyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="declineResponseType" type="tns:DeclineResponseType"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="getBillingBalanceByPolicy">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="policyNumber" type="xs:string"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="getBillingBalanceByPolicyFault" nillable="true" type="xs:string"></xs:element>
+
+  <xs:element name="getBillingBalanceByPolicyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="result" type="tns:AAABillingAccountType"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="getBillingSummariesFault" nillable="true" type="xs:string"></xs:element>
+
+  <xs:element name="getBillingSummariesRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="policyInfo" type="tns:policyInfo"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="getBillingSummariesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="billingInfo" type="tns:BillingAccountType"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="postPaymentOnPolicy">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="policyNumber" type="xs:string"></xs:element>
+        <xs:element name="paymentDetail" type="tns:PaymentDetailType"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="postPaymentOnPolicyFault">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="postPaymentOnPolicyFault" type="xs:string"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="postPaymentOnPolicyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="paymentResponse" type="tns:PaymentResponseType"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="policyInfo">
+    <xs:sequence>
+      <xs:element name="policyNumber" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="termEffectiveDate" type="xs:date"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="BillingAccountType">
+    <xs:all>
+      <xs:element name="accountInfo" type="tns:AAAAccountInfoType"></xs:element>
+      <xs:element name="balance" type="tns:AAABalanceInfoType"></xs:element>
+      <xs:element name="additionalInfo">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="paymentRestriction" type="xs:boolean"></xs:element>
+            <xs:element name="billToMortgagee" type="xs:string"></xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="policies">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="policy" nillable="true" type="tns:BillablePolicyTermType"></xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="errorInfo">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="errorCode" type="xs:string"></xs:element>
+            <xs:element name="errorMessage" type="xs:string"></xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="AAAAccountInfoType">
+    <xs:all>
+      <xs:element name="accountNumber" type="xs:string"></xs:element>
+      <xs:element name="customerNumber" type="xs:string"></xs:element>
+      <xs:element name="firstName" type="xs:string"></xs:element>
+      <xs:element name="lastName" type="xs:string"></xs:element>
+      <xs:element name="billingAddress" type="tns:BillingAddressType"></xs:element>
+      <xs:element name="insurerName" type="xs:string"></xs:element>
+      <xs:element name="payPlan" type="xs:string"></xs:element>
+      <xs:element name="status" type="xs:string"></xs:element>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="BillingAddressType">
+    <xs:sequence>
+      <xs:element name="city" type="xs:string"></xs:element>
+      <xs:element name="country" type="xs:string"></xs:element>
+      <xs:element name="addressLine1" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="addressLine2" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="addressLine3" type="xs:string"></xs:element>
+      <xs:element name="state" type="xs:string"></xs:element>
+      <xs:element name="postalCode" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="AAABalanceInfoType">
+    <xs:all>
+      <xs:element name="balanceDue" type="xs:decimal"></xs:element>
+      <xs:element name="earnedPremiumWO" type="xs:decimal"></xs:element>
+      <xs:element name="minimumDue" type="xs:decimal"></xs:element>
+      <xs:element name="pastDue" type="xs:decimal"></xs:element>
+      <xs:element name="totalPaid" type="xs:decimal"></xs:element>
+      <xs:element name="totalPremium" type="xs:decimal"></xs:element>
+      <xs:element name="dueDate" type="xs:date"></xs:element>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="BillablePolicyTermType">
+    <xs:all>
+      <xs:element name="policyNumber" type="xs:string"></xs:element>
+      <xs:element name="policyStatus" type="xs:string"></xs:element>
+      <xs:element name="termEffectiveDate" type="xs:date"></xs:element>
+      <xs:element name="prodCancEffDate" type="xs:date"></xs:element>
+      <xs:element name="productCd" type="xs:string"></xs:element>
+      <xs:element name="productType" type="xs:string"></xs:element>
+      <xs:element name="companyCode" type="xs:string"></xs:element>
+      <xs:element name="lineOfBusiness" type="xs:string"></xs:element>
+      <xs:element name="isInRenewalPeriod" type="xs:boolean"></xs:element>
+      <xs:element name="balanceInfo" type="tns:TermBalanceInfoType"></xs:element>
+      <xs:element name="currentPaymentDue" type="tns:InstallmentInfoProfileType"></xs:element>
+      <xs:element name="nextPaymentDue" type="tns:InstallmentInfoProfileType"></xs:element>
+      <xs:element name="lastPayment" type="tns:PaymentProfileType"></xs:element>
+      <xs:element name="agentId" type="xs:string"></xs:element>
+      <xs:element name="agentName" type="xs:string"></xs:element>
+      <xs:element name="policyType" type="xs:string"></xs:element>
+      <xs:element name="riskState" type="xs:string"></xs:element>
+      <xs:element name="statusReason" type="xs:string"></xs:element>
+      <xs:element name="priorCarrier" type="xs:string"></xs:element>
+      <xs:element name="effectiveDate" type="xs:date"></xs:element>
+      <xs:element name="expirationDate" type="xs:date"></xs:element>
+      <xs:element name="inceptionDate" type="xs:date"></xs:element>
+      <xs:element name="transactionEffectiveDate" type="xs:date"></xs:element>
+      <xs:element name="conversionInfo" type="tns:ConvertedPolicyInfo"></xs:element>
+      <xs:element name="convertedRenewalOffer" type="xs:boolean"></xs:element>
+      <xs:element name="invoiceDue" type="xs:decimal"></xs:element>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="TermBalanceInfoType">
+    <xs:all>
+      <xs:element name="balanceDue" type="xs:decimal"></xs:element>
+      <xs:element name="minimumDue" type="xs:decimal"></xs:element>
+      <xs:element name="currentAmountDue" type="xs:decimal"></xs:element>
+      <xs:element name="pastDue" type="xs:decimal"></xs:element>
+      <xs:element name="totalPaid" type="xs:decimal"></xs:element>
+      <xs:element name="totalPremium" type="xs:decimal"></xs:element>
+      <xs:element name="termDuration" type="xs:integer"></xs:element>
+      <xs:element name="paymentPlan" type="xs:string"></xs:element>
+      <xs:element name="invoiceDate" type="xs:date"></xs:element>
+      <xs:element name="installmentsRemaining" type="xs:int"></xs:element>
+      <xs:element name="previousBalance" type="xs:decimal"></xs:element>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="InstallmentInfoProfileType">
+    <xs:sequence>
+      <xs:element name="fee" type="xs:decimal"></xs:element>
+      <xs:element name="installmentsNumber" type="xs:int"></xs:element>
+      <xs:element name="installmentAmount" type="xs:decimal"></xs:element>
+      <xs:element name="paymentMethod" type="xs:string"></xs:element>
+      <xs:element name="paymentPlan" type="xs:string"></xs:element>
+      <xs:element name="installmentDate" type="xs:date"></xs:element>
+      <xs:element name="dueDate" type="xs:date"></xs:element>
+      <xs:element name="statementDate" type="xs:date"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="PaymentProfileType">
+    <xs:sequence>
+      <xs:element name="creationDate" type="xs:date"></xs:element>
+      <xs:element name="paymentMethod" type="xs:string"></xs:element>
+      <xs:element name="amount" type="xs:decimal"></xs:element>
+      <xs:element name="status" type="xs:string"></xs:element>
+      <xs:element name="receiptNumber" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ConvertedPolicyInfo">
+    <xs:sequence>
+      <xs:element name="sourcePolicyNum" type="xs:string"></xs:element>
+      <xs:element name="sourceSystem" type="xs:string"></xs:element>
+      <xs:element name="policyType" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="firstTermEffectiveDate" type="xs:date"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="AAABillingAccountType">
+    <xs:all>
+      <xs:element name="accountInfo" type="tns:AAAAccountInfoType"></xs:element>
+      <xs:element name="balance" type="tns:AAABalanceInfoType"></xs:element>
+      <xs:element name="additionalInfo">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="checkReturn" type="xs:boolean"></xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="policies">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="policy" nillable="true" type="tns:AAABillablePolicyTermType"></xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="AAABillablePolicyTermType">
+    <xs:all>
+      <xs:element name="policyNumber" type="xs:string"></xs:element>
+      <xs:element name="termEffectiveDate" type="xs:date"></xs:element>
+      <xs:element name="productCd" type="xs:string"></xs:element>
+      <xs:element name="balanceInfo" type="tns:AAABalanceInfoType"></xs:element>
+      <xs:element name="policyStatus" type="xs:string"></xs:element>
+      <xs:element name="prodCancEffDate" type="xs:date"></xs:element>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="PaymentMethodType">
+    <xs:sequence>
+      <xs:element name="paymentMethodName" type="tns:PaymentMethodNameType"></xs:element>
+      <xs:element minOccurs="0" name="paymentMethodCC" type="tns:PaymentModeCreditCardType"></xs:element>
+      <xs:element minOccurs="0" name="paymentMethodEFT" type="tns:PaymentModeEFTType"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="PaymentModeCreditCardType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="secureToken" type="xs:string"></xs:element>
+      <xs:element name="number" type="xs:string"></xs:element>
+      <xs:element name="cardBrand" type="tns:CardBrandName"></xs:element>
+      <xs:element minOccurs="0" name="expirationMonth" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="expirationYear" type="xs:string"></xs:element>
+      <xs:element name="cardHolderName" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="cardType" type="tns:CardTypeName"></xs:element>
+      <xs:element name="expirationDate" type="xs:date"></xs:element>
+      <xs:element minOccurs="0" name="authorizationCode" type="xs:string"></xs:element>
+      <xs:element name="billingAddress" type="tns:BillingAddressType"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="PaymentModeEFTType">
+    <xs:sequence>
+      <xs:element name="secureToken" type="xs:string"></xs:element>
+      <xs:element name="accountNumber" type="xs:string"></xs:element>
+      <xs:element name="routingNumber" type="xs:string"></xs:element>
+      <xs:element name="bankName" type="xs:string"></xs:element>
+      <xs:element name="authorized" type="xs:boolean"></xs:element>
+      <xs:element name="firstName" type="xs:string"></xs:element>
+      <xs:element name="lastName" type="xs:string"></xs:element>
+      <xs:element name="middleName" type="xs:string"></xs:element>
+      <xs:element name="payeeFullName" type="xs:string"></xs:element>
+      <xs:element name="accountType" type="tns:AccountTypeName"></xs:element>
+      <xs:element name="prefix" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="AlterPaymentMethodResponseType">
+    <xs:sequence>
+      <xs:element name="policyNumber" type="xs:string"></xs:element>
+      <xs:element name="paymentModeId" type="xs:string"></xs:element>
+      <xs:element name="responseStatus" type="tns:ResponseStatusType"></xs:element>
+      <xs:element name="responseStatusMessage" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="PaymentDetailType">
+    <xs:sequence>
+      <xs:element name="paymentSourceSystem" type="tns:PaymentSourceSystemType"></xs:element>
+      <xs:element name="payment" type="tns:MoneyType"></xs:element>
+      <xs:element name="paymentMode" type="tns:PaymentModeType"></xs:element>
+      <xs:element name="revenueType" type="tns:RevenueTypeName"></xs:element>
+      <xs:element name="userInfo" type="tns:UserInfoType"></xs:element>
+      <xs:element name="paymentDate" type="xs:dateTime"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="MoneyType">
+    <xs:sequence>
+      <xs:element name="amount" type="xs:decimal"></xs:element>
+      <xs:element name="currencyCode" type="tns:CurrencyCodeType"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="PaymentModeType">
+    <xs:sequence>
+      <xs:element name="paymentModeName" type="tns:PaymentModeNameType"></xs:element>
+      <xs:element minOccurs="0" name="paymentModeCash" type="tns:PaymentModeCashType"></xs:element>
+      <xs:element minOccurs="0" name="paymentModeCheck" type="tns:PaymentModeCheckType"></xs:element>
+      <xs:element minOccurs="0" name="paymentModeEFT" type="tns:PaymentModeEFTType"></xs:element>
+      <xs:element minOccurs="0" name="paymentModeCreditCard" type="tns:PaymentModeCreditCardType"></xs:element>
+      <xs:element name="externalReceiptNumber" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="PaymentModeCashType">
+    <xs:sequence></xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="PaymentModeCheckType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="bankName" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="chequeDate" type="xs:date"></xs:element>
+      <xs:element name="chequeNumber" type="xs:string"></xs:element>
+      <xs:element name="payeeName" type="xs:string"></xs:element>
+      <xs:element name="bankAccountNumber" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="UserInfoType">
+    <xs:sequence>
+      <xs:element name="districtOfficeNumber" type="xs:string"></xs:element>
+      <xs:element name="repId" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="PaymentResponseType">
+    <xs:sequence>
+      <xs:element name="policyNumber" type="xs:string"></xs:element>
+      <xs:element name="transactionId" type="xs:string"></xs:element>
+      <xs:element name="paymentNumber" type="xs:string"></xs:element>
+      <xs:element name="responseStatus" type="tns:ResponseStatusType"></xs:element>
+      <xs:element name="responseStatusMessage" type="xs:string"></xs:element>
+      <xs:element name="amountPosted" type="xs:decimal"></xs:element>
+      <xs:element name="billingAccount" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="DeclineResponseType">
+    <xs:sequence>
+      <xs:element name="paymentNumber" type="xs:string"></xs:element>
+      <xs:element name="responseStatus" type="tns:ResponseStatusType"></xs:element>
+      <xs:element name="responseStatusMessage" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="AutoPayDetailsType">
+    <xs:sequence>
+      <xs:element name="policyNumber" type="xs:string"></xs:element>
+      <xs:element name="actionFlag" type="tns:ActionFlagType"></xs:element>
+      <xs:element name="paymentMethodName" type="tns:PaymentMethodNameType"></xs:element>
+      <xs:element name="overpaidAmountOption" type="tns:OverpaidAmountOptionType"></xs:element>
+      <xs:element minOccurs="0" name="paymentModeEFT" type="tns:PaymentModeEFTType"></xs:element>
+      <xs:element minOccurs="0" name="paymentModeCC" type="tns:PaymentModeCreditCardType"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="AutoPayOptionResponseType">
+    <xs:sequence>
+      <xs:element name="responseStatus" type="tns:ResponseStatusType"></xs:element>
+      <xs:element name="responseStatusMessage" type="xs:string"></xs:element>
+      <xs:element name="policyNumber" type="xs:string"></xs:element>
+      <xs:element name="paymentModeId" type="xs:string"></xs:element>
+      <xs:element name="confirmationId" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="PaymentMethodNameType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CRDC"></xs:enumeration>
+      <xs:enumeration value="EFT"></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="CardBrandName">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="VISA"></xs:enumeration>
+      <xs:enumeration value="MASTR"></xs:enumeration>
+      <xs:enumeration value="AMEX"></xs:enumeration>
+      <xs:enumeration value="DISC"></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="CardTypeName">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CreditCard"></xs:enumeration>
+      <xs:enumeration value="DebitCard"></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="AccountTypeName">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CHKG"></xs:enumeration>
+      <xs:enumeration value="SAVG"></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="ActionFlagType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="A"></xs:enumeration>
+      <xs:enumeration value="D"></xs:enumeration>
+      <xs:enumeration value="U"></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="ResponseStatusType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="FAILED"></xs:enumeration>
+      <xs:enumeration value="SUCCESS"></xs:enumeration>
+      <xs:enumeration value="SKIPPED"></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="PaymentSourceSystemType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="AGENTWEBPAY"></xs:enumeration>
+      <xs:enumeration value="AGNTPRTL"></xs:enumeration>
+      <xs:enumeration value="AGTINTRA"></xs:enumeration>
+      <xs:enumeration value="AGNTINTRA"></xs:enumeration>
+      <xs:enumeration value="BILLIVR"></xs:enumeration>
+      <xs:enumeration value="BLLMAT"></xs:enumeration>
+      <xs:enumeration value="BILLMAT"></xs:enumeration>
+      <xs:enumeration value="CCSCOL"></xs:enumeration>
+      <xs:enumeration value="CSAACOM"></xs:enumeration>
+      <xs:enumeration value="FTSGEN"></xs:enumeration>
+      <xs:enumeration value="JPOINT"></xs:enumeration>
+      <xs:enumeration value="LkBXSPLT"></xs:enumeration>
+      <xs:enumeration value="NCOCOL"></xs:enumeration>
+      <xs:enumeration value="PAYIVR"></xs:enumeration>
+      <xs:enumeration value="PAYMODE"></xs:enumeration>
+      <xs:enumeration value="PAYPROC"></xs:enumeration>
+      <xs:enumeration value="PCBCKOFF"></xs:enumeration>
+      <xs:enumeration value="PCONLINE"></xs:enumeration>
+      <xs:enumeration value="PMTTOOL"></xs:enumeration>
+      <xs:enumeration value="PMTXSYS"></xs:enumeration>
+      <xs:enumeration value="REGLKBX"></xs:enumeration>
+      <xs:enumeration value="REGONLN"></xs:enumeration>
+      <xs:enumeration value="REGULUS"></xs:enumeration>
+      <xs:enumeration value="NCNUPOS"></xs:enumeration>
+      <xs:enumeration value="NCNUWEB"></xs:enumeration>
+      <xs:enumeration value="NCNUONLN"></xs:enumeration>
+      <xs:enumeration value="EZPAY"></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="CurrencyCodeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="USD"></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="PaymentModeNameType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CASH"></xs:enumeration>
+      <xs:enumeration value="EFT"></xs:enumeration>
+      <xs:enumeration value="CHCK"></xs:enumeration>
+      <xs:enumeration value="CRDC"></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="RevenueTypeName">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Installment"></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="OverpaidAmountOptionType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ALL"></xs:enumeration>
+      <xs:enumeration value="NEXT"></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="PostPaymentOnPolicyFault_Exception">
+    <wsdl:part element="tns:postPaymentOnPolicyFault" name="PostPaymentOnPolicyFault_Exception">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="declinePaymentOnPolicy">
+    <wsdl:part element="tns:declinePaymentOnPolicy" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="declinePaymentOnPolicyResponse">
+    <wsdl:part element="tns:declinePaymentOnPolicyResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getBillingBalanceByPolicyResponse">
+    <wsdl:part element="tns:getBillingBalanceByPolicyResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="AutoPayOptionOnPolicyFault_Exception">
+    <wsdl:part element="tns:autoPayOptionOnPolicyFault" name="AutoPayOptionOnPolicyFault_Exception">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getBillingSummaries">
+    <wsdl:part element="tns:getBillingSummariesRequest" name="policyInfoList">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="AlterPaymentMethodFault_Exception">
+    <wsdl:part element="tns:alterPaymentMethodFault" name="AlterPaymentMethodFault_Exception">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="autoPayOptionOnPolicy">
+    <wsdl:part element="tns:autoPayOptionOnPolicy" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="DeclinePaymentOnPolicyFault_Exception">
+    <wsdl:part element="tns:declinePaymentOnPolicyFault" name="DeclinePaymentOnPolicyFault_Exception">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="alterPaymentMethod">
+    <wsdl:part element="tns:alterPaymentMethod" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getBillingBalanceByPolicy">
+    <wsdl:part element="tns:getBillingBalanceByPolicy" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetBillingBalanceByPolicyFault">
+    <wsdl:part element="tns:getBillingBalanceByPolicyFault" name="GetBillingBalanceByPolicyFault">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="postPaymentOnPolicy">
+    <wsdl:part element="tns:postPaymentOnPolicy" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="postPaymentOnPolicyResponse">
+    <wsdl:part element="tns:postPaymentOnPolicyResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetBillingSummariesFault">
+    <wsdl:part element="tns:getBillingSummariesFault" name="GetBillingSummariesFault">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="autoPayOptionOnPolicyResponse">
+    <wsdl:part element="tns:autoPayOptionOnPolicyResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getBillingSummariesResponse">
+    <wsdl:part element="tns:getBillingSummariesResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="alterPaymentMethodResponse">
+    <wsdl:part element="tns:alterPaymentMethodResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="AAABillingInquiryPort">
+    <wsdl:operation name="getBillingSummaries">
+      <wsdl:input message="tns:getBillingSummaries" name="getBillingSummaries">
+    </wsdl:input>
+      <wsdl:output message="tns:getBillingSummariesResponse" name="getBillingSummariesResponse">
+    </wsdl:output>
+      <wsdl:fault message="tns:GetBillingSummariesFault" name="GetBillingSummariesFault">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getBillingBalanceByPolicy">
+      <wsdl:input message="tns:getBillingBalanceByPolicy" name="getBillingBalanceByPolicy">
+    </wsdl:input>
+      <wsdl:output message="tns:getBillingBalanceByPolicyResponse" name="getBillingBalanceByPolicyResponse">
+    </wsdl:output>
+      <wsdl:fault message="tns:GetBillingBalanceByPolicyFault" name="GetBillingBalanceByPolicyFault">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="alterPaymentMethod">
+      <wsdl:input message="tns:alterPaymentMethod" name="alterPaymentMethod">
+    </wsdl:input>
+      <wsdl:output message="tns:alterPaymentMethodResponse" name="alterPaymentMethodResponse">
+    </wsdl:output>
+      <wsdl:fault message="tns:AlterPaymentMethodFault_Exception" name="AlterPaymentMethodFault_Exception">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="postPaymentOnPolicy">
+      <wsdl:input message="tns:postPaymentOnPolicy" name="postPaymentOnPolicy">
+    </wsdl:input>
+      <wsdl:output message="tns:postPaymentOnPolicyResponse" name="postPaymentOnPolicyResponse">
+    </wsdl:output>
+      <wsdl:fault message="tns:PostPaymentOnPolicyFault_Exception" name="PostPaymentOnPolicyFault_Exception">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="declinePaymentOnPolicy">
+      <wsdl:input message="tns:declinePaymentOnPolicy" name="declinePaymentOnPolicy">
+    </wsdl:input>
+      <wsdl:output message="tns:declinePaymentOnPolicyResponse" name="declinePaymentOnPolicyResponse">
+    </wsdl:output>
+      <wsdl:fault message="tns:DeclinePaymentOnPolicyFault_Exception" name="DeclinePaymentOnPolicyFault_Exception">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="autoPayOptionOnPolicy">
+      <wsdl:input message="tns:autoPayOptionOnPolicy" name="autoPayOptionOnPolicy">
+    </wsdl:input>
+      <wsdl:output message="tns:autoPayOptionOnPolicyResponse" name="autoPayOptionOnPolicyResponse">
+    </wsdl:output>
+      <wsdl:fault message="tns:AutoPayOptionOnPolicyFault_Exception" name="AutoPayOptionOnPolicyFault_Exception">
+    </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AAABillingServiceSoapBinding" type="tns:AAABillingInquiryPort">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"></soap:binding>
+    <wsdl:operation name="getBillingSummaries">
+      <soap:operation soapAction="http://exigenservices.com/aaa/billing/integration/getBillingSummaries" style="document"></soap:operation>
+      <wsdl:input name="getBillingSummaries">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="getBillingSummariesResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+      <wsdl:fault name="GetBillingSummariesFault">
+        <soap:fault name="GetBillingSummariesFault" use="literal"></soap:fault>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getBillingBalanceByPolicy">
+      <soap:operation soapAction="http://exigenservices.com/aaa/billing/integration/getBillingBalanceByPolicy" style="document"></soap:operation>
+      <wsdl:input name="getBillingBalanceByPolicy">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="getBillingBalanceByPolicyResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+      <wsdl:fault name="GetBillingBalanceByPolicyFault">
+        <soap:fault name="GetBillingBalanceByPolicyFault" use="literal"></soap:fault>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="alterPaymentMethod">
+      <soap:operation soapAction="http://exigenservices.com/aaa/billing/integration/addPaymentMethodCreditCard" style="document"></soap:operation>
+      <wsdl:input name="alterPaymentMethod">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="alterPaymentMethodResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+      <wsdl:fault name="AlterPaymentMethodFault_Exception">
+        <soap:fault name="AlterPaymentMethodFault_Exception" use="literal"></soap:fault>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="autoPayOptionOnPolicy">
+      <soap:operation soapAction="http://exigenservices.com/aaa/billing/integration/autoPayOptionOnPolicy" style="document"></soap:operation>
+      <wsdl:input name="autoPayOptionOnPolicy">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="autoPayOptionOnPolicyResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+      <wsdl:fault name="AutoPayOptionOnPolicyFault_Exception">
+        <soap:fault name="AutoPayOptionOnPolicyFault_Exception" use="literal"></soap:fault>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="declinePaymentOnPolicy">
+      <soap:operation soapAction="http://exigenservices.com/aaa/billing/integration/declinePaymentOnPolicy" style="document"></soap:operation>
+      <wsdl:input name="declinePaymentOnPolicy">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="declinePaymentOnPolicyResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+      <wsdl:fault name="DeclinePaymentOnPolicyFault_Exception">
+        <soap:fault name="DeclinePaymentOnPolicyFault_Exception" use="literal"></soap:fault>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="postPaymentOnPolicy">
+      <soap:operation soapAction="http://exigenservices.com/aaa/billing/integration/postPaymentOnPolicy" style="document"></soap:operation>
+      <wsdl:input name="postPaymentOnPolicy">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="postPaymentOnPolicyResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+      <wsdl:fault name="PostPaymentOnPolicyFault_Exception">
+        <soap:fault name="PostPaymentOnPolicyFault_Exception" use="literal"></soap:fault>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AAABillingService">
+    <wsdl:port binding="tns:AAABillingServiceSoapBinding" name="AAABillingInquiryPort">
+      <soap:address location="http://dev5aaa3was601.eqxdev.exigengroup.com:9082/aaa-admin/services/aaaBilling"></soap:address>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

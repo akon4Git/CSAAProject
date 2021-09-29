@@ -1,0 +1,55 @@
+23:16:38 -----> Selenium Server Started
+23:16:38 
+23:16:44 Build: EIS_5.2.34-AAA_PAS07-20150807-68056
+23:16:44 Instance: http://dev2aaa3was405.eqxdev.exigengroup.com
+
+23:16:48 =====> AZ_testAssDocGenDataGathering: Started
+23:17:02 ==========================================
+23:17:02 AZ Account created with number: 800036034
+23:17:02 ==========================================
+23:18:18 OK_active_policy_1--OKSS910091960is created.
+23:18:18 Unable to create policy for the sequence 1
+23:18:19 <===== AZ_testAssDocGenDataGathering: FAILED
+23:18:19 
+23:18:19 =====> AZ_testAssDocGenDataGathering: Started
+23:18:30 ==========================================
+23:18:30 AZ Account created with number: 800036035
+23:18:30 ==========================================
+23:19:23 UT_active_policy_1--UTSS910091961is created.
+23:19:23 Unable to create policy for the sequence 4
+23:19:23 <===== AZ_testAssDocGenDataGathering: PASSED
+23:19:23 
+23:19:23 =====> AZ_testAssDocGenDataGathering: Started
+23:19:34 ==========================================
+23:19:34 AZ Account created with number: 800036036
+23:19:34 ==========================================
+23:20:32 PA_active_policy_1--PASS910091962is created.
+23:20:32 Unable to create policy for the sequence 5
+23:20:32 <===== AZ_testAssDocGenDataGathering: PASSED
+23:20:32 
+23:20:34 Time has been changed to 2015-11-03 22:25:48 MST -0700
+23:20:34 =====> TimeChangeAndJobExecutor Started
+23:20:35 Time has been changed to 2015-09-18 22:25:49 MST -0700
+23:20:43 =====> JobExecutionParamTest: Started
+23:20:47 Job Will be executed: aaaCancellationNoticeAsyncJob
+23:20:57 ======================================================
+23:20:57 Job aaaCancellationNoticeAsyncJob executed: Success
+23:20:57 ======================================================
+23:20:57 <===== JobExecutionParamTest: PASSED
+23:20:57 
+23:20:59 <----- Selenium Server Stopped
+23:20:59 
+23:21:00 -----> Selenium Server Started
+23:21:00 
+23:21:02 Time has been changed to 2015-09-21 22:26:14 MST -0700
+23:21:10 =====> JobExecutionParamTest: Started
+23:21:13 Job Will be executed: aaaCancellationNoticeAsyncJob
+23:21:24 ======================================================
+23:21:24 Job aaaCancellationNoticeAsyncJob executed: Success
+23:21:24 ======================================================
+23:21:24 <===== JobExecutionParamTest: PASSED
+23:21:24 
+23:21:25 <----- Selenium Server Stopped
+23:21:25 
+23:21:25 <===== TimeChangeAndJobExecutor: PASSED
+23:21:25 

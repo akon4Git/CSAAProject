@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Policy version="1" name="AAA_SS" xmlns="http://www.exigeninsurance.com/eis/data/product/AAA_SS/1.0">
+    <AAACSAAutoPolicy state="Created">
+        <agentCd>500010141</agentCd>
+       	<effective>2015-09-06T00:00:00</effective>
+        <expiration>2016-03-17T00:00:00</expiration>
+        <importedFrom>SIS</importedFrom>
+      	<inceptionDate>2009-03-17T00:00:00</inceptionDate>
+        <productCd>AAA_SS</productCd>
+		 <riskStateCd>AZ</riskStateCd>
+		 <producerCd>500001005</producerCd>
+		 <subProducerCd>500005456</subProducerCd>
+        <sourcePolicyNum>OKS 3000917</sourcePolicyNum>
+      
+        <AAADriver state="Created" oid="4303624">
+        	 <firstName>SS</firstName>
+               <lastName>Lee</lastName>
+    
+           
+        </AAADriver>
+             	
+        <AAAInsured state="Created" oid="4303622">
+        	 <firstName>SS</firstName>
+                 <lastName>Lee</lastName>
+               	 <principalRoleCd>policyHolder</principalRoleCd>        
+     <mainInsured>true</mainInsured>
+	   <principalRoleCd>policyHolder</principalRoleCd>
+            <AAAInsuredPrimaryAddress state="Created">
+               <addressDisplayValue>5045 Cedar Hills Road</addressDisplayValue>
+                <addressLine1>5045 Cedar Hills Road</addressLine1>
+                <city>Snowflake</city>
+                <countryCd>US</countryCd>
+                <postalCode>85937</postalCode>
+                <stateProvCd>AZ</stateProvCd>
+                <usageType>living</usageType>
+            </AAAInsuredPrimaryAddress>
+        </AAAInsured>
+ 
+         
+      
+<AAAOtherOrPriorPolicy oid="4303628" state="Created">
+         <continuousMonthsInsured>true</continuousMonthsInsured>
+         <insurerCd>10</insurerCd>
+         <monthsWithInsurer>12</monthsWithInsurer>
+		 <inceptionDate>2011-04-18T00:00:00</inceptionDate>
+         <policyExpDate>2012-04-18T00:00:00</policyExpDate>
+         <policyNumber>898989</policyNumber>
+         <priorBILimits>50000/100000</priorBILimits>
+      </AAAOtherOrPriorPolicy>
+        <AAAVehicle state="Created">
+        <PremiumEntry premiumCd="GWT">
+            <actualAmt>280</actualAmt>
+            <annualAmt>280</annualAmt>
+            <changeAmt>280</changeAmt>
+        </PremiumEntry>
+        <PremiumEntry premiumCd="NWT">
+            <actualAmt>280</actualAmt>
+            <annualAmt>280</annualAmt>
+            <changeAmt>280</changeAmt>
+        </PremiumEntry>
+        <PremiumEntry premiumCd="NWT/R">
+            <actualAmt>280</actualAmt>
+            <annualAmt>280</annualAmt>
+            <changeAmt>280</changeAmt>
+        </PremiumEntry>
+        <PremiumEntry premiumCd="RAW">
+            <actualAmt>280</actualAmt>
+            <annualAmt>280</annualAmt>
+            <changeAmt>280</changeAmt>
+        </PremiumEntry>
+
+        </AAAVehicle>
+		<agentCd>400005456</agentCd>
+        <OtherOrPriorPolicy>
+            <insurerCd>Yes</insurerCd>
+            <insurerName>SS Lee</insurerName>
+            <policyNumber>2855156</policyNumber>
+            <productCd>condo</productCd>
+        </OtherOrPriorPolicy>
+         <OtherOrPriorPolicy>
+                   <insurerCd>Yes</insurerCd>
+                   <insurerName>SS Lee</insurerName>
+                   <policyNumber>4381762040955404</policyNumber>
+                   <productCd>membership</productCd>
+        </OtherOrPriorPolicy>
+       <paidInFull>Y</paidInFull>
+	   	
+	<AAAPaymentOption state="Created" oid="7313224">
+	 <paymentPlanCd>annualSS</paymentPlanCd>
+	  <billingMethodCd>DIR</billingMethodCd>
+	</AAAPaymentOption>
+	<!--  <PaymentOption state="Created" oid="7313223">
+            <billingMethodCd>DIR</billingMethodCd>
+            <paymentPlanCd>annualCA_R</paymentPlanCd>
+        </PaymentOption> -->
+	
+      </AAACSAAutoPolicy>
+
+
+   	
+</Policy>

@@ -1,0 +1,49 @@
+
+PAS09- Google sheet link-
+https://docs.google.com/spreadsheets/d/1A_2bBLWxrK00yxRv67P6AYSOHCzTZaUOm5rJH41V9_4/edit#gid=1482523851
+
+
+PAS08- Google sheet link-
+https://docs.google.com/spreadsheets/d/1gNYZflVgCzXdQXj9xRsGauPvps2rf6D9Z6XZyL2gfHA/edit#gid=0 
+
+
+http://dev5aaa3jnk601.eqxdev.exigengroup.com:8080/view/AAA%20Deploy%20Tests/job/AAA-Deploy-Deloitte_Timepoint_tests_part1/259/HTML_Report/ 
+
+C-HO-HO6-CL-267
+AAA-Deploy-Property-Deloitte-Calendar-tests_part2
+http://dev5aaa3jnk601.eqxdev.exigengroup.com:8080/view/AAA%20Deploy%20Tests/job/AAA-Deploy-Property-Deloitte-Calendar-tests_part2/66/HTML_Report/
+
+B-T-Auto-SS-Reinstate Policy-AZ-25
+
+AAA-Deploy-Deloitte_Timepoint_tests_part1
+
+
+C-H-Cancellation-CL-1877
+Reinstatement restriction for A30 agent when DNR is set on the policy. Need script fix for agent.
+
+
+T-PU-PUP-CA-160
+Line77 fix- set coverage E value to 4000000 for underlying to overcome the validation failure. As its a known PAS09 change
+lin83- limit of liability for under policy on property tab for underlying policy needs to be checked and changed accordingly
+
+Ref:PC61-B-C-HO-HO3-PUP-AZ-0219 
+http://dev5aaa3jnk601.eqxdev.exigengroup.com:8080/view/AAA%20Deploy%20Tests/job/AAA-Deploy-Property-Deloitte-Calendar-tests_part2/65/HTML_Report/
+
+DC Calendar AZ SC11	Auto	AAA-Deploy-Deloitte_Calendar_tests_PEF
+In TC16- line 129, to get error 200003, this particular step needs to be manually tested by changing the NI ( identified from stub as applicable for error code) and then verify the error 200003
+
+DC FTPT AZ SC010	Auto	AAA-Deploy-Deloitte_Timepoint_tests_part1
+discuss with viral
+
+
+
+F-A-UnderwritingRuleOverride-AZ-1401	Auto	AAA-Deploy-Deloitte_Functional_tests_part2
+Code which clicks on continue button on vehicle page has been commented out.
+
+
+
+
+
+
+
+

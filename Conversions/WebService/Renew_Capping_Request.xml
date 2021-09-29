@@ -1,0 +1,1237 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+	<soap:Body>
+		<ns1:DeterminePolicyPremium xmlns:ns1="http://auto.rating.aaa.exigen.com/">
+			<ns1:arg0>
+				<ns2:country xmlns:ns2="http://context.rules.openl.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+				<ns2:currency xmlns:ns2="http://context.rules.openl.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+				<ns2:currentDate xmlns:ns2="http://context.rules.openl.org">2018-01-21T00:00:00-07:00</ns2:currentDate>
+				<ns2:lang xmlns:ns2="http://context.rules.openl.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+				<ns2:lob xmlns:ns2="http://context.rules.openl.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+				<ns2:region xmlns:ns2="http://context.rules.openl.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+				<ns2:usRegion xmlns:ns2="http://context.rules.openl.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+				<ns2:usState xmlns:ns2="http://context.rules.openl.org">NJ</ns2:usState>
+			</ns1:arg0>
+			<ns1:arg1 xmlns:ns2="http://beans.generated.openl.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns2:PolicyAZ">
+				<ns2:aaaAPIPIncomeContBenLimit>100</ns2:aaaAPIPIncomeContBenLimit>
+				<ns2:aaaAPIPLengthIncomeCont>TWOYR</ns2:aaaAPIPLengthIncomeCont>
+				<ns2:aaaAsdInsurancePersistency>1</ns2:aaaAsdInsurancePersistency>
+				<ns2:aaaCondoPolicy>N</ns2:aaaCondoPolicy>
+				<ns2:aaaHomePolicy>N</ns2:aaaHomePolicy>
+				<ns2:aaaInsurancePersistency>1</ns2:aaaInsurancePersistency>
+				<ns2:aaaLifePolicy>false</ns2:aaaLifePolicy>
+				<ns2:aaaMotorcyclePolicy>false</ns2:aaaMotorcyclePolicy>
+				<ns2:aaaPIPExtMedPayLimit>1</ns2:aaaPIPExtMedPayLimit>
+				<ns2:aaaPIPMedExpDeductible>1000</ns2:aaaPIPMedExpDeductible>
+				<ns2:aaaPIPMedExpLimit>150</ns2:aaaPIPMedExpLimit>
+				<ns2:aaaPIPNonMedExp>B</ns2:aaaPIPNonMedExp>
+				<ns2:aaaPIPPrimaryInsurer>P</ns2:aaaPIPPrimaryInsurer>
+				<ns2:aaaRentersPolicy>N</ns2:aaaRentersPolicy>
+				<ns2:aggregateCompClaims>0</ns2:aggregateCompClaims>
+				<ns2:autoInsurancePersistency>1</ns2:autoInsurancePersistency>
+				<ns2:avgAnnualERSperMember>99.9</ns2:avgAnnualERSperMember>
+				<ns2:baseYear>2017</ns2:baseYear>
+				<ns2:cappingDetails xmlns:ns3="http://capping.beans.generated.openl.org" xsi:type="ns3:CappingDetails">
+					<ns3:agePremium>true</ns3:agePremium>
+					<ns3:cappingCalculatedForTerm xsi:nil="true"/>
+					<ns3:carrierCode>WUIC</ns3:carrierCode>
+					<ns3:formCd/>
+					<ns3:lineOfBusiness>Auto</ns3:lineOfBusiness>
+					<ns3:overriddenCappingFactor xsi:nil="true"/>
+					<ns3:previousCappingFactor xsi:nil="true"/>
+					<ns3:previousPolicyPremium>3151.0</ns3:previousPolicyPremium>
+					<ns3:productCode>Signature Series</ns3:productCode>
+					<ns3:programCode>NewRenPAS</ns3:programCode>
+					<ns3:state>NJ</ns3:state>
+					<ns3:term>12</ns3:term>
+					<ns3:termCappingFactor xsi:nil="true"/>
+					<ns3:underwriterCode>WUIC</ns3:underwriterCode>
+				</ns2:cappingDetails>
+				<ns2:creditScore>650</ns2:creditScore>
+				<ns2:distributionChannel>AAA Agent</ns2:distributionChannel>
+				<ns2:drivers>
+					<ns2:DriverAZ xsi:type="ns2:DriverAZ">
+						<ns2:ageBeforeEndorsement>27</ns2:ageBeforeEndorsement>
+						<ns2:cleanDriver xsi:nil="true"/>
+						<ns2:defensiveDrivingCourse>N</ns2:defensiveDrivingCourse>
+						<ns2:distantStudent>false</ns2:distantStudent>
+						<ns2:driverAge>27</ns2:driverAge>
+						<ns2:drivesync xsi:nil="true"/>
+						<ns2:dsr>0</ns2:dsr>
+						<ns2:employee>false</ns2:employee>
+						<ns2:exposure>true</ns2:exposure>
+						<ns2:foreignLicense>false</ns2:foreignLicense>
+						<ns2:forms xsi:nil="true"/>
+						<ns2:gender>M</ns2:gender>
+						<ns2:goodDriver>false</ns2:goodDriver>
+						<ns2:goodStudent>false</ns2:goodStudent>
+						<ns2:hasBIAccident24 xsi:nil="true"/>
+						<ns2:hasBIAccident2548 xsi:nil="true"/>
+						<ns2:hasBIAccident49 xsi:nil="true"/>
+						<ns2:hasClaims xsi:nil="true"/>
+						<ns2:hasFR44>false</ns2:hasFR44>
+						<ns2:hasNaf xsi:nil="true"/>
+						<ns2:hasPDAccident33 xsi:nil="true"/>
+						<ns2:hasPDAccident3436 xsi:nil="true"/>
+						<ns2:hasPDAccident3748 xsi:nil="true"/>
+						<ns2:hasPDAccident49 xsi:nil="true"/>
+						<ns2:hasSR22>false</ns2:hasSR22>
+						<ns2:hasTravelink>false</ns2:hasTravelink>
+						<ns2:id>iD7hI2ztoC4KQ0Hy15lEBw</ns2:id>
+						<ns2:isExcludedDriver>false</ns2:isExcludedDriver>
+						<ns2:lifemotoCd xsi:nil="true"/>
+						<ns2:maritalStatus>S</ns2:maritalStatus>
+						<ns2:matureDriver>false</ns2:matureDriver>
+						<ns2:militaryDefensiveDrivingCourse>N</ns2:militaryDefensiveDrivingCourse>
+						<ns2:name>Philip R</ns2:name>
+						<ns2:newDriver>false</ns2:newDriver>
+						<ns2:occasionalOperator xsi:nil="true"/>
+						<ns2:outOfStateLicenseSurcharge>false</ns2:outOfStateLicenseSurcharge>
+						<ns2:smartDriver>false</ns2:smartDriver>
+						<ns2:tyde>6</ns2:tyde>
+						<ns2:type>P</ns2:type>
+						<ns2:unverifiableDrivingRecord>false</ns2:unverifiableDrivingRecord>
+						<ns2:vehicleAssignedId xsi:nil="true"/>
+						<ns2:yaf>6</ns2:yaf>
+					</ns2:DriverAZ>
+				</ns2:drivers>
+				<ns2:effectiveDate>2018-01-21T00:00:00-07:00</ns2:effectiveDate>
+				<ns2:expenseFees xsi:nil="true"/>
+				<ns2:forms>
+					<ns2:Form xsi:type="ns2:Form">
+						<ns2:endorsementAmount xsi:nil="true"/>
+						<ns2:formCode>AA21NJA</ns2:formCode>
+						<ns2:formName>Added Personal Injury Protection Coverage</ns2:formName>
+					</ns2:Form>
+				</ns2:forms>
+				<ns2:insuredAge>27</ns2:insuredAge>
+				<ns2:isAAAMember>true</ns2:isAAAMember>
+				<ns2:isAARP>false</ns2:isAARP>
+				<ns2:isAdvanceShopping>false</ns2:isAdvanceShopping>
+				<ns2:isEmployee>false</ns2:isEmployee>
+				<ns2:isHomeOwner>true</ns2:isHomeOwner>
+				<ns2:isSingleDriverMultiVeh xsi:nil="true"/>
+				<ns2:memberPersistency>6</ns2:memberPersistency>
+				<ns2:multiCar>false</ns2:multiCar>
+				<ns2:multipolicyCode xsi:nil="true"/>
+				<ns2:nafAccidents>0</ns2:nafAccidents>
+				<ns2:nanoPolicyType>None</ns2:nanoPolicyType>
+				<ns2:noOfAPIPAddlNamedRel>0</ns2:noOfAPIPAddlNamedRel>
+				<ns2:noOfVehiclesExcludingTrailer>1</ns2:noOfVehiclesExcludingTrailer>
+				<ns2:numberOfIL>0</ns2:numberOfIL>
+				<ns2:paymentPlanList xsi:nil="true"/>
+				<ns2:paymentPlanType>P</ns2:paymentPlanType>
+				<ns2:points xsi:nil="true"/>
+				<ns2:policyNumber>NJSS910014511</ns2:policyNumber>
+				<ns2:prevPolicy xsi:nil="true"/>
+				<ns2:previousAaaInsurancePersistency xsi:nil="true"/>
+				<ns2:previousEffectiveDate>2018-01-21T00:00:00-07:00</ns2:previousEffectiveDate>
+				<ns2:priorBILimit>100/XX</ns2:priorBILimit>
+				<ns2:rbTier xsi:nil="true"/>
+				<ns2:reinstatements>0</ns2:reinstatements>
+				<ns2:supplementalSpousalLiability xsi:nil="true"/>
+				<ns2:term>12</ns2:term>
+				<ns2:tier xsi:nil="true"/>
+				<ns2:tort xsi:nil="true"/>
+				<ns2:txType>renewal</ns2:txType>
+				<ns2:umbiConvCode xsi:nil="true"/>
+				<ns2:unacceptableRisk>false</ns2:unacceptableRisk>
+				<ns2:vehicles>
+					<ns2:VehicleAZ xsi:type="ns2:VehicleAZ">
+						<ns2:address xsi:type="ns2:Address">
+							<ns2:city>Avenel</ns2:city>
+							<ns2:state>NJ</ns2:state>
+							<ns2:streetLine1>111 Test Street</ns2:streetLine1>
+							<ns2:streetLine2/>
+							<ns2:zip>07001</ns2:zip>
+						</ns2:address>
+						<ns2:airbagCode>3</ns2:airbagCode>
+						<ns2:altCoverages>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount>300.0</ns2:additionalLimitAmount>
+								<ns2:coverageCD>TOWING</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>50</ns2:limit>
+								<ns2:limitAmount>50.00</ns2:limitAmount>
+								<ns2:limitCode>50/300</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>UMPD</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>5</ns2:limit>
+								<ns2:limitAmount>5000.00</ns2:limitAmount>
+								<ns2:limitCode>5000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>UMPD</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>10</ns2:limit>
+								<ns2:limitAmount>10000.00</ns2:limitAmount>
+								<ns2:limitCode>10000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>UMPD</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>15</ns2:limit>
+								<ns2:limitAmount>15000.00</ns2:limitAmount>
+								<ns2:limitCode>15000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>UMPD</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>25</ns2:limit>
+								<ns2:limitAmount>25000.00</ns2:limitAmount>
+								<ns2:limitCode>25000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>UMPD</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>50</ns2:limit>
+								<ns2:limitAmount>50000.00</ns2:limitAmount>
+								<ns2:limitCode>50000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>UMPD</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>100</ns2:limit>
+								<ns2:limitAmount>100000.00</ns2:limitAmount>
+								<ns2:limitCode>100000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>UMPD</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>300</ns2:limit>
+								<ns2:limitAmount>300000.00</ns2:limitAmount>
+								<ns2:limitCode>300000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>UMPD</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>500</ns2:limit>
+								<ns2:limitAmount>500000.00</ns2:limitAmount>
+								<ns2:limitCode>500000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>UMPD</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>1M</ns2:limit>
+								<ns2:limitAmount>1000000.00</ns2:limitAmount>
+								<ns2:limitCode>1000000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount>900.0</ns2:additionalLimitAmount>
+								<ns2:coverageCD>RENTAL</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>30/900</ns2:limit>
+								<ns2:limitAmount>30.00</ns2:limitAmount>
+								<ns2:limitCode>30/900</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount>1200.0</ns2:additionalLimitAmount>
+								<ns2:coverageCD>RENTAL</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>40/1200</ns2:limit>
+								<ns2:limitAmount>40.00</ns2:limitAmount>
+								<ns2:limitCode>40/1200</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount>1500.0</ns2:additionalLimitAmount>
+								<ns2:coverageCD>RENTAL</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>50/1500</ns2:limit>
+								<ns2:limitAmount>50.00</ns2:limitAmount>
+								<ns2:limitCode>50/1500</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>COLL</ns2:coverageCD>
+								<ns2:deductible>100</ns2:deductible>
+								<ns2:deductibleAmount>100.00</ns2:deductibleAmount>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit xsi:nil="true"/>
+								<ns2:limitAmount xsi:nil="true"/>
+								<ns2:limitCode>100</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>COLL</ns2:coverageCD>
+								<ns2:deductible>150</ns2:deductible>
+								<ns2:deductibleAmount>150.00</ns2:deductibleAmount>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit xsi:nil="true"/>
+								<ns2:limitAmount xsi:nil="true"/>
+								<ns2:limitCode>150</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>COLL</ns2:coverageCD>
+								<ns2:deductible>250</ns2:deductible>
+								<ns2:deductibleAmount>250.00</ns2:deductibleAmount>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit xsi:nil="true"/>
+								<ns2:limitAmount xsi:nil="true"/>
+								<ns2:limitCode>250</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>COLL</ns2:coverageCD>
+								<ns2:deductible>500</ns2:deductible>
+								<ns2:deductibleAmount>500.00</ns2:deductibleAmount>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit xsi:nil="true"/>
+								<ns2:limitAmount xsi:nil="true"/>
+								<ns2:limitCode>500</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>COLL</ns2:coverageCD>
+								<ns2:deductible>750</ns2:deductible>
+								<ns2:deductibleAmount>750.00</ns2:deductibleAmount>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit xsi:nil="true"/>
+								<ns2:limitAmount xsi:nil="true"/>
+								<ns2:limitCode>750</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>COLL</ns2:coverageCD>
+								<ns2:deductible>1000</ns2:deductible>
+								<ns2:deductibleAmount>1000.00</ns2:deductibleAmount>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit xsi:nil="true"/>
+								<ns2:limitAmount xsi:nil="true"/>
+								<ns2:limitCode>1000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>COLL</ns2:coverageCD>
+								<ns2:deductible>1500</ns2:deductible>
+								<ns2:deductibleAmount>1500.00</ns2:deductibleAmount>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit xsi:nil="true"/>
+								<ns2:limitAmount xsi:nil="true"/>
+								<ns2:limitCode>1500</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>COLL</ns2:coverageCD>
+								<ns2:deductible>2000</ns2:deductible>
+								<ns2:deductibleAmount>2000.00</ns2:deductibleAmount>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit xsi:nil="true"/>
+								<ns2:limitAmount xsi:nil="true"/>
+								<ns2:limitCode>2000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount>30000.0</ns2:additionalLimitAmount>
+								<ns2:coverageCD>BI-Verbal</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>15/30</ns2:limit>
+								<ns2:limitAmount>15000.00</ns2:limitAmount>
+								<ns2:limitCode>15000/30000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount>50000.0</ns2:additionalLimitAmount>
+								<ns2:coverageCD>BI-Verbal</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>25/50</ns2:limit>
+								<ns2:limitAmount>25000.00</ns2:limitAmount>
+								<ns2:limitCode>25000/50000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount>100000.0</ns2:additionalLimitAmount>
+								<ns2:coverageCD>BI-Verbal</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>50/100</ns2:limit>
+								<ns2:limitAmount>50000.00</ns2:limitAmount>
+								<ns2:limitCode>50000/100000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount>300000.0</ns2:additionalLimitAmount>
+								<ns2:coverageCD>BI-Verbal</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>100/300</ns2:limit>
+								<ns2:limitAmount>100000.00</ns2:limitAmount>
+								<ns2:limitCode>100000/300000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount>500000.0</ns2:additionalLimitAmount>
+								<ns2:coverageCD>BI-Verbal</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>250/500</ns2:limit>
+								<ns2:limitAmount>250000.00</ns2:limitAmount>
+								<ns2:limitCode>250000/500000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount>500000.0</ns2:additionalLimitAmount>
+								<ns2:coverageCD>BI-Verbal</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>300/500</ns2:limit>
+								<ns2:limitAmount>300000.00</ns2:limitAmount>
+								<ns2:limitCode>300000/500000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount>500000.0</ns2:additionalLimitAmount>
+								<ns2:coverageCD>BI-Verbal</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>500/500</ns2:limit>
+								<ns2:limitAmount>500000.00</ns2:limitAmount>
+								<ns2:limitCode>500000/500000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount>1000000.0</ns2:additionalLimitAmount>
+								<ns2:coverageCD>BI-Verbal</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>500/1M</ns2:limit>
+								<ns2:limitAmount>500000.00</ns2:limitAmount>
+								<ns2:limitCode>500000/1000000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount>1000000.0</ns2:additionalLimitAmount>
+								<ns2:coverageCD>BI-Verbal</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>1M/1M</ns2:limit>
+								<ns2:limitAmount>1000000.00</ns2:limitAmount>
+								<ns2:limitCode>1000000/1000000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount>30000.0</ns2:additionalLimitAmount>
+								<ns2:coverageCD>UMBI-Verbal</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>15/30</ns2:limit>
+								<ns2:limitAmount>15000.00</ns2:limitAmount>
+								<ns2:limitCode>15000/30000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount>50000.0</ns2:additionalLimitAmount>
+								<ns2:coverageCD>UMBI-Verbal</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>25/50</ns2:limit>
+								<ns2:limitAmount>25000.00</ns2:limitAmount>
+								<ns2:limitCode>25000/50000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount>100000.0</ns2:additionalLimitAmount>
+								<ns2:coverageCD>UMBI-Verbal</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>50/100</ns2:limit>
+								<ns2:limitAmount>50000.00</ns2:limitAmount>
+								<ns2:limitCode>50000/100000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount>300000.0</ns2:additionalLimitAmount>
+								<ns2:coverageCD>UMBI-Verbal</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>100/300</ns2:limit>
+								<ns2:limitAmount>100000.00</ns2:limitAmount>
+								<ns2:limitCode>100000/300000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount>500000.0</ns2:additionalLimitAmount>
+								<ns2:coverageCD>UMBI-Verbal</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>250/500</ns2:limit>
+								<ns2:limitAmount>250000.00</ns2:limitAmount>
+								<ns2:limitCode>250000/500000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount>500000.0</ns2:additionalLimitAmount>
+								<ns2:coverageCD>UMBI-Verbal</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>300/500</ns2:limit>
+								<ns2:limitAmount>300000.00</ns2:limitAmount>
+								<ns2:limitCode>300000/500000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount>500000.0</ns2:additionalLimitAmount>
+								<ns2:coverageCD>UMBI-Verbal</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>500/500</ns2:limit>
+								<ns2:limitAmount>500000.00</ns2:limitAmount>
+								<ns2:limitCode>500000/500000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount>1000000.0</ns2:additionalLimitAmount>
+								<ns2:coverageCD>UMBI-Verbal</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>500/1M</ns2:limit>
+								<ns2:limitAmount>500000.00</ns2:limitAmount>
+								<ns2:limitCode>500000/1000000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount>1000000.0</ns2:additionalLimitAmount>
+								<ns2:coverageCD>UMBI-Verbal</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>1M/1M</ns2:limit>
+								<ns2:limitAmount>1000000.00</ns2:limitAmount>
+								<ns2:limitCode>1000000/1000000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>PD</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>5</ns2:limit>
+								<ns2:limitAmount>5000.00</ns2:limitAmount>
+								<ns2:limitCode>5000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>PD</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>10</ns2:limit>
+								<ns2:limitAmount>10000.00</ns2:limitAmount>
+								<ns2:limitCode>10000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>PD</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>15</ns2:limit>
+								<ns2:limitAmount>15000.00</ns2:limitAmount>
+								<ns2:limitCode>15000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>PD</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>25</ns2:limit>
+								<ns2:limitAmount>25000.00</ns2:limitAmount>
+								<ns2:limitCode>25000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>PD</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>50</ns2:limit>
+								<ns2:limitAmount>50000.00</ns2:limitAmount>
+								<ns2:limitCode>50000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>PD</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>100</ns2:limit>
+								<ns2:limitAmount>100000.00</ns2:limitAmount>
+								<ns2:limitCode>100000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>PD</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>300</ns2:limit>
+								<ns2:limitAmount>300000.00</ns2:limitAmount>
+								<ns2:limitCode>300000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>PD</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>500</ns2:limit>
+								<ns2:limitAmount>500000.00</ns2:limitAmount>
+								<ns2:limitCode>500000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>PD</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>1M</ns2:limit>
+								<ns2:limitAmount>1000000.00</ns2:limitAmount>
+								<ns2:limitCode>1000000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>LOAN</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>1</ns2:limit>
+								<ns2:limitAmount>1.00</ns2:limitAmount>
+								<ns2:limitCode>1</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>PIP</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>15</ns2:limit>
+								<ns2:limitAmount>15000.00</ns2:limitAmount>
+								<ns2:limitCode>15000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>PIP</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>50</ns2:limit>
+								<ns2:limitAmount>50000.00</ns2:limitAmount>
+								<ns2:limitCode>50000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>PIP</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>75</ns2:limit>
+								<ns2:limitAmount>75000.00</ns2:limitAmount>
+								<ns2:limitCode>75000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>PIP</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>150</ns2:limit>
+								<ns2:limitAmount>150000.00</ns2:limitAmount>
+								<ns2:limitCode>150000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>PIP</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>250</ns2:limit>
+								<ns2:limitAmount>250000.00</ns2:limitAmount>
+								<ns2:limitCode>250000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount>300.0</ns2:additionalLimitAmount>
+								<ns2:coverageCD>TOWING</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>50</ns2:limit>
+								<ns2:limitAmount>50.00</ns2:limitAmount>
+								<ns2:limitCode>50/300</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>APIP</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>100</ns2:limit>
+								<ns2:limitAmount>100.00</ns2:limitAmount>
+								<ns2:limitCode>100</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>APIP</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>125</ns2:limit>
+								<ns2:limitAmount>125.00</ns2:limitAmount>
+								<ns2:limitCode>125</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>APIP</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>175</ns2:limit>
+								<ns2:limitAmount>175.00</ns2:limitAmount>
+								<ns2:limitCode>175</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>APIP</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>250</ns2:limit>
+								<ns2:limitAmount>250.00</ns2:limitAmount>
+								<ns2:limitCode>250</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>APIP</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>400</ns2:limit>
+								<ns2:limitAmount>400.00</ns2:limitAmount>
+								<ns2:limitCode>400</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>APIP</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>500</ns2:limit>
+								<ns2:limitAmount>500.00</ns2:limitAmount>
+								<ns2:limitCode>500</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>APIP</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>600</ns2:limit>
+								<ns2:limitAmount>600.00</ns2:limitAmount>
+								<ns2:limitCode>600</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>APIP</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>700</ns2:limit>
+								<ns2:limitAmount>700.00</ns2:limitAmount>
+								<ns2:limitCode>700</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>COMP</ns2:coverageCD>
+								<ns2:deductible>100</ns2:deductible>
+								<ns2:deductibleAmount>100.00</ns2:deductibleAmount>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit xsi:nil="true"/>
+								<ns2:limitAmount xsi:nil="true"/>
+								<ns2:limitCode>100</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>COMP</ns2:coverageCD>
+								<ns2:deductible>150</ns2:deductible>
+								<ns2:deductibleAmount>150.00</ns2:deductibleAmount>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit xsi:nil="true"/>
+								<ns2:limitAmount xsi:nil="true"/>
+								<ns2:limitCode>150</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>COMP</ns2:coverageCD>
+								<ns2:deductible>250</ns2:deductible>
+								<ns2:deductibleAmount>250.00</ns2:deductibleAmount>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit xsi:nil="true"/>
+								<ns2:limitAmount xsi:nil="true"/>
+								<ns2:limitCode>250</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>COMP</ns2:coverageCD>
+								<ns2:deductible>500</ns2:deductible>
+								<ns2:deductibleAmount>500.00</ns2:deductibleAmount>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit xsi:nil="true"/>
+								<ns2:limitAmount xsi:nil="true"/>
+								<ns2:limitCode>500</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>COMP</ns2:coverageCD>
+								<ns2:deductible>750</ns2:deductible>
+								<ns2:deductibleAmount>750.00</ns2:deductibleAmount>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit xsi:nil="true"/>
+								<ns2:limitAmount xsi:nil="true"/>
+								<ns2:limitCode>750</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>COMP</ns2:coverageCD>
+								<ns2:deductible>1000</ns2:deductible>
+								<ns2:deductibleAmount>1000.00</ns2:deductibleAmount>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit xsi:nil="true"/>
+								<ns2:limitAmount xsi:nil="true"/>
+								<ns2:limitCode>1000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>COMP</ns2:coverageCD>
+								<ns2:deductible>1500</ns2:deductible>
+								<ns2:deductibleAmount>1500.00</ns2:deductibleAmount>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit xsi:nil="true"/>
+								<ns2:limitAmount xsi:nil="true"/>
+								<ns2:limitCode>1500</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>COMP</ns2:coverageCD>
+								<ns2:deductible>2000</ns2:deductible>
+								<ns2:deductibleAmount>2000.00</ns2:deductibleAmount>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit xsi:nil="true"/>
+								<ns2:limitAmount xsi:nil="true"/>
+								<ns2:limitCode>2000</ns2:limitCode>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+						</ns2:altCoverages>
+						<ns2:annualMileage>99999</ns2:annualMileage>
+						<ns2:antiTheftString>NONE</ns2:antiTheftString>
+						<ns2:commuteBand xsi:nil="true"/>
+						<ns2:coverages>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>SP EQUIP</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>1500</ns2:limit>
+								<ns2:limitAmount xsi:nil="true"/>
+								<ns2:limitCode xsi:nil="true"/>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>PIP</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>150</ns2:limit>
+								<ns2:limitAmount xsi:nil="true"/>
+								<ns2:limitCode xsi:nil="true"/>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>PD</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>50</ns2:limit>
+								<ns2:limitAmount xsi:nil="true"/>
+								<ns2:limitCode xsi:nil="true"/>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>UMPD</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>50</ns2:limit>
+								<ns2:limitAmount xsi:nil="true"/>
+								<ns2:limitCode xsi:nil="true"/>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>UMBI-Verbal</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>100/300</ns2:limit>
+								<ns2:limitAmount xsi:nil="true"/>
+								<ns2:limitCode xsi:nil="true"/>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>COLL</ns2:coverageCD>
+								<ns2:deductible>250</ns2:deductible>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit xsi:nil="true"/>
+								<ns2:limitAmount xsi:nil="true"/>
+								<ns2:limitCode xsi:nil="true"/>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>COMP</ns2:coverageCD>
+								<ns2:deductible>250</ns2:deductible>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit xsi:nil="true"/>
+								<ns2:limitAmount xsi:nil="true"/>
+								<ns2:limitCode xsi:nil="true"/>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>APIP</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>100</ns2:limit>
+								<ns2:limitAmount xsi:nil="true"/>
+								<ns2:limitCode xsi:nil="true"/>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+							<ns2:CoverageAZ xsi:type="ns2:CoverageAZ">
+								<ns2:additionalLimitAmount xsi:nil="true"/>
+								<ns2:coverageCD>BI-Verbal</ns2:coverageCD>
+								<ns2:deductible xsi:nil="true"/>
+								<ns2:deductibleAmount xsi:nil="true"/>
+								<ns2:glassDeductible>N/A</ns2:glassDeductible>
+								<ns2:limit>100/300</ns2:limit>
+								<ns2:limitAmount xsi:nil="true"/>
+								<ns2:limitCode xsi:nil="true"/>
+								<ns2:pipDedType xsi:nil="true"/>
+								<ns2:rejectionWorklossBenefit>N/A</ns2:rejectionWorklossBenefit>
+							</ns2:CoverageAZ>
+						</ns2:coverages>
+						<ns2:ete>false</ns2:ete>
+						<ns2:firstOrAddlVehicle>F</ns2:firstOrAddlVehicle>
+						<ns2:hasAntiTheft xsi:nil="true"/>
+						<ns2:id>k-Krk4Dn3si7Znk6w3lKwA</ns2:id>
+						<ns2:isABS>false</ns2:isABS>
+						<ns2:isDaytimeRunning>false</ns2:isDaytimeRunning>
+						<ns2:isHybrid>true</ns2:isHybrid>
+						<ns2:isTeenTelematic xsi:nil="true"/>
+						<ns2:isTelematic>false</ns2:isTelematic>
+						<ns2:isUdrive>false</ns2:isUdrive>
+						<ns2:manuallyAssignedDriver xsi:nil="true"/>
+						<ns2:manuallyAssignedUndesignatedDriverInd>false</ns2:manuallyAssignedUndesignatedDriverInd>
+						<ns2:maxDriverAge xsi:nil="true"/>
+						<ns2:modelYear>2011</ns2:modelYear>
+						<ns2:multiCarInd>false</ns2:multiCarInd>
+						<ns2:newCarAddedProtection>false</ns2:newCarAddedProtection>
+						<ns2:oldStatCode xsi:nil="true"/>
+						<ns2:premiumAmount xsi:nil="true"/>
+						<ns2:primaryDriver xsi:type="ns2:DriverAZ">
+							<ns2:ageBeforeEndorsement>27</ns2:ageBeforeEndorsement>
+							<ns2:cleanDriver xsi:nil="true"/>
+							<ns2:defensiveDrivingCourse>N</ns2:defensiveDrivingCourse>
+							<ns2:distantStudent>false</ns2:distantStudent>
+							<ns2:driverAge>27</ns2:driverAge>
+							<ns2:drivesync xsi:nil="true"/>
+							<ns2:dsr>0</ns2:dsr>
+							<ns2:employee>false</ns2:employee>
+							<ns2:exposure>true</ns2:exposure>
+							<ns2:foreignLicense>false</ns2:foreignLicense>
+							<ns2:forms xsi:nil="true"/>
+							<ns2:gender>M</ns2:gender>
+							<ns2:goodDriver>false</ns2:goodDriver>
+							<ns2:goodStudent>false</ns2:goodStudent>
+							<ns2:hasBIAccident24 xsi:nil="true"/>
+							<ns2:hasBIAccident2548 xsi:nil="true"/>
+							<ns2:hasBIAccident49 xsi:nil="true"/>
+							<ns2:hasClaims xsi:nil="true"/>
+							<ns2:hasFR44>false</ns2:hasFR44>
+							<ns2:hasNaf xsi:nil="true"/>
+							<ns2:hasPDAccident33 xsi:nil="true"/>
+							<ns2:hasPDAccident3436 xsi:nil="true"/>
+							<ns2:hasPDAccident3748 xsi:nil="true"/>
+							<ns2:hasPDAccident49 xsi:nil="true"/>
+							<ns2:hasSR22>false</ns2:hasSR22>
+							<ns2:hasTravelink>false</ns2:hasTravelink>
+							<ns2:id>iD7hI2ztoC4KQ0Hy15lEBw</ns2:id>
+							<ns2:isExcludedDriver>false</ns2:isExcludedDriver>
+							<ns2:lifemotoCd xsi:nil="true"/>
+							<ns2:maritalStatus>S</ns2:maritalStatus>
+							<ns2:matureDriver>false</ns2:matureDriver>
+							<ns2:militaryDefensiveDrivingCourse>N</ns2:militaryDefensiveDrivingCourse>
+							<ns2:name>Philip R</ns2:name>
+							<ns2:newDriver>false</ns2:newDriver>
+							<ns2:occasionalOperator xsi:nil="true"/>
+							<ns2:outOfStateLicenseSurcharge>false</ns2:outOfStateLicenseSurcharge>
+							<ns2:smartDriver>false</ns2:smartDriver>
+							<ns2:tyde>6</ns2:tyde>
+							<ns2:type>P</ns2:type>
+							<ns2:unverifiableDrivingRecord>false</ns2:unverifiableDrivingRecord>
+							<ns2:vehicleAssignedId xsi:nil="true"/>
+							<ns2:yaf>6</ns2:yaf>
+						</ns2:primaryDriver>
+						<ns2:ratedDriver xsi:type="ns2:DriverAZ">
+							<ns2:ageBeforeEndorsement>27</ns2:ageBeforeEndorsement>
+							<ns2:cleanDriver xsi:nil="true"/>
+							<ns2:defensiveDrivingCourse>N</ns2:defensiveDrivingCourse>
+							<ns2:distantStudent>false</ns2:distantStudent>
+							<ns2:driverAge>27</ns2:driverAge>
+							<ns2:drivesync xsi:nil="true"/>
+							<ns2:dsr>0</ns2:dsr>
+							<ns2:employee>false</ns2:employee>
+							<ns2:exposure>true</ns2:exposure>
+							<ns2:foreignLicense>false</ns2:foreignLicense>
+							<ns2:forms xsi:nil="true"/>
+							<ns2:gender>M</ns2:gender>
+							<ns2:goodDriver>false</ns2:goodDriver>
+							<ns2:goodStudent>false</ns2:goodStudent>
+							<ns2:hasBIAccident24 xsi:nil="true"/>
+							<ns2:hasBIAccident2548 xsi:nil="true"/>
+							<ns2:hasBIAccident49 xsi:nil="true"/>
+							<ns2:hasClaims xsi:nil="true"/>
+							<ns2:hasFR44>false</ns2:hasFR44>
+							<ns2:hasNaf xsi:nil="true"/>
+							<ns2:hasPDAccident33 xsi:nil="true"/>
+							<ns2:hasPDAccident3436 xsi:nil="true"/>
+							<ns2:hasPDAccident3748 xsi:nil="true"/>
+							<ns2:hasPDAccident49 xsi:nil="true"/>
+							<ns2:hasSR22>false</ns2:hasSR22>
+							<ns2:hasTravelink>false</ns2:hasTravelink>
+							<ns2:id>iD7hI2ztoC4KQ0Hy15lEBw</ns2:id>
+							<ns2:isExcludedDriver>false</ns2:isExcludedDriver>
+							<ns2:lifemotoCd xsi:nil="true"/>
+							<ns2:maritalStatus>S</ns2:maritalStatus>
+							<ns2:matureDriver>false</ns2:matureDriver>
+							<ns2:militaryDefensiveDrivingCourse>N</ns2:militaryDefensiveDrivingCourse>
+							<ns2:name>Philip R</ns2:name>
+							<ns2:newDriver>false</ns2:newDriver>
+							<ns2:occasionalOperator xsi:nil="true"/>
+							<ns2:outOfStateLicenseSurcharge>false</ns2:outOfStateLicenseSurcharge>
+							<ns2:smartDriver>false</ns2:smartDriver>
+							<ns2:tyde>6</ns2:tyde>
+							<ns2:type>P</ns2:type>
+							<ns2:unverifiableDrivingRecord>false</ns2:unverifiableDrivingRecord>
+							<ns2:vehicleAssignedId xsi:nil="true"/>
+							<ns2:yaf>6</ns2:yaf>
+						</ns2:ratedDriver>
+						<ns2:safetyScore>-1</ns2:safetyScore>
+						<ns2:statCode>AX</ns2:statCode>
+						<ns2:symbol>23</ns2:symbol>
+						<ns2:symbolCSAA xsi:nil="true"/>
+						<ns2:totalVehiclePoint>0</ns2:totalVehiclePoint>
+						<ns2:usage>P</ns2:usage>
+						<ns2:vehicleAge>7</ns2:vehicleAge>
+					</ns2:VehicleAZ>
+				</ns2:vehicles>
+				<ns2:yafAfterInception>0</ns2:yafAfterInception>
+				<ns2:ycfAfterInception>0</ns2:ycfAfterInception>
+				<ns2:yearsAtFaultAccidentFree>5</ns2:yearsAtFaultAccidentFree>
+				<ns2:yearsIncidentFree>5</ns2:yearsIncidentFree>
+			</ns1:arg1>
+		</ns1:DeterminePolicyPremium>
+	</soap:Body>
+</soap:Envelope>

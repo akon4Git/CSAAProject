@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestSuite" time="275.166" tests="5" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.vendor" value="Sun Microsystems Inc."/>
+    <property name="JOB_NAME" value="AAA-Deloitte_Timepoint_tests_Conversion_Pilot"/>
+    <property name="SVN_URL" value="https://csaa-insurance.aaa.com/svn/PAS_TEST/PAS06_AAA/src/aaa-testng-maven"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="NUMBER_OF_PROCESSORS" value="1"/>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
+    <property name="JENKINS_HOME" value="C:\Jenkins"/>
+    <property name="HUDSON_SERVER_COOKIE" value="8cb5c503842afa52812fb64a45d04327"/>
+    <property name="os.name" value="Windows XP"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.6.0_29\jre\lib\resources.jar;C:\Program Files\Java\jdk1.6.0_29\jre\lib\rt.jar;C:\Program Files\Java\jdk1.6.0_29\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.6.0_29\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.6.0_29\jre\lib\jce.jar;C:\Program Files\Java\jdk1.6.0_29\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.6.0_29\jre\lib\modules\jdk.boot.jar;C:\Program Files\Java\jdk1.6.0_29\jre\classes"/>
+    <property name="EXECUTOR_NUMBER" value="0"/>
+    <property name="selenium.port" value="4444"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.PSC1"/>
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="NODE_LABELS" value="dev2aaa3qa509"/>
+    <property name="TEMP" value="C:\WINDOWS\TEMP"/>
+    <property name="java.runtime.version" value="1.6.0_29-b11"/>
+    <property name="Test_Instance" value="dev2aaa3was405"/>
+    <property name="selenium.browser" value="*chrome"/>
+    <property name="user.name" value="SYSTEM"/>
+    <property name="ProgramFiles" value="C:\Program Files"/>
+    <property name="user.language" value="en"/>
+    <property name="maven.interceptor.override" value="c:\jenkins_slave\maven2.1-interceptor.jar"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.6.0_29\jre\bin"/>
+    <property name="suiteFile" value="testSuites/deloitte/conversion/conversion_tests_suite_pilot.xml"/>
+    <property name="java.version" value="1.6.0_29"/>
+    <property name="PROCESSOR_LEVEL" value="6"/>
+    <property name="user.timezone" value="Pacific/Guadalcanal"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="NODE_NAME" value="dev2aaa3qa509"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.6.0_29\jre\lib\endorsed"/>
+    <property name="BUILD_ID" value="2015-08-13_23-14-00"/>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="file.separator" value="\"/>
+    <property name="Branch" value="PAS06_AAA"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="50.0"/>
+    <property name="user.country" value="US"/>
+    <property name="ALLUSERSPROFILE" value="C:\Documents and Settings\All Users"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.6.0_29\jre"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="os.version" value="5.1"/>
+    <property name="TMP" value="C:\WINDOWS\TEMP"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.version" value="20.4-b02"/>
+    <property name="user.variant" value=""/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="FP_NO_HOST_CHECK" value="NO"/>
+    <property name="JAVA_HOME" value="C:\Program Files\Java\jdk1.6.0_29"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="CommonProgramFiles" value="C:\Program Files\Common Files"/>
+    <property name="ComSpec" value="C:\WINDOWS\system32\cmd.exe"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="COMPUTERNAME" value="DEV2AAA3QA509"/>
+    <property name="maven.interceptor" value="c:\jenkins_slave\maven-interceptor.jar"/>
+    <property name="user.home" value="C:\"/>
+    <property name="BUILD_TAG" value="jenkins-AAA-Deloitte_Timepoint_tests_Conversion_Pilot-75"/>
+    <property name="JENKINS_SERVER_COOKIE" value="8cb5c503842afa52812fb64a45d04327"/>
+    <property name="HUDSON_URL" value="http://dev2aaa3jnk301.eqxdev.exigengroup.com:8080/"/>
+    <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="USERPROFILE" value="C:\Documents and Settings\LocalService"/>
+    <property name="CLASSPATH" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.6.0_29\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\apache-maven-2.2.1/bin;C:\Program Files\Java\jdk1.6.0_29/bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\system32\WindowsPowerShell\v1.0;C:\Program Files\Java\jdk1.6.0_29\bin;C:\apache-maven-2.2.1\bin;."/>
+    <property name="java.vendor.url" value="http://java.sun.com/"/>
+    <property name="config_file" value="DEV/config_dev2aaa3was405.properties"/>
+    <property name="java.vm.vendor" value="Sun Microsystems Inc."/>
+    <property name="maven.home" value="C:\apache-maven-2.2.1"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.class.path" value="c:\jenkins_slave\maven-agent.jar;c:\jenkins_slave\classworlds.jar"/>
+    <property name="sun.java.command" value="hudson.maven.agent.Main C:\apache-maven-2.2.1 C:\jenkins_slave\slave.jar c:\jenkins_slave\maven-interceptor.jar 3597 c:\jenkins_slave\maven2.1-interceptor.jar"/>
+    <property name="Path" value="C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\system32\WindowsPowerShell\v1.0;C:\Program Files\Java\jdk1.6.0_29\bin;C:\apache-maven-2.2.1\bin"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PROCESSOR_ARCHITECTURE" value="x86"/>
+    <property name="PATH+JDK" value="C:\Program Files\Java\jdk1.6.0_29/bin"/>
+    <property name="PROCESSOR_IDENTIFIER" value="x86 Family 6 Model 37 Stepping 1, GenuineIntel"/>
+    <property name="java.vm.specification.version" value="1.0"/>
+    <property name="sun.os.patch.level" value="Service Pack 3"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="M2_HOME" value="C:\apache-maven-2.2.1"/>
+    <property name="java.io.tmpdir" value="C:\WINDOWS\TEMP\"/>
+    <property name="OS" value="Windows_NT"/>
+    <property name="HUDSON_HOME" value="C:\Jenkins"/>
+    <property name="PATH+MAVEN" value="C:\apache-maven-2.2.1/bin"/>
+    <property name="BUILD_URL" value="http://dev2aaa3jnk301.eqxdev.exigengroup.com:8080/job/AAA-Deloitte_Timepoint_tests_Conversion_Pilot/75/"/>
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="x86"/>
+    <property name="SELENIUM_PORT" value="4444"/>
+    <property name="SystemRoot" value="C:\WINDOWS"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.6.0_29\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="SVN_REVISION" value="31545"/>
+    <property name="user.dir" value="c:\jenkins_slave\workspace\AAA-Deloitte_Timepoint_tests_Conversion_Pilot\aaa-testng-tests"/>
+    <property name="JOB_URL" value="http://dev2aaa3jnk301.eqxdev.exigengroup.com:8080/job/AAA-Deloitte_Timepoint_tests_Conversion_Pilot/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="MAVEN_HOME" value="C:\apache-maven-2.2.1"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
+    <property name="BUILD_NUMBER" value="75"/>
+    <property name="BASE" value="c:\jenkins_slave"/>
+    <property name="JENKINS_URL" value="http://dev2aaa3jnk301.eqxdev.exigengroup.com:8080/"/>
+    <property name="PROCESSOR_REVISION" value="2501"/>
+    <property name="BUILD_CAUSE_MANUALTRIGGER" value="true"/>
+    <property name="windir" value="C:\WINDOWS"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="SystemDrive" value="C:"/>
+    <property name="WORKSPACE" value="c:\jenkins_slave\workspace\AAA-Deloitte_Timepoint_tests_Conversion_Pilot"/>
+    <property name="java.specification.version" value="1.6"/>
+    <property name="PSModulePath" value="C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\"/>
+    <property name="BUILD_CAUSE" value="MANUALTRIGGER"/>
+  </properties>
+  <testcase name="testAssDocGenDataGathering" classname="com.deloitte.automation.poc.PolicyCreator" time="89.91">
+    <failure message="Verification failures:&#10;java.lang.AssertionError: Element: &apos;producContextInfoForm:policyDetail_policyStatusCdText&apos; text expected [Policy Active] but found [Policy Expired]&#10;	at com.exigen.automation.helper.SoftAssert.verifyEquals(SoftAssert.java:133)&#10;	at com.exigen.automation.helper.ExtendedAssert.verifyEquals(ExtendedAssert.java:100)&#10;	at com.exigen.automation.helper.SeleniumUtils.verifyTextOfElementEquals(SeleniumUtils.java:1722)&#10;	at com.exigen.automation.helper.SeleniumUtils.verifyTextOfElementEquals(SeleniumUtils.java:1712)&#10;	at com.deloitte.automation.poc.PolicyCreator.testAssDocGenDataGathering(PolicyCreator.java:133)&#10;" type="java.lang.AssertionError">java.lang.AssertionError: Verification failures:
+java.lang.AssertionError: Element: 'producContextInfoForm:policyDetail_policyStatusCdText' text expected [Policy Active] but found [Policy Expired]
+	at com.exigen.automation.helper.SoftAssert.verifyEquals(SoftAssert.java:133)
+	at com.exigen.automation.helper.ExtendedAssert.verifyEquals(ExtendedAssert.java:100)
+	at com.exigen.automation.helper.SeleniumUtils.verifyTextOfElementEquals(SeleniumUtils.java:1722)
+	at com.exigen.automation.helper.SeleniumUtils.verifyTextOfElementEquals(SeleniumUtils.java:1712)
+	at com.deloitte.automation.poc.PolicyCreator.testAssDocGenDataGathering(PolicyCreator.java:133)
+
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.exigen.automation.helper.SoftAssert.checkForVerificationErrors(SoftAssert.java:218)
+	at com.exigen.automation.helper.ExtendedAssert.checkForVerificationErrors(ExtendedAssert.java:120)
+	at com.deloitte.automation.poc.PolicyCreator.testAssDocGenDataGathering(PolicyCreator.java:147)
+</failure>
+    <system-out>-----> Selenium Server Started
+
+
+
+Build: EIS_5.2.34-AAA_PAS07-20150807-68056
+Instance: http://dev2aaa3was405.eqxdev.exigengroup.com
+
+=====> AZ_testAssDocGenDataGathering: Started
+==========================================
+AZ Account created with number: 800036034
+==========================================
+Verification failed: Element: 'producContextInfoForm:policyDetail_policyStatusCdText' text expected [Policy Active] but found [Policy Expired]
+Verify Screenshot created: PolicyCreator.testAssDocGenDataGathering(133)_98414.png
+
+OK_active_policy_1--OKSS910091960is created.
+Unable to create policy for the sequence 1
+</system-out>
+  </testcase>
+  <testcase name="testAssDocGenDataGathering" classname="com.deloitte.automation.poc.PolicyCreator" time="64.593"/>
+  <testcase name="testAssDocGenDataGathering" classname="com.deloitte.automation.poc.PolicyCreator" time="68.879"/>
+  <testcase name="setDateTimeTest" classname="com.exigen.automation.testcase.commonTests.SetDateTimeParamTestNew" time="0.42"/>
+  <testcase name="timeAndJobExecutor" classname="com.deloitte.automation.poc.TimeChangeAndJobExecutor" time="51.364"/>
+</testsuite>

@@ -1,0 +1,1785 @@
+<?xml version="1.0" ?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://exigenservices.com/ipb/policy/integration" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="PfPolicyService" targetNamespace="http://exigenservices.com/ipb/policy/integration">
+  <wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://exigenservices.com/ipb/policy/integration" xmlns:ns1="http://exigenservices.com/ipb/general/integration" elementFormDefault="qualified" targetNamespace="http://exigenservices.com/ipb/policy/integration" version="1.0">
+
+  <xs:import namespace="http://exigenservices.com/ipb/general/integration"></xs:import>
+
+  <xs:element name="AddDriverRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="policyNo" type="xs:string"></xs:element>
+        <xs:element name="driverType" type="xs:string"></xs:element>
+        <xs:element name="relationshipToInsured" type="xs:string"></xs:element>
+        <xs:element name="firstName" type="xs:string"></xs:element>
+        <xs:element name="middleName" type="xs:string"></xs:element>
+        <xs:element name="lastName" type="xs:string"></xs:element>
+        <xs:element name="occupation" type="xs:string"></xs:element>
+        <xs:element name="dateOfBirth" type="xs:date"></xs:element>
+        <xs:element name="gender" type="xs:string"></xs:element>
+        <xs:element name="maritalStatus" type="xs:string"></xs:element>
+        <xs:element name="licenseNo" type="xs:string"></xs:element>
+        <xs:element name="licensingState" type="xs:string"></xs:element>
+        <xs:element name="licenseDate" type="xs:date"></xs:element>
+        <xs:element name="licenseStatus" type="xs:string"></xs:element>
+        <xs:element name="country" type="xs:string"></xs:element>
+        <xs:element name="zipCode" type="xs:string"></xs:element>
+        <xs:element name="addressLine1" type="xs:string"></xs:element>
+        <xs:element name="addressLine2" type="xs:string"></xs:element>
+        <xs:element name="addressLine3" type="xs:string"></xs:element>
+        <xs:element name="city" type="xs:string"></xs:element>
+        <xs:element name="state" type="xs:string"></xs:element>
+      </xs:sequence>
+      <xs:attribute name="serializationStrategy" type="tns:SerializationStrategyType"></xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="AddVehicleRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="policyNo" type="xs:string"></xs:element>
+        <xs:element name="vehicleType" type="xs:string"></xs:element>
+        <xs:element name="collector" type="xs:string"></xs:element>
+        <xs:element name="misc" type="xs:string"></xs:element>
+        <xs:element name="make" type="xs:string"></xs:element>
+        <xs:element name="model" type="xs:string"></xs:element>
+        <xs:element name="year" type="xs:int"></xs:element>
+        <xs:element name="veicleVIN" type="xs:string"></xs:element>
+        <xs:element name="style" type="xs:string"></xs:element>
+        <xs:element name="bodyStyle" type="xs:string"></xs:element>
+        <xs:element name="performance" type="xs:string"></xs:element>
+        <xs:element name="registeredState" type="xs:string"></xs:element>
+        <xs:element name="airBags" type="xs:string"></xs:element>
+        <xs:element name="automaticBelts" type="xs:boolean"></xs:element>
+        <xs:element name="recoveryDevice" type="xs:boolean"></xs:element>
+        <xs:element name="antiTheft" type="xs:string"></xs:element>
+        <xs:element name="antiLock" type="xs:string"></xs:element>
+        <xs:element name="symbol" type="xs:string"></xs:element>
+        <xs:element name="compSymbol" type="xs:string"></xs:element>
+        <xs:element name="collSymbol" type="xs:string"></xs:element>
+        <xs:element name="bISymbol" type="xs:string"></xs:element>
+        <xs:element name="pDSymbol" type="xs:string"></xs:element>
+        <xs:element name="pIPMEDSymbol" type="xs:string"></xs:element>
+        <xs:element name="statedAmount" type="xs:decimal"></xs:element>
+      </xs:sequence>
+      <xs:attribute name="serializationStrategy" type="tns:SerializationStrategyType"></xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="BindQuoteRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Policy" type="tns:Policy"></xs:element>
+        <xs:element name="PolicyNumber" type="xs:string"></xs:element>
+        <xs:element name="PolicyRevisionNo" type="xs:integer"></xs:element>
+        <xs:element name="TxDate" type="xs:date"></xs:element>
+        <xs:element name="TermEffective" type="xs:dateTime"></xs:element>
+        <xs:element name="TxReason" type="xs:string"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="CancelPolicyRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="PolicyNumber" type="xs:string"></xs:element>
+        <xs:element name="PolicyRevisionNo" type="xs:integer"></xs:element>
+        <xs:element name="TxDate" type="xs:date"></xs:element>
+        <xs:element name="TermEffective" type="xs:dateTime"></xs:element>
+        <xs:element name="TxReason" type="xs:string"></xs:element>
+      </xs:sequence>
+      <xs:attribute name="serializationStrategy" type="tns:SerializationStrategyType"></xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="CustomEndorseRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="policyNo" type="xs:string"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="CustomEndorseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="policyNo" type="xs:string"></xs:element>
+        <xs:element name="resultStatus" type="tns:ResultStatusResponse"></xs:element>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="vehicleInfoList" nillable="true" type="tns:VehicleInfo"></xs:element>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="driverInfoList" nillable="true" type="tns:DriverInfo"></xs:element>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="insuredInfoList" nillable="true" type="tns:InsuredInfos"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="DeleteDriverRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="policyNo" type="xs:string"></xs:element>
+        <xs:element name="driverId" type="xs:string"></xs:element>
+      </xs:sequence>
+      <xs:attribute name="serializationStrategy" type="tns:SerializationStrategyType"></xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="DeleteVehicleRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="policyNo" type="xs:string"></xs:element>
+        <xs:element name="vehicleId" type="xs:string"></xs:element>
+      </xs:sequence>
+      <xs:attribute name="serializationStrategy" type="tns:SerializationStrategyType"></xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="EndorseInquiryRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="policyNo" type="xs:string"></xs:element>
+      </xs:sequence>
+      <xs:attribute name="serializationStrategy" type="tns:SerializationStrategyType"></xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="EndorseInquiryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="policyNo" type="xs:string"></xs:element>
+        <xs:element name="firstName" nillable="true" type="xs:string"></xs:element>
+        <xs:element name="lastName" nillable="true" type="xs:string"></xs:element>
+        <xs:element name="email" nillable="true" type="xs:string"></xs:element>
+        <xs:element name="phoneNumber" nillable="true" type="xs:string"></xs:element>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="annualPremium" nillable="true" type="tns:endorseReturned"></xs:element>
+        <xs:element name="totalPremium" nillable="true" type="xs:decimal"></xs:element>
+        <xs:element name="errorMsg" nillable="true" type="xs:string"></xs:element>
+        <xs:element name="remainPremium" nillable="true" type="xs:decimal"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="EndorsePolicyRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="PolicyNumber" type="xs:string"></xs:element>
+        <xs:element name="PolicyRevisionNo" type="xs:integer"></xs:element>
+        <xs:element name="TxDate" type="xs:date"></xs:element>
+        <xs:element name="TermEffective" type="xs:dateTime"></xs:element>
+        <xs:element name="TxReason" type="xs:string"></xs:element>
+      </xs:sequence>
+      <xs:attribute name="serializationStrategy" type="tns:SerializationStrategyType"></xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="IssueEndorseRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="policyNo" type="xs:string"></xs:element>
+      </xs:sequence>
+      <xs:attribute name="serializationStrategy" type="tns:SerializationStrategyType"></xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="IssueQuoteRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Policy" type="tns:Policy"></xs:element>
+        <xs:element name="PolicyNumber" type="xs:string"></xs:element>
+        <xs:element name="PolicyRevisionNo" type="xs:integer"></xs:element>
+        <xs:element name="TxDate" type="xs:date"></xs:element>
+        <xs:element name="TermEffective" type="xs:dateTime"></xs:element>
+        <xs:element name="TxReason" type="xs:string"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="PolicyInquiryTermEffectiveRequest">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="policyNo" type="xs:string"></xs:element>
+        <xs:element name="pendingRevisionNo" type="xs:integer"></xs:element>
+        <xs:element name="revisionNo" type="xs:integer"></xs:element>
+        <xs:element name="termEffectiveDate" type="xs:date"></xs:element>
+      </xs:all>
+      <xs:attribute name="serializationStrategy" type="tns:SerializationStrategyType"></xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="PolicyInquiryTxDateRequest">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="policyNo" type="xs:string"></xs:element>
+        <xs:element name="txDate" type="xs:date"></xs:element>
+      </xs:all>
+      <xs:attribute name="serializationStrategy" type="tns:SerializationStrategyType"></xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="ProductSchemaRequest">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="productCode" type="xs:string"></xs:element>
+        <xs:element name="productVersion" type="xs:double"></xs:element>
+      </xs:all>
+      <xs:attribute name="serializationStrategy" type="tns:SerializationStrategyType"></xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="ProductSchemaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="MsgID" type="xs:string"></xs:element>
+        <xs:element name="ResponseToMsgID" type="xs:string"></xs:element>
+        <xs:element name="MessageStatus" type="ns1:MessageStatusType"></xs:element>
+        <xs:element name="productSchema" type="xs:string"></xs:element>
+      </xs:sequence>
+      <xs:attribute name="serializationStrategy" type="tns:SerializationStrategyType"></xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="ProposeQuoteRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Policy" type="tns:Policy"></xs:element>
+        <xs:element name="PolicyNumber" type="xs:string"></xs:element>
+        <xs:element name="PolicyRevisionNo" type="xs:integer"></xs:element>
+        <xs:element name="TxDate" type="xs:date"></xs:element>
+        <xs:element name="TermEffective" type="xs:dateTime"></xs:element>
+        <xs:element name="TxReason" type="xs:string"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="QuotePolicyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Result" type="tns:Policy"></xs:element>
+      </xs:sequence>
+      <xs:attribute name="serializationStrategy" type="tns:SerializationStrategyType"></xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="RateEndorseRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="policyNo" type="xs:string"></xs:element>
+      </xs:sequence>
+      <xs:attribute name="serializationStrategy" type="tns:SerializationStrategyType"></xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="RateQuoteRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Policy" type="tns:Policy"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="ReinstatePolicyRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="PolicyNumber" type="xs:string"></xs:element>
+        <xs:element name="PolicyRevisionNo" type="xs:integer"></xs:element>
+        <xs:element name="TxDate" type="xs:date"></xs:element>
+        <xs:element name="TermEffective" type="xs:dateTime"></xs:element>
+        <xs:element name="TxReason" type="xs:string"></xs:element>
+      </xs:sequence>
+      <xs:attribute name="serializationStrategy" type="tns:SerializationStrategyType"></xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="RenewPolicyRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="PolicyNumber" type="xs:string"></xs:element>
+        <xs:element name="PolicyRevisionNo" type="xs:integer"></xs:element>
+        <xs:element name="TxDate" type="xs:date"></xs:element>
+        <xs:element name="TermEffective" type="xs:dateTime"></xs:element>
+        <xs:element name="TxReason" type="xs:string"></xs:element>
+        <xs:element name="renewalType" type="xs:string"></xs:element>
+      </xs:sequence>
+      <xs:attribute name="serializationStrategy" type="tns:SerializationStrategyType"></xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="RetroPolicyRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="PolicyNumber" type="xs:string"></xs:element>
+        <xs:element name="PolicyRevisionNo" type="xs:integer"></xs:element>
+        <xs:element name="TxDate" type="xs:date"></xs:element>
+        <xs:element name="TermEffective" type="xs:dateTime"></xs:element>
+        <xs:element name="TxReason" type="xs:string"></xs:element>
+      </xs:sequence>
+      <xs:attribute name="serializationStrategy" type="tns:SerializationStrategyType"></xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="SaveEndorseRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="policyNo" type="xs:string"></xs:element>
+        <xs:element name="updateType" type="xs:string"></xs:element>
+        <xs:element name="firstName" nillable="true" type="xs:string"></xs:element>
+        <xs:element name="lastName" nillable="true" type="xs:string"></xs:element>
+        <xs:element name="email" nillable="true" type="xs:string"></xs:element>
+        <xs:element name="phoneNumber" nillable="true" type="xs:string"></xs:element>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="medicalPaymentlimit" nillable="true" type="tns:medicalPayment"></xs:element>
+      </xs:sequence>
+      <xs:attribute name="serializationStrategy" type="tns:SerializationStrategyType"></xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="SaveQuoteRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Policy" type="tns:Policy"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="UpdateCoverageRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="policyNo" type="xs:string"></xs:element>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="riskItemForCoverageList" nillable="true" type="tns:RiskItemForCoverage"></xs:element>
+      </xs:sequence>
+      <xs:attribute name="serializationStrategy" type="tns:SerializationStrategyType"></xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="UpdateDriverRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="policyNo" type="xs:string"></xs:element>
+        <xs:element name="driverId" type="xs:string"></xs:element>
+        <xs:element name="driverType" type="xs:string"></xs:element>
+        <xs:element name="relationshipToInsured" type="xs:string"></xs:element>
+        <xs:element name="firstName" type="xs:string"></xs:element>
+        <xs:element name="middleName" type="xs:string"></xs:element>
+        <xs:element name="lastName" type="xs:string"></xs:element>
+        <xs:element name="occupation" type="xs:string"></xs:element>
+        <xs:element name="dateOfBirth" type="xs:date"></xs:element>
+        <xs:element name="gender" type="xs:string"></xs:element>
+        <xs:element name="maritalStatus" type="xs:string"></xs:element>
+        <xs:element name="licenseNo" type="xs:string"></xs:element>
+        <xs:element name="licensingState" type="xs:string"></xs:element>
+        <xs:element name="licenseDate" type="xs:date"></xs:element>
+        <xs:element name="licenseStatus" type="xs:string"></xs:element>
+      </xs:sequence>
+      <xs:attribute name="serializationStrategy" type="tns:SerializationStrategyType"></xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="UpdateInsuredRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="policyNo" type="xs:string"></xs:element>
+        <xs:element name="insuredId" type="xs:string"></xs:element>
+        <xs:element name="mainInsured" type="xs:boolean"></xs:element>
+        <xs:element name="nameType" type="xs:string"></xs:element>
+        <xs:element name="firstName" type="xs:string"></xs:element>
+        <xs:element name="middleName" type="xs:string"></xs:element>
+        <xs:element name="lastName" type="xs:string"></xs:element>
+        <xs:element name="otherName" type="xs:string"></xs:element>
+        <xs:element name="additionalNameInd" type="xs:boolean"></xs:element>
+        <xs:element name="additionalName" type="xs:string"></xs:element>
+        <xs:element name="addressType" type="xs:string"></xs:element>
+        <xs:element name="country" type="xs:string"></xs:element>
+        <xs:element name="zipCode" type="xs:string"></xs:element>
+        <xs:element name="addressLine1" type="xs:string"></xs:element>
+        <xs:element name="addressLine2" type="xs:string"></xs:element>
+        <xs:element name="addressLine3" type="xs:string"></xs:element>
+        <xs:element name="city" type="xs:string"></xs:element>
+        <xs:element name="state" type="xs:string"></xs:element>
+        <xs:element name="county" type="xs:string"></xs:element>
+        <xs:element name="formerAddressInd" type="xs:boolean"></xs:element>
+        <xs:element name="formerAddressType" type="xs:string"></xs:element>
+        <xs:element name="formerCountry" type="xs:string"></xs:element>
+        <xs:element name="formerZipCode" type="xs:string"></xs:element>
+        <xs:element name="formerAddressLine1" type="xs:string"></xs:element>
+        <xs:element name="formerAddressLine2" type="xs:string"></xs:element>
+        <xs:element name="formerAddressLine3" type="xs:string"></xs:element>
+        <xs:element name="formerCity" type="xs:string"></xs:element>
+        <xs:element name="formerState" type="xs:string"></xs:element>
+        <xs:element name="formerCounty" type="xs:string"></xs:element>
+      </xs:sequence>
+      <xs:attribute name="serializationStrategy" type="tns:SerializationStrategyType"></xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="UpdateInterestRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="policyNumber" type="xs:string"></xs:element>
+        <xs:element name="vehicleId" type="xs:string"></xs:element>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="interestList" nillable="true" type="tns:InterestType"></xs:element>
+      </xs:sequence>
+      <xs:attribute name="serializationStrategy" type="tns:SerializationStrategyType"></xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="UpdateVehicleRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="policyNumber" type="xs:string"></xs:element>
+        <xs:element name="vehicleId" type="xs:string"></xs:element>
+        <xs:element name="year" type="xs:string"></xs:element>
+        <xs:element name="make" type="xs:string"></xs:element>
+        <xs:element name="model" type="xs:string"></xs:element>
+        <xs:element name="vin" type="xs:string"></xs:element>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" type="tns:LocationType"></xs:element>
+      </xs:sequence>
+      <xs:attribute name="serializationStrategy" type="tns:SerializationStrategyType"></xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="ValidateQuoteRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Policy" type="tns:Policy"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="finPolicyDetailByPolicyNumber" nillable="true" type="tns:finPolicyDetailByPolicyNumber"></xs:element>
+
+  <xs:element name="finPolicyDetailByPolicyNumberResponse" nillable="true" type="tns:finPolicyDetailByPolicyNumberResponse"></xs:element>
+
+  <xs:element name="findCustomer" nillable="true" type="tns:findCustomer"></xs:element>
+
+  <xs:element name="findCustomerResponse" nillable="true" type="tns:findCustomerResponse"></xs:element>
+
+  <xs:element name="findCustomerStep2" nillable="true" type="tns:findCustomerStep2"></xs:element>
+
+  <xs:element name="findCustomerStep2Response" nillable="true" type="tns:findCustomerStep2Response"></xs:element>
+
+  <xs:element name="findInsuredInfoListRequest" nillable="true" type="tns:findInsuredInfoListRequest"></xs:element>
+
+  <xs:element name="findInsuredInfoListResponse" nillable="true" type="tns:findInsuredInfoListResponse"></xs:element>
+
+  <xs:element name="findPolicyAndQuotesByCustomers" nillable="true" type="tns:findPolicyAndQuotesByCustomers"></xs:element>
+
+  <xs:element name="findPolicyAndQuotesByCustomersResponse" nillable="true" type="tns:findPolicyAndQuotesByCustomersResponse"></xs:element>
+
+  <xs:element name="getCustomerByEmailAndCustomerNumber" nillable="true" type="tns:getCustomerByEmailAndCustomerNumber"></xs:element>
+
+  <xs:element name="getCustomerByEmailAndCustomerNumberResponse" nillable="true" type="tns:getCustomerByEmailAndCustomerNumberResponse"></xs:element>
+
+  <xs:element name="getDocumentedPolicyResultView" nillable="true" type="tns:getDocumentedPolicyResultView"></xs:element>
+
+  <xs:element name="getDocumentedPolicyResultViewResponse" nillable="true" type="tns:getDocumentedPolicyResultViewResponse"></xs:element>
+
+  <xs:element name="getFileFromEfolder" nillable="true" type="tns:getFileFromEfolder"></xs:element>
+
+  <xs:element name="getFileFromEfolderResponse" nillable="true" type="tns:getFileFromEfolderResponse"></xs:element>
+
+  <xs:element name="getMakeList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="year" type="xs:int"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="getMakeListFault" nillable="true" type="xs:string"></xs:element>
+
+  <xs:element name="getMakeListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" type="tns:MakeListType"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="getModelList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="make" type="xs:string"></xs:element>
+        <xs:element name="year" type="xs:int"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="getModelListFault" nillable="true" type="xs:string"></xs:element>
+
+  <xs:element name="getModelListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" type="tns:ModelListType"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="getPDFfileFromEIS" nillable="true" type="tns:getPDFfileFromEIS"></xs:element>
+
+  <xs:element name="getPDFfileFromEISResponse" nillable="true" type="tns:getPDFfileFromEISResponse"></xs:element>
+
+  <xs:element name="getPolicyPaymentList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="customerNumber" type="xs:string"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="getPolicyPaymentListFault" nillable="true" type="xs:string"></xs:element>
+
+  <xs:element name="getPolicyPaymentListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="return" type="tns:PolicyPaymentListType"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="searchCustomer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="request" type="tns:SearchCriteriaType"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="searchCustomerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="result" type="tns:SearchPolicyResponseType"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="searchPolicy">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="request" type="tns:SearchCriteriaType"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="searchPolicyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="result" type="tns:SearchPolicyResponseType"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="updateCustomerInfo" nillable="true" type="tns:updateCustomerInfo"></xs:element>
+
+  <xs:element name="updateCustomerInfoResponse" nillable="true" type="tns:updateCustomerInfoResponse"></xs:element>
+
+  <xs:complexType name="InterestType">
+    <xs:all>
+      <xs:element name="interestId" type="xs:string"></xs:element>
+      <xs:element name="name" type="xs:string"></xs:element>
+      <xs:element name="interestType" type="xs:string"></xs:element>
+      <xs:element name="address1" type="xs:string"></xs:element>
+      <xs:element name="address2" type="xs:string"></xs:element>
+      <xs:element name="address3" type="xs:string"></xs:element>
+      <xs:element name="city" type="xs:string"></xs:element>
+      <xs:element name="state" type="xs:string"></xs:element>
+      <xs:element name="zip" type="xs:string"></xs:element>
+      <xs:element name="country" type="xs:string"></xs:element>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="Policy">
+    <xs:sequence>
+      <xs:element name="MsgID" type="xs:string"></xs:element>
+      <xs:element name="ResponseToMsgID" type="xs:string"></xs:element>
+      <xs:element name="MessageStatus" type="ns1:MessageStatusType"></xs:element>
+      <xs:any namespace="##other" processContents="skip"></xs:any>
+    </xs:sequence>
+    <xs:attribute name="policyImageType" type="tns:PolicyImageTypeEnum"></xs:attribute>
+    <xs:attribute name="serializationStrategy" type="tns:SerializationStrategyType"></xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="exportFile">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="fileData" type="xs:base64Binary"></xs:element>
+      <xs:element minOccurs="0" name="fileName" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="findPolicyAndQuotesByCustomersResponse">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="return" type="tns:PolicyInfoTypePlus"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="PolicyInfoTypePlus">
+    <xs:sequence>
+      <xs:element name="policyInfoType" type="tns:PolicyInfoType"></xs:element>
+      <xs:element name="userName" type="xs:string"></xs:element>
+      <xs:element name="fileName" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="PolicyInfoType">
+    <xs:sequence>
+      <xs:element name="actualPremium" type="xs:decimal"></xs:element>
+      <xs:element name="billingMethodCd" type="xs:string"></xs:element>
+      <xs:element name="contractTerm" type="tns:TermType"></xs:element>
+      <xs:element name="customerNumber" type="xs:string"></xs:element>
+      <xs:element name="doNotRenewInd" type="xs:boolean"></xs:element>
+      <xs:element name="inceptionDate" type="xs:date"></xs:element>
+      <xs:element name="manualRenewInd" type="xs:boolean"></xs:element>
+      <xs:element name="policyNumber" type="xs:string"></xs:element>
+      <xs:element name="policyStatusCd" type="xs:string"></xs:element>
+      <xs:element name="producerCd" type="xs:string"></xs:element>
+      <xs:element name="productCd" type="xs:string"></xs:element>
+      <xs:element name="revisionNo" type="xs:int"></xs:element>
+      <xs:element name="transactionDate" type="xs:date"></xs:element>
+      <xs:element name="transactionEffectiveDate" type="xs:date"></xs:element>
+      <xs:element name="txReason" type="xs:string"></xs:element>
+      <xs:element name="txReasonText" type="xs:string"></xs:element>
+      <xs:element name="txSubType" type="xs:string"></xs:element>
+      <xs:element name="txType" type="xs:string"></xs:element>
+      <xs:element name="underwriterCd" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="TermType">
+    <xs:sequence>
+      <xs:element name="effective" type="xs:dateTime"></xs:element>
+      <xs:element name="expiration" type="xs:dateTime"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="findCustomerStep2Response">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:customerInfo"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="customerInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="address1" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="address2" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="address3" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="city" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="customerName" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="customerNumber" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="email" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="firstName" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="lastName" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="phoneNumber" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="state" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="zip" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="emailId" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="findInsuredInfoListResponse">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="insuredInfoList" nillable="true" type="tns:insuredInfo"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="insuredInfo">
+    <xs:sequence>
+      <xs:element name="policyNumber" type="xs:string"></xs:element>
+      <xs:element name="firstName" type="xs:string"></xs:element>
+      <xs:element name="lastName" type="xs:string"></xs:element>
+      <xs:element name="addressLine1" type="xs:string"></xs:element>
+      <xs:element name="addressLine2" type="xs:string"></xs:element>
+      <xs:element name="addressLine3" type="xs:string"></xs:element>
+      <xs:element name="city" type="xs:string"></xs:element>
+      <xs:element name="stateProvCd" type="xs:string"></xs:element>
+      <xs:element name="postalCode" type="xs:string"></xs:element>
+      <xs:element name="email" type="xs:string"></xs:element>
+      <xs:element name="phoneNumber" type="xs:string"></xs:element>
+      <xs:element name="countryCd" type="xs:string"></xs:element>
+      <xs:element name="country" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getCustomerByEmailAndCustomerNumber">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="arg1" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ModelListType">
+    <xs:sequence>
+      <xs:element name="model" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="SearchCriteriaType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="firstName" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="lastName" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="policyNumber" type="xs:string"></xs:element>
+      <xs:element name="customerNumber" type="xs:string"></xs:element>
+      <xs:element name="address" type="tns:AddressType"></xs:element>
+      <xs:element name="emailAddress" type="xs:string"></xs:element>
+      <xs:element name="birthDay" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="AddressType">
+    <xs:sequence>
+      <xs:element name="addressLine1" type="xs:string"></xs:element>
+      <xs:element name="addressLine2" type="xs:string"></xs:element>
+      <xs:element name="addressLine3" type="xs:string"></xs:element>
+      <xs:element name="city" type="xs:string"></xs:element>
+      <xs:element name="countryCd" type="xs:string"></xs:element>
+      <xs:element name="country" type="xs:string"></xs:element>
+      <xs:element name="displayValue" type="xs:string"></xs:element>
+      <xs:element name="postalCode" type="xs:string"></xs:element>
+      <xs:element name="postalCodeFirst5" type="xs:string"></xs:element>
+      <xs:element name="postalCodeLast4" type="xs:string"></xs:element>
+      <xs:element name="regionCd" type="xs:string"></xs:element>
+      <xs:element name="standardized" type="xs:string"></xs:element>
+      <xs:element name="stateProvCd" type="xs:string"></xs:element>
+      <xs:element name="streetName" type="xs:string"></xs:element>
+      <xs:element name="streetNumber" type="xs:string"></xs:element>
+      <xs:element name="streetType" type="xs:string"></xs:element>
+      <xs:element name="unitNumber" type="xs:string"></xs:element>
+      <xs:element name="usageType" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="findPolicyAndQuotesByCustomers">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="arg0" nillable="true" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="SearchPolicyResponseType">
+    <xs:sequence>
+      <xs:element name="results">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="result" nillable="true" type="tns:PolicyInfoType"></xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="incomplete" type="xs:boolean"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getDocumentedPolicyResultViewResponse">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="return" type="tns:PolicyInfoTypePlus"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getDocumentedPolicyResultView">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getFileFromEfolderResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:exportFile"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="finPolicyDetailByPolicyNumberResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:policyDetailType"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="policyDetailType">
+    <xs:sequence>
+      <xs:element form="unqualified" minOccurs="0" name="annualPremium" type="xs:decimal"></xs:element>
+      <xs:element form="unqualified" maxOccurs="unbounded" minOccurs="0" name="insuredInformation" nillable="true" type="tns:autoInsuredInformation"></xs:element>
+      <xs:element name="effectiveDt" type="xs:date"></xs:element>
+      <xs:element name="exprirationDt" type="xs:date"></xs:element>
+      <xs:element form="unqualified" minOccurs="0" name="policyNumber" type="xs:string"></xs:element>
+      <xs:element form="unqualified" minOccurs="0" name="userName" type="xs:string"></xs:element>
+      <xs:element form="unqualified" minOccurs="0" name="txType" type="xs:string"></xs:element>
+      <xs:element form="unqualified" minOccurs="0" name="productCd" type="xs:string"></xs:element>
+      <xs:element form="unqualified" minOccurs="0" name="addressLine1" type="xs:string"></xs:element>
+      <xs:element form="unqualified" minOccurs="0" name="addressLine2" type="xs:string"></xs:element>
+      <xs:element form="unqualified" minOccurs="0" name="addressLine3" type="xs:string"></xs:element>
+      <xs:element form="unqualified" minOccurs="0" name="phoneNumber1" type="xs:string"></xs:element>
+      <xs:element form="unqualified" minOccurs="0" name="phoneNumber2" type="xs:string"></xs:element>
+      <xs:element form="unqualified" minOccurs="0" name="gender" type="xs:string"></xs:element>
+      <xs:element form="unqualified" minOccurs="0" name="email" type="xs:string"></xs:element>
+      <xs:element form="unqualified" minOccurs="0" name="age" type="xs:string"></xs:element>
+      <xs:element form="unqualified" minOccurs="0" name="insuredAddress" type="xs:string"></xs:element>
+      <xs:element form="unqualified" maxOccurs="unbounded" minOccurs="0" name="riskItemNames" nillable="true" type="tns:riskItemName"></xs:element>
+      <xs:element form="unqualified" maxOccurs="unbounded" minOccurs="0" name="drivers" nillable="true" type="tns:cpDriver"></xs:element>
+      <xs:element name="revisionNo" type="xs:int"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="autoInsuredInformation">
+    <xs:sequence>
+      <xs:element form="unqualified" minOccurs="0" name="driverName" type="xs:string"></xs:element>
+      <xs:element form="unqualified" minOccurs="0" name="relationShip" type="xs:string"></xs:element>
+      <xs:element form="unqualified" minOccurs="0" name="email" type="xs:string"></xs:element>
+      <xs:element form="unqualified" minOccurs="0" name="phoneNumber" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="riskItemName">
+    <xs:sequence>
+      <xs:element form="unqualified" minOccurs="0" name="itemName" type="xs:string"></xs:element>
+      <xs:element form="unqualified" minOccurs="0" name="vehicleLocation" type="xs:string"></xs:element>
+      <xs:element form="unqualified" maxOccurs="unbounded" minOccurs="0" name="interestList" nillable="true" type="tns:interest"></xs:element>
+      <xs:element form="unqualified" maxOccurs="unbounded" minOccurs="0" name="coverages" nillable="true" type="tns:coverageDetail"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="interest">
+    <xs:sequence>
+      <xs:element form="unqualified" minOccurs="0" name="name" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="coverageDetail">
+    <xs:sequence>
+      <xs:element form="unqualified" minOccurs="0" name="annualPremium" type="xs:decimal"></xs:element>
+      <xs:element form="unqualified" minOccurs="0" name="coverage" type="xs:string"></xs:element>
+      <xs:element form="unqualified" minOccurs="0" name="deductible" type="xs:decimal"></xs:element>
+      <xs:element form="unqualified" minOccurs="0" name="limit" type="xs:decimal"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cpDriver">
+    <xs:sequence>
+      <xs:element form="unqualified" minOccurs="0" name="driverName" type="xs:string"></xs:element>
+      <xs:element form="unqualified" minOccurs="0" name="dateOfBirth" type="xs:string"></xs:element>
+      <xs:element form="unqualified" minOccurs="0" name="relationShip" type="xs:string"></xs:element>
+      <xs:element form="unqualified" minOccurs="0" name="driverId" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getFileFromEfolder">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="policyNumber" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="fileName" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="folderName" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getCustomerByEmailAndCustomerNumberResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:customerInfo"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="findCustomerResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:customerInfo"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="findCustomerStep2">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="firstName" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="lastName" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="email" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="birthday" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="customerNumber" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="emailId" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="PolicyPaymentListType">
+    <xs:all>
+      <xs:element name="productType" type="xs:string"></xs:element>
+      <xs:element name="policyNumber" type="xs:string"></xs:element>
+      <xs:element name="currentTerm" type="xs:string"></xs:element>
+      <xs:element name="totalPremium" type="xs:decimal"></xs:element>
+      <xs:element name="balance" type="xs:decimal"></xs:element>
+      <xs:element name="lastPayment" type="xs:decimal"></xs:element>
+      <xs:element name="lastPaymentDue" type="xs:date"></xs:element>
+      <xs:element name="nextPayment" type="xs:decimal"></xs:element>
+      <xs:element name="nextPaymentDue" type="xs:date"></xs:element>
+      <xs:element name="paymentMethod" type="xs:string"></xs:element>
+      <xs:element name="paymentPlan" type="xs:string"></xs:element>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="MakeListType">
+    <xs:all>
+      <xs:element name="make" type="xs:string"></xs:element>
+      <xs:element name="makeLabel" type="xs:string"></xs:element>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="getPDFfileFromEISResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:exportFile"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getPDFfileFromEIS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="policyNumber" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="templateId" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="updateCustomerInfoResponse">
+    <xs:sequence></xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="findInsuredInfoListRequest">
+    <xs:sequence>
+      <xs:element name="customerNum" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="finPolicyDetailByPolicyNumber">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="updateCustomerInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:customerInfo"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="findCustomer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="firstName" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="lastName" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="email" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="birthday" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="customerNumber" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="endorseReturned">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="medicalPaymentlimit" type="xs:decimal"></xs:element>
+      <xs:element minOccurs="0" name="annualPremium" type="xs:decimal"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="medicalPayment">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="paymentValue" type="xs:string"></xs:element>
+      <xs:element minOccurs="0" name="vehicleId" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="LocationType">
+    <xs:all>
+      <xs:element name="addressId" type="xs:string"></xs:element>
+      <xs:element name="address1" type="xs:string"></xs:element>
+      <xs:element name="city" type="xs:string"></xs:element>
+      <xs:element name="state" type="xs:string"></xs:element>
+      <xs:element name="zip" type="xs:string"></xs:element>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="ResultStatusResponse">
+    <xs:sequence>
+      <xs:element name="codeId" type="xs:string"></xs:element>
+      <xs:element name="description" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="VehicleInfo">
+    <xs:sequence>
+      <xs:element name="vehicleId" type="xs:string"></xs:element>
+      <xs:element name="make" type="xs:string"></xs:element>
+      <xs:element name="model" type="xs:string"></xs:element>
+      <xs:element name="year" type="xs:string"></xs:element>
+      <xs:element name="vin" type="xs:string"></xs:element>
+      <xs:element name="location" type="xs:string"></xs:element>
+      <xs:element name="locationId" type="xs:string"></xs:element>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="interestList" nillable="true" type="tns:InterestType"></xs:element>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="coverageInfoList" nillable="true" type="tns:CoverageInfo"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="CoverageInfo">
+    <xs:sequence>
+      <xs:element name="annualPremium" type="xs:decimal"></xs:element>
+      <xs:element name="coverageCd" type="xs:string"></xs:element>
+      <xs:element name="coverage" type="xs:string"></xs:element>
+      <xs:element name="deductible" type="xs:decimal"></xs:element>
+      <xs:element name="limit" type="xs:decimal"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="DriverInfo">
+    <xs:sequence>
+      <xs:element name="driverName" type="xs:string"></xs:element>
+      <xs:element name="dateOfBirth" type="xs:string"></xs:element>
+      <xs:element name="relationShip" type="xs:string"></xs:element>
+      <xs:element name="driverId" type="xs:string"></xs:element>
+      <xs:element name="driverType" type="xs:string"></xs:element>
+      <xs:element name="relationshipToInsured" type="xs:string"></xs:element>
+      <xs:element name="firstName" type="xs:string"></xs:element>
+      <xs:element name="middleName" type="xs:string"></xs:element>
+      <xs:element name="lastName" type="xs:string"></xs:element>
+      <xs:element name="occupation" type="xs:string"></xs:element>
+      <xs:element name="gender" type="xs:string"></xs:element>
+      <xs:element name="maritalStatus" type="xs:string"></xs:element>
+      <xs:element name="licenseNo" type="xs:string"></xs:element>
+      <xs:element name="licensingState" type="xs:string"></xs:element>
+      <xs:element name="licenseDate" type="xs:date"></xs:element>
+      <xs:element name="licenseStatus" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="InsuredInfos">
+    <xs:sequence>
+      <xs:element name="firstName" type="xs:string"></xs:element>
+      <xs:element name="lastName" type="xs:string"></xs:element>
+      <xs:element name="otherName" type="xs:string"></xs:element>
+      <xs:element name="insuredId" type="xs:string"></xs:element>
+      <xs:element name="phoneNumber" type="xs:string"></xs:element>
+      <xs:element name="email" type="xs:string"></xs:element>
+      <xs:element name="mainInsured" type="xs:boolean"></xs:element>
+      <xs:element name="nameType" type="xs:string"></xs:element>
+      <xs:element name="middleName" type="xs:string"></xs:element>
+      <xs:element name="additionalNameInd" type="xs:boolean"></xs:element>
+      <xs:element name="additionalName" type="xs:string"></xs:element>
+      <xs:element name="addressType" type="xs:string"></xs:element>
+      <xs:element name="country" type="xs:string"></xs:element>
+      <xs:element name="zipCode" type="xs:string"></xs:element>
+      <xs:element name="addressLine1" type="xs:string"></xs:element>
+      <xs:element name="addressLine2" type="xs:string"></xs:element>
+      <xs:element name="addressLine3" type="xs:string"></xs:element>
+      <xs:element name="city" type="xs:string"></xs:element>
+      <xs:element name="state" type="xs:string"></xs:element>
+      <xs:element name="county" type="xs:string"></xs:element>
+      <xs:element name="formerAddressInd" type="xs:boolean"></xs:element>
+      <xs:element name="formerAddressType" type="xs:string"></xs:element>
+      <xs:element name="formerCountry" type="xs:string"></xs:element>
+      <xs:element name="formerZipCode" type="xs:string"></xs:element>
+      <xs:element name="formerAddressLine1" type="xs:string"></xs:element>
+      <xs:element name="formerAddressLine2" type="xs:string"></xs:element>
+      <xs:element name="formerAddressLine3" type="xs:string"></xs:element>
+      <xs:element name="formerCity" type="xs:string"></xs:element>
+      <xs:element name="formerState" type="xs:string"></xs:element>
+      <xs:element name="formerCounty" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="RiskItemForCoverage">
+    <xs:sequence>
+      <xs:element name="vehicleId" type="xs:string"></xs:element>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="updatedCoverageList" nillable="true" type="tns:UpdatedCoverage"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="UpdatedCoverage">
+    <xs:sequence>
+      <xs:element name="coverageCd" type="xs:string"></xs:element>
+      <xs:element name="limit" nillable="true" type="xs:decimal"></xs:element>
+      <xs:element name="deductible" nillable="true" type="xs:decimal"></xs:element>
+      <xs:element name="combinedLimitAmount" nillable="true" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="SerializationStrategyType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="default"></xs:enumeration>
+      <xs:enumeration value="custom"></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="PolicyImageTypeEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Delta"></xs:enumeration>
+      <xs:enumeration value="Full"></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://exigenservices.com/ipb/general/integration" elementFormDefault="qualified" targetNamespace="http://exigenservices.com/ipb/general/integration" version="1.0">
+
+  <xs:complexType name="MessageStatusType">
+    <xs:sequence>
+      <xs:element name="MsgStatus" type="tns:MessageStatusEnum"></xs:element>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="ExtendedStatus" type="tns:ExtendedStatusType"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ExtendedStatusType">
+    <xs:sequence>
+      <xs:element name="ExtendedStatusCd" type="xs:string"></xs:element>
+      <xs:element name="ExtendedStatus" type="tns:MessageStatusEnum"></xs:element>
+      <xs:element minOccurs="0" name="ExtendedStatusDesc" type="xs:string"></xs:element>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="AppliesTo" type="xs:string"></xs:element>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:ID"></xs:attribute>
+    <xs:attribute name="IdRefs">
+      <xs:simpleType>
+        <xs:list itemType="xs:IDREF"></xs:list>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:simpleType name="MessageStatusEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Error"></xs:enumeration>
+      <xs:enumeration value="Warning"></xs:enumeration>
+      <xs:enumeration value="Info"></xs:enumeration>
+      <xs:enumeration value="Success"></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="UpdateDriver">
+    <wsdl:part element="tns:UpdateDriverRequest" name="request">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ProposeQuote">
+    <wsdl:part element="tns:ProposeQuoteRequest" name="request">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="CancelPolicy">
+    <wsdl:part element="tns:CancelPolicyRequest" name="request">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="PolicyInquiryTermEffectiveResponse">
+    <wsdl:part element="tns:QuotePolicyResponse" name="response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="PolicyInquiryTxDateResponse">
+    <wsdl:part element="tns:QuotePolicyResponse" name="response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="IssueEndorse">
+    <wsdl:part element="tns:IssueEndorseRequest" name="request">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="UpdateInterestResponse">
+    <wsdl:part element="tns:QuotePolicyResponse" name="response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="AddDriverResponse">
+    <wsdl:part element="tns:QuotePolicyResponse" name="response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="AddVehicleResponse">
+    <wsdl:part element="tns:QuotePolicyResponse" name="response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="IssueQuoteResponse">
+    <wsdl:part element="tns:QuotePolicyResponse" name="response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ValidateQuote">
+    <wsdl:part element="tns:ValidateQuoteRequest" name="request">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="EndorsePolicyResponse">
+    <wsdl:part element="tns:QuotePolicyResponse" name="response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="DeleteVehicleResponse">
+    <wsdl:part element="tns:QuotePolicyResponse" name="response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="AddDriver">
+    <wsdl:part element="tns:AddDriverRequest" name="request">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RenewPolicyResponse">
+    <wsdl:part element="tns:QuotePolicyResponse" name="response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GenerateProductXmlSchemaResponse">
+    <wsdl:part element="tns:ProductSchemaResponse" name="request">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RateQuoteResponse">
+    <wsdl:part element="tns:QuotePolicyResponse" name="response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="CustomEndorse">
+    <wsdl:part element="tns:CustomEndorseRequest" name="request">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RateEndorse">
+    <wsdl:part element="tns:RateEndorseRequest" name="request">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ValidateQuoteResponse">
+    <wsdl:part element="tns:QuotePolicyResponse" name="response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="DeleteVehicle">
+    <wsdl:part element="tns:DeleteVehicleRequest" name="request">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="EndorsePolicy">
+    <wsdl:part element="tns:EndorsePolicyRequest" name="request">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="BindQuoteResponse">
+    <wsdl:part element="tns:QuotePolicyResponse" name="response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="CustomEndorseResponse">
+    <wsdl:part element="tns:CustomEndorseResponse" name="response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="UpdateVehicle">
+    <wsdl:part element="tns:UpdateVehicleRequest" name="request">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RateEndorseResponse">
+    <wsdl:part element="tns:QuotePolicyResponse" name="response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="UpdateCoverage">
+    <wsdl:part element="tns:UpdateCoverageRequest" name="request">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="EndorseInquiry">
+    <wsdl:part element="tns:EndorseInquiryRequest" name="request">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="DeleteDriver">
+    <wsdl:part element="tns:DeleteDriverRequest" name="request">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="AddVehicle">
+    <wsdl:part element="tns:AddVehicleRequest" name="request">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="IssueQuote">
+    <wsdl:part element="tns:IssueQuoteRequest" name="request">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="DeleteDriverResponse">
+    <wsdl:part element="tns:QuotePolicyResponse" name="response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="UpdateDriverResponse">
+    <wsdl:part element="tns:QuotePolicyResponse" name="response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="UpdateCoverageResponse">
+    <wsdl:part element="tns:QuotePolicyResponse" name="response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="EndorseInquiryResponse">
+    <wsdl:part element="tns:EndorseInquiryResponse" name="response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ReinstatePolicyResponse">
+    <wsdl:part element="tns:QuotePolicyResponse" name="response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ProposeQuoteResponse">
+    <wsdl:part element="tns:QuotePolicyResponse" name="response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="CancelPolicyResponse">
+    <wsdl:part element="tns:QuotePolicyResponse" name="response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="IssueEndorseResponse">
+    <wsdl:part element="tns:QuotePolicyResponse" name="response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SaveQuoteResponse">
+    <wsdl:part element="tns:QuotePolicyResponse" name="response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="BindQuote">
+    <wsdl:part element="tns:BindQuoteRequest" name="request">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="UpdateInsuredResponse">
+    <wsdl:part element="tns:QuotePolicyResponse" name="response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RateQuote">
+    <wsdl:part element="tns:RateQuoteRequest" name="request">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="UpdateInterest">
+    <wsdl:part element="tns:UpdateInterestRequest" name="request">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SaveEndorseResponse">
+    <wsdl:part element="tns:QuotePolicyResponse" name="response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SaveEndorse">
+    <wsdl:part element="tns:SaveEndorseRequest" name="request">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RetroPolicyResponse">
+    <wsdl:part element="tns:QuotePolicyResponse" name="response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="PolicyInquiryTxDate">
+    <wsdl:part element="tns:PolicyInquiryTxDateRequest" name="request">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="UpdateInsured">
+    <wsdl:part element="tns:UpdateInsuredRequest" name="request">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ReinstatePolicy">
+    <wsdl:part element="tns:ReinstatePolicyRequest" name="request">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="PolicyInquiryTermEffective">
+    <wsdl:part element="tns:PolicyInquiryTermEffectiveRequest" name="request">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RenewPolicy">
+    <wsdl:part element="tns:RenewPolicyRequest" name="request">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="UpdateVehicleResponse">
+    <wsdl:part element="tns:QuotePolicyResponse" name="response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RetroPolicy">
+    <wsdl:part element="tns:RetroPolicyRequest" name="request">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SaveQuote">
+    <wsdl:part element="tns:SaveQuoteRequest" name="request">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GenerateProductXmlSchema">
+    <wsdl:part element="tns:ProductSchemaRequest" name="request">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="PfPolicyPort">
+    <wsdl:operation name="UpdateInterest">
+      <wsdl:input message="tns:UpdateInterest" name="UpdateInterest">
+    </wsdl:input>
+      <wsdl:output message="tns:UpdateInterestResponse" name="UpdateInterestResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDriver">
+      <wsdl:input message="tns:DeleteDriver" name="DeleteDriver">
+    </wsdl:input>
+      <wsdl:output message="tns:DeleteDriverResponse" name="DeleteDriverResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IssueEndorse">
+      <wsdl:input message="tns:IssueEndorse" name="IssueEndorse">
+    </wsdl:input>
+      <wsdl:output message="tns:IssueEndorseResponse" name="IssueEndorseResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReinstatePolicy">
+      <wsdl:input message="tns:ReinstatePolicy" name="ReinstatePolicy">
+    </wsdl:input>
+      <wsdl:output message="tns:ReinstatePolicyResponse" name="ReinstatePolicyResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateProductXmlSchema">
+      <wsdl:input message="tns:GenerateProductXmlSchema" name="GenerateProductXmlSchema">
+    </wsdl:input>
+      <wsdl:output message="tns:GenerateProductXmlSchemaResponse" name="GenerateProductXmlSchemaResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RateQuote">
+      <wsdl:input message="tns:RateQuote" name="RateQuote">
+    </wsdl:input>
+      <wsdl:output message="tns:RateQuoteResponse" name="RateQuoteResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RateEndorse">
+      <wsdl:input message="tns:RateEndorse" name="RateEndorse">
+    </wsdl:input>
+      <wsdl:output message="tns:RateEndorseResponse" name="RateEndorseResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EndorseInquiry">
+      <wsdl:input message="tns:EndorseInquiry" name="EndorseInquiry">
+    </wsdl:input>
+      <wsdl:output message="tns:EndorseInquiryResponse" name="EndorseInquiryResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveQuote">
+      <wsdl:input message="tns:SaveQuote" name="SaveQuote">
+    </wsdl:input>
+      <wsdl:output message="tns:SaveQuoteResponse" name="SaveQuoteResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RenewPolicy">
+      <wsdl:input message="tns:RenewPolicy" name="RenewPolicy">
+    </wsdl:input>
+      <wsdl:output message="tns:RenewPolicyResponse" name="RenewPolicyResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveEndorse">
+      <wsdl:input message="tns:SaveEndorse" name="SaveEndorse">
+    </wsdl:input>
+      <wsdl:output message="tns:SaveEndorseResponse" name="SaveEndorseResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVehicle">
+      <wsdl:input message="tns:UpdateVehicle" name="UpdateVehicle">
+    </wsdl:input>
+      <wsdl:output message="tns:UpdateVehicleResponse" name="UpdateVehicleResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddDriver">
+      <wsdl:input message="tns:AddDriver" name="AddDriver">
+    </wsdl:input>
+      <wsdl:output message="tns:AddDriverResponse" name="AddDriverResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateQuote">
+      <wsdl:input message="tns:ValidateQuote" name="ValidateQuote">
+    </wsdl:input>
+      <wsdl:output message="tns:ValidateQuoteResponse" name="ValidateQuoteResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelPolicy">
+      <wsdl:input message="tns:CancelPolicy" name="CancelPolicy">
+    </wsdl:input>
+      <wsdl:output message="tns:CancelPolicyResponse" name="CancelPolicyResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetroPolicy">
+      <wsdl:input message="tns:RetroPolicy" name="RetroPolicy">
+    </wsdl:input>
+      <wsdl:output message="tns:RetroPolicyResponse" name="RetroPolicyResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDriver">
+      <wsdl:input message="tns:UpdateDriver" name="UpdateDriver">
+    </wsdl:input>
+      <wsdl:output message="tns:UpdateDriverResponse" name="UpdateDriverResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInsured">
+      <wsdl:input message="tns:UpdateInsured" name="UpdateInsured">
+    </wsdl:input>
+      <wsdl:output message="tns:UpdateInsuredResponse" name="UpdateInsuredResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PolicyInquiryTermEffective">
+      <wsdl:input message="tns:PolicyInquiryTermEffective" name="PolicyInquiryTermEffective">
+    </wsdl:input>
+      <wsdl:output message="tns:PolicyInquiryTermEffectiveResponse" name="PolicyInquiryTermEffectiveResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomEndorse">
+      <wsdl:input message="tns:CustomEndorse" name="CustomEndorse">
+    </wsdl:input>
+      <wsdl:output message="tns:CustomEndorseResponse" name="CustomEndorseResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BindQuote">
+      <wsdl:input message="tns:BindQuote" name="BindQuote">
+    </wsdl:input>
+      <wsdl:output message="tns:BindQuoteResponse" name="BindQuoteResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteVehicle">
+      <wsdl:input message="tns:DeleteVehicle" name="DeleteVehicle">
+    </wsdl:input>
+      <wsdl:output message="tns:DeleteVehicleResponse" name="DeleteVehicleResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddVehicle">
+      <wsdl:input message="tns:AddVehicle" name="AddVehicle">
+    </wsdl:input>
+      <wsdl:output message="tns:AddVehicleResponse" name="AddVehicleResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IssueQuote">
+      <wsdl:input message="tns:IssueQuote" name="IssueQuote">
+    </wsdl:input>
+      <wsdl:output message="tns:IssueQuoteResponse" name="IssueQuoteResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EndorsePolicy">
+      <wsdl:input message="tns:EndorsePolicy" name="EndorsePolicy">
+    </wsdl:input>
+      <wsdl:output message="tns:EndorsePolicyResponse" name="EndorsePolicyResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProposeQuote">
+      <wsdl:input message="tns:ProposeQuote" name="ProposeQuote">
+    </wsdl:input>
+      <wsdl:output message="tns:ProposeQuoteResponse" name="ProposeQuoteResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCoverage">
+      <wsdl:input message="tns:UpdateCoverage" name="UpdateCoverage">
+    </wsdl:input>
+      <wsdl:output message="tns:UpdateCoverageResponse" name="UpdateCoverageResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PolicyInquiryTxDate">
+      <wsdl:input message="tns:PolicyInquiryTxDate" name="PolicyInquiryTxDate">
+    </wsdl:input>
+      <wsdl:output message="tns:PolicyInquiryTxDateResponse" name="PolicyInquiryTxDateResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PfPolicyServiceSoapBinding" type="tns:PfPolicyPort">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"></soap:binding>
+    <wsdl:operation name="UpdateInterest">
+      <soap:operation soapAction="http://exigenservices.com/ipb/policy/integration/UpdateInterest" style="document"></soap:operation>
+      <wsdl:input name="UpdateInterest">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="UpdateInterestResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDriver">
+      <soap:operation soapAction="http://exigenservices.com/ipb/policy/integration/DeleteDriver" style="document"></soap:operation>
+      <wsdl:input name="DeleteDriver">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="DeleteDriverResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IssueEndorse">
+      <soap:operation soapAction="http://exigenservices.com/ipb/policy/integration/IssueEndorse" style="document"></soap:operation>
+      <wsdl:input name="IssueEndorse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="IssueEndorseResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReinstatePolicy">
+      <soap:operation soapAction="http://exigenservices.com/ipb/policy/integration/ReinstatePolicy" style="document"></soap:operation>
+      <wsdl:input name="ReinstatePolicy">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="ReinstatePolicyResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateProductXmlSchema">
+      <soap:operation soapAction="http://exigenservices.com/ipb/policy/integration/GenerateProductXmlSchema" style="document"></soap:operation>
+      <wsdl:input name="GenerateProductXmlSchema">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="GenerateProductXmlSchemaResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RateQuote">
+      <soap:operation soapAction="http://exigenservices.com/ipb/policy/integration/RateQuote" style="document"></soap:operation>
+      <wsdl:input name="RateQuote">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="RateQuoteResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RateEndorse">
+      <soap:operation soapAction="http://exigenservices.com/ipb/policy/integration/RateEndorse" style="document"></soap:operation>
+      <wsdl:input name="RateEndorse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="RateEndorseResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EndorseInquiry">
+      <soap:operation soapAction="http://exigenservices.com/ipb/policy/integration/EndorseInquiry" style="document"></soap:operation>
+      <wsdl:input name="EndorseInquiry">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="EndorseInquiryResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveQuote">
+      <soap:operation soapAction="http://exigenservices.com/ipb/policy/integration/SaveQuote" style="document"></soap:operation>
+      <wsdl:input name="SaveQuote">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="SaveQuoteResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RenewPolicy">
+      <soap:operation soapAction="http://exigenservices.com/ipb/policy/integration/RenewPolicy" style="document"></soap:operation>
+      <wsdl:input name="RenewPolicy">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="RenewPolicyResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveEndorse">
+      <soap:operation soapAction="http://exigenservices.com/ipb/policy/integration/SaveEndorse" style="document"></soap:operation>
+      <wsdl:input name="SaveEndorse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="SaveEndorseResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVehicle">
+      <soap:operation soapAction="http://exigenservices.com/ipb/policy/integration/UpdateVehicle" style="document"></soap:operation>
+      <wsdl:input name="UpdateVehicle">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="UpdateVehicleResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddDriver">
+      <soap:operation soapAction="http://exigenservices.com/ipb/policy/integration/AddDriver" style="document"></soap:operation>
+      <wsdl:input name="AddDriver">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="AddDriverResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelPolicy">
+      <soap:operation soapAction="http://exigenservices.com/ipb/policy/integration/CancelPolicy" style="document"></soap:operation>
+      <wsdl:input name="CancelPolicy">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="CancelPolicyResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateQuote">
+      <soap:operation soapAction="http://exigenservices.com/ipb/policy/integration/ValidateQuote" style="document"></soap:operation>
+      <wsdl:input name="ValidateQuote">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="ValidateQuoteResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetroPolicy">
+      <soap:operation soapAction="http://exigenservices.com/ipb/policy/integration/RetroPolicy" style="document"></soap:operation>
+      <wsdl:input name="RetroPolicy">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="RetroPolicyResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDriver">
+      <soap:operation soapAction="http://exigenservices.com/ipb/policy/integration/UpdateDriver" style="document"></soap:operation>
+      <wsdl:input name="UpdateDriver">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="UpdateDriverResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BindQuote">
+      <soap:operation soapAction="http://exigenservices.com/ipb/policy/integration/BindQuote" style="document"></soap:operation>
+      <wsdl:input name="BindQuote">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="BindQuoteResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomEndorse">
+      <soap:operation soapAction="http://exigenservices.com/ipb/policy/integration/CustomEndorse" style="document"></soap:operation>
+      <wsdl:input name="CustomEndorse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="CustomEndorseResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PolicyInquiryTermEffective">
+      <soap:operation soapAction="http://exigenservices.com/ipb/policy/integration/PolicyInquiryTermEffective" style="document"></soap:operation>
+      <wsdl:input name="PolicyInquiryTermEffective">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="PolicyInquiryTermEffectiveResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInsured">
+      <soap:operation soapAction="http://exigenservices.com/ipb/policy/integration/UpdateInsured" style="document"></soap:operation>
+      <wsdl:input name="UpdateInsured">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="UpdateInsuredResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteVehicle">
+      <soap:operation soapAction="http://exigenservices.com/ipb/policy/integration/DeleteVehicle" style="document"></soap:operation>
+      <wsdl:input name="DeleteVehicle">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="DeleteVehicleResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddVehicle">
+      <soap:operation soapAction="http://exigenservices.com/ipb/policy/integration/AddVehicle" style="document"></soap:operation>
+      <wsdl:input name="AddVehicle">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="AddVehicleResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IssueQuote">
+      <soap:operation soapAction="http://exigenservices.com/ipb/policy/integration/IssueQuote" style="document"></soap:operation>
+      <wsdl:input name="IssueQuote">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="IssueQuoteResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EndorsePolicy">
+      <soap:operation soapAction="http://exigenservices.com/ipb/policy/integration/EndorsePolicy" style="document"></soap:operation>
+      <wsdl:input name="EndorsePolicy">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="EndorsePolicyResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProposeQuote">
+      <soap:operation soapAction="http://exigenservices.com/ipb/policy/integration/ProposeQuote" style="document"></soap:operation>
+      <wsdl:input name="ProposeQuote">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="ProposeQuoteResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PolicyInquiryTxDate">
+      <soap:operation soapAction="http://exigenservices.com/ipb/policy/integration/PolicyInquiryTxDate" style="document"></soap:operation>
+      <wsdl:input name="PolicyInquiryTxDate">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="PolicyInquiryTxDateResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCoverage">
+      <soap:operation soapAction="http://exigenservices.com/ipb/policy/integration/UpdateCoverage" style="document"></soap:operation>
+      <wsdl:input name="UpdateCoverage">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="UpdateCoverageResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PfPolicyService">
+    <wsdl:port binding="tns:PfPolicyServiceSoapBinding" name="PfPolicySOAP">
+      <soap:address location="http://dev5aaa3was601.eqxdev.exigengroup.com:9082/aaa-admin/services/pfPolicy"></soap:address>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

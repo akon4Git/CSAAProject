@@ -1,0 +1,11 @@
+PAS10 Newly created scenarios Total AC count : 73
+Olde release scenarios Delta AC count : 78
+
+
+Bookroll designs Leverage
+C-AU-SS-HCCAP-CL-001
+C-AU-SS-HCCAP-CL-002
+C-AU-SS-HCCAP-CL-005
+C-AU-SS-HCCAP-CL-006
+C-AU-SS-HCCAP-CL-007
+C-AU-SS-HCCAP-CL-009

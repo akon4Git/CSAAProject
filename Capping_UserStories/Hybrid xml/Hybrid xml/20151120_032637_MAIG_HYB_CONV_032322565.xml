@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Policy xmlns="http://www.exigeninsurance.com/eis/data/product/AAA_SS/1.0" name="AAA_SS" version="1">
+    <AAACSAAutoPolicy state="Created">
+        <aaaProgramCode>LegacyConv</aaaProgramCode>
+        <agentCd>500017392</agentCd>
+        <effective>2017-01-01T00:00:00</effective>
+        <expiration>2018-01-01T00:00:00</expiration>
+        <importedFrom>MAIG</importedFrom>
+        <inceptionDate>2007-06-01T00:00:00</inceptionDate>
+        <preConversionPolicyNumber>032322565</preConversionPolicyNumber>
+        <preConversionPolicyPremium>5000</preConversionPolicyPremium>
+        <producerCd>500017178</producerCd>
+        <productCd>AAA_SS</productCd>
+        <riskStateCd>PA</riskStateCd>
+        <sourcePolicyNum>032322565</sourcePolicyNum>
+        <subProducerCd>500017392</subProducerCd>
+        <OtherOrPriorPolicy>
+            <productCd>membership</productCd>
+        </OtherOrPriorPolicy>
+        <AAAPaymentOption state="Created">
+            <paymentPlanCd>standartSS_R</paymentPlanCd>
+        </AAAPaymentOption>
+        <AAAInsured oid="108058" state="Created">
+            <firstName>RUTH</firstName>
+            <lastName>HENSLEY</lastName>
+            <mainInsured>true</mainInsured>
+            <AAAInsuredPrimaryAddress state="Created">
+                <addressDisplayValue>126 ROBERTS RD , BROOKHAVEN, PA, 19015</addressDisplayValue>
+                <addressLine1>126 ROBERTS RD</addressLine1>
+                <city>BROOKHAVEN</city>
+                <countryCd>US</countryCd>
+                <postalCode>19015</postalCode>
+                <stateProvCd>PA</stateProvCd>
+                <usageType>mailing</usageType>
+            </AAAInsuredPrimaryAddress>
+        </AAAInsured>
+    </AAACSAAutoPolicy>
+    <billingAccount>
+        <paymentDetailsPCICreditCard>
+            <profileId>DD0F1850-E005-6231-C96D-6</profileId>
+            <expirationDate>2020-05-31T00:00:00</expirationDate>
+            <fullName>Fred</fullName>
+            <number>4595</number>
+            <type>VISA</type>
+        </paymentDetailsPCICreditCard>
+    </billingAccount>
+    <userNote>
+        <version>0</version>
+        <title>Conversion</title>
+        <updatedOn>2013-03-18T00:00:00</updatedOn>
+        <userText>1:02 S/W MS HENSLEY INQ AS TO WHY SHE IS NOT BEING RENEWED  ADVSD TWO LOSSES NOT INCLUDED BY ACT 68 AS AMENDED BY ACT 6: 6/25/11 AFA-RED LIGHT AGAINST INSURED-(COLLISION $730), 3/4/12 AT FAULT ACCIDENT-RED LIGHT AGAINST INSURED (PD$4394, COL A DRIVER EXCEEDING 1 AT FAULT ACCIDENT IN 3 YEARS IS INELIGIBLE  TRANSFER TO AGENCY TO GET WRITTEN W/ANOTHER CARRIER. IC#610-499-9276</userText>
+    </userNote>
+    <userNote>
+        <version>0</version>
+        <title>Conversion</title>
+        <updatedOn>2013-04-26T00:00:00</updatedOn>
+        <userText>3:35 S/E RUTH WANTING A QUOTE WITH PROGRESSIVE AS SHE IS A NON RENEW D UE TO DRIVER HISTORY.</userText>
+    </userNote>
+    <userNote>
+        <version>0</version>
+        <title>Conversion</title>
+        <updatedOn>2014-05-05T00:00:00</updatedOn>
+        <userText>5/5/2014 ~UW NOTES~KBRUNER AGENT TRIED TO WRITE IN PAS, POLICY INELIGIBLE BECAUSE OF 2 AFA NO ACTION TAKEN</userText>
+    </userNote>
+    <userNote>
+        <version>0</version>
+        <title>Conversion</title>
+        <updatedOn>2014-06-12T00:00:00</updatedOn>
+        <userText>6/12/14. UW JLEMONDS. REFERRAL RCVD CALL FROM TERRELL IN SVC.  INSD WAS NON-RENEWED AS OF 6/1/13, DUE TO DRIVING ACTIVITY.  AGENT IS ATT TO WRITE IN PAS, AND ASKED IF WE CAN SINCE ACC FROM 6/25/11 IS OVER 33 MONTHS OLD.  CONF VIA DD SCREEN THAT THIS IS THE CASE, AND THAT THEY ARE NOW ELIG FOR COVERAGE IN PAS. 1220P S/W RUTH CALLING FOR QUOTE TO COME BACK TO COMPANY SPK WITH JLEMONDS VERF THAT THEY ARE NOW ELIG FOR COVERAGE IN PAS TRANSF TO SALES FOR QUOTE</userText>
+    </userNote>
+    <userNote>
+        <version>0</version>
+        <title>Conversion</title>
+        <updatedOn>2007-05-24T00:00:00</updatedOn>
+        <userText>MVR AND CLUE CLEAR</userText>
+    </userNote>
+    <userNote>
+        <version>0</version>
+        <title>Conversion</title>
+        <updatedOn>2013-03-11T00:00:00</updatedOn>
+        <userText>3/11/13 BHIGGINS RENEWAL REVIEW NTBR-DUE TO RUTH HENSLEY'S DRIVING HISTORY TWO LOSSES NOT INCLUDED BY ACT 68 AS AMENDED BY ACT 6: 6/25/11 AFA-RED LIGHT AGAINST INSURED-(COLLISION $730), 3/4/12 AT FAULT ACCIDENT-RED LIGHT AGAINST INSURED (PD$4394, COLL$1482 A DRIVER EXCEEDING 1 AT FAULT ACCIDENT IN 3 YEARS IS INELIGIBLE</userText>
+    </userNote>
+    <userNote>
+        <version>0</version>
+        <title>Conversion</title>
+        <updatedOn>2007-07-09T00:00:00</updatedOn>
+        <userText>NBC-RCVD PAGE 3 OF APP-INSURED SIGNED AND DATED SENT TO FILE NET</userText>
+    </userNote>
+    <userNote>
+        <version>0</version>
+        <title>Conversion</title>
+        <updatedOn>2007-07-31T00:00:00</updatedOn>
+        <userText>@4:25PM MRS INSRD CALLED TO DISCUSS PREMIUM STATUS ADVISED PREMIUM WAS INITIALLY $780.00 AND WHEN VIN# WAS ADDED PREMIUM TOTAL NOW $908.00</userText>
+    </userNote>
+    <userNote>
+        <version>0</version>
+        <title>Conversion</title>
+        <updatedOn>2010-06-17T00:00:00</updatedOn>
+        <userText>11:48AM BOBBI FROM BARGAIN CAR RENTAL VERIFIED THAT CHESTER HENSLEY ON POLICY AND VEH COVGS. * 610 872 2906</userText>
+    </userNote>
+    <userNote>
+        <version>0</version>
+        <title>Conversion</title>
+        <updatedOn>2012-05-31T00:00:00</updatedOn>
+        <userText>ADDED MP DISCOUNT EFF 06/01/12 HOME 22259800</userText>
+    </userNote>
+    <userNote>
+        <version>0</version>
+        <title>Conversion</title>
+        <updatedOn>2007-06-21T00:00:00</updatedOn>
+        <userText>NBC-SENT PAGE 3 OF APP-INSURED TO SIGN AND DATE DIARY 7/6/07</userText>
+    </userNote>
+</Policy>

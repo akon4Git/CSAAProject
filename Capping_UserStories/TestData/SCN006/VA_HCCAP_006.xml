@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Policy xmlns="http://www.exigeninsurance.com/eis/data/product/AAA_SS/1.0" name="AAA_SS" version="1">
+	<AAACSAAutoPolicy state="Created">
+		<aaaProgramCode>LegacyConv</aaaProgramCode>
+		<agentCd>500013270</agentCd>
+		<effective>2015-10-26T00:00:00</effective>
+		<expiration>2016-10-26T00:00:00</expiration>
+		<importedFrom>MAIG</importedFrom>
+		<inceptionDate>2012-12-31T00:00:00</inceptionDate>
+		<preConversionPolicyNumber>052241138</preConversionPolicyNumber>
+		<preConversionPolicyPremium>1621</preConversionPolicyPremium>
+		<producerCd>500001003</producerCd>
+		<productCd>AAA_SS</productCd>
+		<riskStateCd>VA</riskStateCd>
+		<sourcePolicyNum>052241138</sourcePolicyNum>
+		<subProducerCd>500013270</subProducerCd>
+		<OtherOrPriorPolicy>
+			<productCd>membership</productCd>
+		</OtherOrPriorPolicy>
+		<AAAPaymentOption state="Created">
+			<paymentPlanCd>standartSS_R</paymentPlanCd>
+		</AAAPaymentOption>
+		<AAAInsured oid="109489" state="Created">
+			<firstName>JOANN</firstName>
+			<lastName>TERRY</lastName>
+			<mainInsured>true</mainInsured>
+			<middleName>T</middleName>
+			<AAAInsuredPrimaryAddress state="Created">
+				<addressDisplayValue>21802 OLD VAUGHAN RD , DINWIDDIE, VA, 23841</addressDisplayValue>
+				<addressLine1>21802 OLD VAUGHAN RD</addressLine1>
+				<city>DINWIDDIE</city>
+				<countryCd>US</countryCd>
+				<postalCode>23841</postalCode>
+				<stateProvCd>VA</stateProvCd>
+				<usageType>mailing</usageType>
+			</AAAInsuredPrimaryAddress>
+		</AAAInsured>
+	</AAACSAAutoPolicy>
+	<billingAccount>
+		<paymentDetailsEFT>
+			<profileId>EB8D27A1-40B1-B9EF-E45C-6</profileId>
+			<accountNumber>7890</accountNumber>
+			<accountTypeCd>checking</accountTypeCd>
+			<bankAccountHolderName>Louis Ruggiano</bankAccountHolderName>
+			<bankName>PNC BANK, NEW JERSEY</bankName>
+			<signedAuthorizationOnFile>TRUE</signedAuthorizationOnFile>
+			<transitNumber>031207607</transitNumber>
+		</paymentDetailsEFT>
+	</billingAccount>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2012-12-27T00:00:00</updatedOn>
+		<userText>DATE: 12/27/12 AGENT:LZITA   SOURCE:MAIG INBOUND USAGE:PLEASURE USE HH RES/MEMBERS:INSURED ONLY VEHICLES REGISTERED TO: INSURED ACTIVITY: N/A STATUS: ACTIVE PH#:804-469-2157 ADDITIONAL INFO:PIF ON 12/27/12 - $996.00</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2012-12-31T00:00:00</updatedOn>
+		<userText>RECD POL SERV EMAIL FRM LISA ZITA EFF 12/31/12 ADDED MP DISCOUNT HOME 52229904</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2013-04-30T00:00:00</updatedOn>
+		<userText>4/30/13  C50  |K.SHETLEY| POLICY NUMBER: 52241138 CLAIMS OCCURENCE:   052241138600001 LOSS DATE:  3/13/12 :: NEW POLICY - LOSS WITHIN 60 DAYS OF INCEPTION ACTION: CHECKED CLAIMS NOTES</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2013-10-02T00:00:00</updatedOn>
+		<userText>11:13 MS. TERRY CALLED TO ADD VEH.. 2006 DODGE DAKOTA/MILE 150800 MRICE $5,700/VIN# 1D7HE22K76S623813/FULL COV OR LIAB VEH IS MS. TERRY/PLEASURE USE/NO ADDTL DRIVER IN HH FULL COV 500 DEDUCTIBLES 531 TOTAL PREMIUM $1,464 LIAB COV ONLY $327 TOTAL PREMIUM $1,260 804-469-3457   MORE VEHICLES THAN DRIVER, SENDING NOTICE U/W NO EMAIL</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2013-10-11T00:00:00</updatedOn>
+		<userText>804-469-3457 NO EMAIL 2;46 MRS. TERRY CLD TO DELETE THE CHEVROLET PICK UP, 1989 EFFECTIVE: 10/11/13. PROCESSED. MS. TERRY ALSO CLLED TO ADD 2006 DODGE DAKOTA EFF: 10/02/2013. PROCESSED.</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2013-10-30T00:00:00</updatedOn>
+		<userText>PROCESSED CHANGE PER EMAIL CONYERS, PATRICIA PCONYERS@AAAMIDATLANTIC. PLEASE CHANGE 2011 TOYOTA CAMRY TO: 2013 TOYOTA RAV 4 VIN 2T3ZFREV4DW056247 ODO 16 FINANCED WITH TOYOTA PRIORITY, 2000 WALTHALL CTR. DR.  CHESTER, VA  23 831 EFFECTIVE 10/29/13 REQUOTED AAA WESTERN UNITED AND THE RATE WAS $1955 PER YEAR, THIS AMOUNT. REQUOTED WITH AAA WESTERN UNITED, RATE WAS $1955, TWICE AS HIGH AS AAA MID-ATLANTIC/KEYSTONE.</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2013-12-30T00:00:00</updatedOn>
+		<userText>AUTHORIZATION CODE:  03093P             SW JOANN 355PM RECEIPT NUMBER:  889816-87028-84        8044693457 MESSAGE FROM BANK:  APPROVAL            NO EMAIL POLICY ID:  52241138 CUSTOMER NAME:  TERRY, CHARGE DATE:  12/30/2013 3:58:51 PM CREDIT CARD TYPE:  DISCOVER CREDIT CARD EXPIRATION:  04/1/2017 CREDIT CARD:  ****-3885 AMOUNT:  $1,676.00</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2014-10-22T00:00:00</updatedOn>
+		<userText>10/22/14 UW DCOLEMAN RENEWAL REVIEW NTBR- NOTICE MAILED DUE TO CLAIMS HISTORY/DRIVING ACTIVITY OVER THE PAST THREE YEARS FOR JOANN TERRY  05/02/14 KACC 198 ALL OTHER, NO DETAILS - INSURED LIABLE COLL    4467.66  TOT    4467.66 03/13/13 KACC 101 INSURED REARENDED CLAIMANT"S VEHICLE COLL    5744.46  TOT    5744.46</userText>
+	</userNote>
+</Policy>

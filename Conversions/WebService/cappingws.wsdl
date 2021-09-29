@@ -1,0 +1,959 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://auto.rating.aaa.exigen.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="RatingService" targetNamespace="http://auto.rating.aaa.exigen.com/">
+  <wsdl:types>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://beans.generated.openl.org" xmlns:ns2="http://cxf.apache.org/arrays" xmlns:ns1="http://capping.beans.generated.openl.org" xmlns:ns0="http://auto.rating.aaa.exigen.com/" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://beans.generated.openl.org">
+  <xsd:import namespace="http://auto.rating.aaa.exigen.com/"/>
+  <xsd:import namespace="http://capping.beans.generated.openl.org"/>
+  <xsd:import namespace="http://cxf.apache.org/arrays"/>
+  <xsd:complexType name="Form">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="endorsementAmount" nillable="true" type="xsd:decimal"/>
+      <xsd:element minOccurs="0" name="formCode" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="formName" nillable="true" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ArrayOfForm">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Form" nillable="true" type="tns:Form"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ArrayOfDriverAZ">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="DriverAZ" nillable="true" type="tns:DriverAZ"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Address">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="city" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="state" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="streetLine1" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="streetLine2" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="zip" nillable="true" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="VehicleAZ">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="address" nillable="true" type="tns:Address"/>
+      <xsd:element minOccurs="0" name="airbagCode" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="altCoverages" nillable="true" type="tns:ArrayOfCoverageAZ"/>
+      <xsd:element minOccurs="0" name="annualMileage" nillable="true" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="antiTheftString" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="commuteBand" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="coverages" nillable="true" type="tns:ArrayOfCoverageAZ"/>
+      <xsd:element minOccurs="0" name="ete" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="firstOrAddlVehicle" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="hasAntiTheft" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="id" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="isABS" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="isDaytimeRunning" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="isHybrid" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="isTeenTelematic" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="isTelematic" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="isUdrive" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="manuallyAssignedDriver" nillable="true" type="tns:DriverAZ"/>
+      <xsd:element minOccurs="0" name="manuallyAssignedUndesignatedDriverInd" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="maxDriverAge" nillable="true" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="modelYear" nillable="true" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="multiCarInd" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="newCarAddedProtection" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="oldStatCode" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="premiumAmount" nillable="true" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="primaryDriver" nillable="true" type="tns:DriverAZ"/>
+      <xsd:element minOccurs="0" name="ratedDriver" nillable="true" type="tns:DriverAZ"/>
+      <xsd:element minOccurs="0" name="safetyScore" nillable="true" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="statCode" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="symbol" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="symbolCSAA" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="totalVehiclePoint" nillable="true" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="usage" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="vehicleAge" nillable="true" type="xsd:int"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ExpenseFee">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="feeName" nillable="true" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="CoverageAZ">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="additionalLimitAmount" nillable="true" type="xsd:decimal"/>
+      <xsd:element minOccurs="0" name="coverageCD" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="deductible" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="deductibleAmount" nillable="true" type="xsd:decimal"/>
+      <xsd:element minOccurs="0" name="glassDeductible" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="limit" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="limitAmount" nillable="true" type="xsd:decimal"/>
+      <xsd:element minOccurs="0" name="limitCode" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="pipDedType" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="rejectionWorklossBenefit" nillable="true" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ArrayOfVehicleAZ">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="VehicleAZ" nillable="true" type="tns:VehicleAZ"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="VehicleVars">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="extendedVehicleGroup" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="mapGender" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="mapMaritalStatus" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="mapedModelYear" nillable="true" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="policyDriverFactorHash" nillable="true" type="ns0:anyType2anyTypeHashMap"/>
+      <xsd:element minOccurs="0" name="vehicleGroup" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="vehicleNumber" nillable="true" type="xsd:int"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="DriverAZ">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="ageBeforeEndorsement" nillable="true" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="cleanDriver" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="defensiveDrivingCourse" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="distantStudent" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="driverAge" nillable="true" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="drivesync" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="dsr" nillable="true" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="employee" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="exposure" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="foreignLicense" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="forms" nillable="true" type="tns:ArrayOfForm"/>
+      <xsd:element minOccurs="0" name="gender" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="goodDriver" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="goodStudent" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="hasBIAccident24" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="hasBIAccident2548" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="hasBIAccident49" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="hasClaims" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="hasFR44" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="hasNaf" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="hasPDAccident33" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="hasPDAccident3436" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="hasPDAccident3748" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="hasPDAccident49" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="hasSR22" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="hasTravelink" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="id" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="isExcludedDriver" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="lifemotoCd" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="maritalStatus" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="matureDriver" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="militaryDefensiveDrivingCourse" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="name" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="newDriver" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="occasionalOperator" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="outOfStateLicenseSurcharge" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="smartDriver" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="tyde" nillable="true" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="type" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="unverifiableDrivingRecord" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="vehicleAssignedId" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="yaf" nillable="true" type="xsd:int"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="PolicyVars">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="cappingConfiguration" nillable="true" type="ns1:CappingConfiguration"/>
+      <xsd:element minOccurs="0" name="multiCarNumber" nillable="true" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="numberOfDriversLess25" nillable="true" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="numberOfPAVehicles" nillable="true" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="policy" nillable="true" type="tns:PolicyAZ"/>
+      <xsd:element minOccurs="0" name="rateYear" nillable="true" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="tierFactor" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="tierPoints" nillable="true" type="xsd:int"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="PolicyAZ">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="aaaAPIPIncomeContBenLimit" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="aaaAPIPLengthIncomeCont" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="aaaAsdInsurancePersistency" nillable="true" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="aaaCondoPolicy" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="aaaHomePolicy" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="aaaInsurancePersistency" nillable="true" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="aaaLifePolicy" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="aaaMotorcyclePolicy" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="aaaPIPExtMedPayLimit" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="aaaPIPMedExpDeductible" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="aaaPIPMedExpLimit" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="aaaPIPNonMedExp" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="aaaPIPPrimaryInsurer" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="aaaRentersPolicy" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="aggregateCompClaims" nillable="true" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="autoInsurancePersistency" nillable="true" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="avgAnnualERSperMember" nillable="true" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="baseYear" nillable="true" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="cappingDetails" nillable="true" type="ns1:CappingDetails"/>
+      <xsd:element minOccurs="0" name="creditScore" nillable="true" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="distributionChannel" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="drivers" nillable="true" type="tns:ArrayOfDriverAZ"/>
+      <xsd:element minOccurs="0" name="effectiveDate" nillable="true" type="xsd:dateTime"/>
+      <xsd:element minOccurs="0" name="expenseFees" nillable="true" type="tns:ArrayOfExpenseFee"/>
+      <xsd:element minOccurs="0" name="forms" nillable="true" type="tns:ArrayOfForm"/>
+      <xsd:element minOccurs="0" name="insuredAge" nillable="true" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="isAAAMember" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="isAARP" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="isAdvanceShopping" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="isEmployee" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="isHomeOwner" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="isSingleDriverMultiVeh" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="memberPersistency" nillable="true" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="multiCar" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="multipolicyCode" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="nafAccidents" nillable="true" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="nanoPolicyType" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="noOfAPIPAddlNamedRel" nillable="true" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="noOfVehiclesExcludingTrailer" nillable="true" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="numberOfIL" nillable="true" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="paymentPlanList" nillable="true" type="ns2:ArrayOfAnyType"/>
+      <xsd:element minOccurs="0" name="paymentPlanType" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="points" nillable="true" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="policyNumber" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="prevPolicy" nillable="true" type="tns:PolicyAZ"/>
+      <xsd:element minOccurs="0" name="previousAaaInsurancePersistency" nillable="true" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="previousEffectiveDate" nillable="true" type="xsd:dateTime"/>
+      <xsd:element minOccurs="0" name="priorBILimit" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="rbTier" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="reinstatements" nillable="true" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="supplementalSpousalLiability" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="term" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="tier" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="tort" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="txType" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="umbiConvCode" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="unacceptableRisk" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="vehicles" nillable="true" type="tns:ArrayOfVehicleAZ"/>
+      <xsd:element minOccurs="0" name="yafAfterInception" nillable="true" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="ycfAfterInception" nillable="true" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="yearsAtFaultAccidentFree" nillable="true" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="yearsIncidentFree" nillable="true" type="xsd:int"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ArrayOfCoverageAZ">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="CoverageAZ" nillable="true" type="tns:CoverageAZ"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ArrayOfExpenseFee">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="ExpenseFee" nillable="true" type="tns:ExpenseFee"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://calc.rules.openl.org" xmlns:ns1="http://cxf.apache.org/arrays" xmlns:ns0="http://auto.rating.aaa.exigen.com/" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://calc.rules.openl.org">
+  <xsd:import namespace="http://auto.rating.aaa.exigen.com/"/>
+  <xsd:import namespace="http://cxf.apache.org/arrays"/>
+  <xsd:complexType name="SpreadsheetResult">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="columnNames" nillable="true" type="ns0:ArrayOfString"/>
+      <xsd:element minOccurs="0" name="fieldsCoordinates" nillable="true" type="ns0:string2PointMap"/>
+      <xsd:element minOccurs="0" name="results" nillable="true" type="ns1:ArrayOfArrayOfAnyType"/>
+      <xsd:element minOccurs="0" name="rowNames" nillable="true" type="ns0:ArrayOfString"/>
+      <xsd:any maxOccurs="unbounded" minOccurs="0"/>
+    </xsd:sequence>
+    <xsd:anyAttribute/>
+  </xsd:complexType>
+</xsd:schema>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://auto.rating.aaa.exigen.com" xmlns:ns0="http://convertor.result.calculation.rules.openl.org" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://auto.rating.aaa.exigen.com">
+  <xsd:import namespace="http://convertor.result.calculation.rules.openl.org"/>
+  <xsd:complexType name="ErrorMessageCompoundStep">
+    <xsd:complexContent>
+      <xsd:extension base="ns0:CompoundStep">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="errorMessage" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://auto.rating.aaa.exigen.com/" xmlns:ns4="http://calc.rules.openl.org" xmlns:ns3="http://convertor.result.calculation.rules.openl.org" xmlns:ns2="http://beans.generated.openl.org" xmlns:ns1="http://context.rules.openl.org" xmlns:ns0="http://table.rules.openl.org" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://auto.rating.aaa.exigen.com/">
+  <xsd:import namespace="http://table.rules.openl.org"/>
+  <xsd:import namespace="http://context.rules.openl.org"/>
+  <xsd:import namespace="http://beans.generated.openl.org"/>
+  <xsd:import namespace="http://convertor.result.calculation.rules.openl.org"/>
+  <xsd:import namespace="http://calc.rules.openl.org"/>
+  <xsd:complexType name="anyType2anyTypeHashMap">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="entry">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="key" type="xsd:anyType"/>
+            <xsd:element minOccurs="0" name="value" type="xsd:anyType"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="string2PointMap">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="entry">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="key" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="value" type="ns0:Point"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ArrayOfString">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="string" nillable="true" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="DetermineMVRPredictor" type="tns:DetermineMVRPredictor"/>
+  <xsd:complexType name="DetermineMVRPredictor">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="ns1:IRulesRuntimeContext"/>
+      <xsd:element minOccurs="0" name="arg1" type="ns2:PolicyAZ"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="DetermineMVRPredictorResponse" type="tns:DetermineMVRPredictorResponse"/>
+  <xsd:complexType name="DetermineMVRPredictorResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="ns3:CompoundStep"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="calcAltCoverage" type="tns:calcAltCoverage"/>
+  <xsd:complexType name="calcAltCoverage">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="ns1:IRulesRuntimeContext"/>
+      <xsd:element minOccurs="0" name="arg1" type="ns2:PolicyAZ"/>
+      <xsd:element minOccurs="0" name="arg2" type="ns2:DriverAZ"/>
+      <xsd:element minOccurs="0" name="arg3" type="ns2:VehicleAZ"/>
+      <xsd:element minOccurs="0" name="arg4" type="ns2:PolicyVars"/>
+      <xsd:element minOccurs="0" name="arg5" type="ns2:VehicleVars"/>
+      <xsd:element minOccurs="0" name="arg6" type="ns2:CoverageAZ"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="calcAltCoverageResponse" type="tns:calcAltCoverageResponse"/>
+  <xsd:complexType name="calcAltCoverageResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="ns4:SpreadsheetResult"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="calcDiscountPercForSafetyScore" type="tns:calcDiscountPercForSafetyScore"/>
+  <xsd:complexType name="calcDiscountPercForSafetyScore">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="ns1:IRulesRuntimeContext"/>
+      <xsd:element name="arg1" type="xsd:int"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="calcDiscountPercForSafetyScoreResponse" type="tns:calcDiscountPercForSafetyScoreResponse"/>
+  <xsd:complexType name="calcDiscountPercForSafetyScoreResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" nillable="true" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="DeterminePolicyPremium" type="tns:DeterminePolicyPremium"/>
+  <xsd:complexType name="DeterminePolicyPremium">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="ns1:IRulesRuntimeContext"/>
+      <xsd:element minOccurs="0" name="arg1" type="ns2:PolicyAZ"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="DeterminePolicyPremiumResponse" type="tns:DeterminePolicyPremiumResponse"/>
+  <xsd:complexType name="DeterminePolicyPremiumResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="ns3:CompoundStep"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="determineBandNumber" type="tns:determineBandNumber"/>
+  <xsd:complexType name="determineBandNumber">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="ns1:IRulesRuntimeContext"/>
+      <xsd:element name="arg1" type="xsd:int"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="determineBandNumberResponse" type="tns:determineBandNumberResponse"/>
+  <xsd:complexType name="determineBandNumberResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" nillable="true" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="calcCoverage" type="tns:calcCoverage"/>
+  <xsd:complexType name="calcCoverage">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="ns1:IRulesRuntimeContext"/>
+      <xsd:element minOccurs="0" name="arg1" type="ns2:PolicyAZ"/>
+      <xsd:element minOccurs="0" name="arg2" type="ns2:DriverAZ"/>
+      <xsd:element minOccurs="0" name="arg3" type="ns2:VehicleAZ"/>
+      <xsd:element minOccurs="0" name="arg4" type="ns2:PolicyVars"/>
+      <xsd:element minOccurs="0" name="arg5" type="ns2:VehicleVars"/>
+      <xsd:element minOccurs="0" name="arg6" type="ns2:CoverageAZ"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="calcCoverageResponse" type="tns:calcCoverageResponse"/>
+  <xsd:complexType name="calcCoverageResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="ns4:SpreadsheetResult"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://convertor.result.calculation.rules.openl.org" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://convertor.result.calculation.rules.openl.org">
+  <xsd:complexType name="CodeStep">
+    <xsd:complexContent>
+      <xsd:extension base="tns:CalculationStep">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="code" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="CalculationStep">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="stepName" nillable="true" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="CompoundStep">
+    <xsd:complexContent>
+      <xsd:extension base="tns:CodeStep">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="formula" nillable="true" type="xsd:double"/>
+          <xsd:element minOccurs="0" name="id" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="steps" nillable="true" type="tns:ArrayOfCodeStep"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="SimpleStep">
+    <xsd:complexContent>
+      <xsd:extension base="tns:CodeStep">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="formula" nillable="true" type="xsd:double"/>
+          <xsd:element minOccurs="0" name="text" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="value" nillable="true" type="xsd:double"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="ArrayOfCodeStep">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="CodeStep" nillable="true" type="tns:CodeStep"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://context.rules.openl.org" xmlns:ns1="http://enumeration.rules.openl.org" xmlns:ns0="http://runtime.openl.org" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://context.rules.openl.org">
+  <xsd:import namespace="http://enumeration.rules.openl.org"/>
+  <xsd:import namespace="http://runtime.openl.org"/>
+  <xsd:complexType name="IRulesRuntimeContext">
+    <xsd:complexContent>
+      <xsd:extension base="ns0:IRuntimeContext">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="country" nillable="true" type="ns1:CountriesEnum"/>
+          <xsd:element minOccurs="0" name="currency" nillable="true" type="ns1:CurrenciesEnum"/>
+          <xsd:element minOccurs="0" name="currentDate" type="xsd:dateTime"/>
+          <xsd:element minOccurs="0" name="lang" nillable="true" type="ns1:LanguagesEnum"/>
+          <xsd:element minOccurs="0" name="lob" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="region" nillable="true" type="ns1:RegionsEnum"/>
+          <xsd:element minOccurs="0" name="requestDate" type="xsd:dateTime"/>
+          <xsd:element minOccurs="0" name="usRegion" nillable="true" type="ns1:UsRegionsEnum"/>
+          <xsd:element minOccurs="0" name="usState" nillable="true" type="ns1:UsStatesEnum"/>
+          <xsd:any maxOccurs="unbounded" minOccurs="0"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://convertor.result.calc.common.rating.ipb.exigen.com" xmlns:ns0="http://convertor.result.calculation.rules.openl.org" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://convertor.result.calc.common.rating.ipb.exigen.com">
+  <xsd:import namespace="http://convertor.result.calculation.rules.openl.org"/>
+  <xsd:complexType name="ErrorCompoundStep">
+    <xsd:complexContent>
+      <xsd:extension base="ns0:CompoundStep">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="errorMessage" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://capping.beans.generated.openl.org" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://capping.beans.generated.openl.org">
+  <xsd:complexType name="CappingConfiguration">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="ceiling" nillable="true" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="floor" nillable="true" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="restartCapping" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="startDate" nillable="true" type="xsd:dateTime"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="CappingDetails">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="agePremium" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="cappingCalculatedForTerm" nillable="true" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="carrierCode" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="formCd" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="lineOfBusiness" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="overriddenCappingFactor" nillable="true" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="previousCappingFactor" nillable="true" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="previousPolicyPremium" nillable="true" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="productCode" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="programCode" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="state" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="term" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="termCappingFactor" nillable="true" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="underwriterCode" nillable="true" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://cxf.apache.org/arrays" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://cxf.apache.org/arrays">
+  <xsd:complexType name="ArrayOfArrayOfAnyType">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="ArrayOfAnyType" nillable="true" type="tns:ArrayOfAnyType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ArrayOfAnyType">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="anyType" nillable="true" type="xsd:anyType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://enumeration.rules.openl.org" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://enumeration.rules.openl.org">
+  <xsd:simpleType name="CurrenciesEnum">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="ALL"/>
+      <xsd:enumeration value="DZD"/>
+      <xsd:enumeration value="ARS"/>
+      <xsd:enumeration value="AUD"/>
+      <xsd:enumeration value="BHD"/>
+      <xsd:enumeration value="BYR"/>
+      <xsd:enumeration value="BOB"/>
+      <xsd:enumeration value="BAM"/>
+      <xsd:enumeration value="BRL"/>
+      <xsd:enumeration value="CAD"/>
+      <xsd:enumeration value="CLP"/>
+      <xsd:enumeration value="CNY"/>
+      <xsd:enumeration value="COP"/>
+      <xsd:enumeration value="CRC"/>
+      <xsd:enumeration value="HRK"/>
+      <xsd:enumeration value="CZK"/>
+      <xsd:enumeration value="DKK"/>
+      <xsd:enumeration value="DOP"/>
+      <xsd:enumeration value="EGP"/>
+      <xsd:enumeration value="EUR"/>
+      <xsd:enumeration value="GTQ"/>
+      <xsd:enumeration value="HNL"/>
+      <xsd:enumeration value="HKD"/>
+      <xsd:enumeration value="HUF"/>
+      <xsd:enumeration value="ISK"/>
+      <xsd:enumeration value="INR"/>
+      <xsd:enumeration value="IDR"/>
+      <xsd:enumeration value="IQD"/>
+      <xsd:enumeration value="ILS"/>
+      <xsd:enumeration value="JPY"/>
+      <xsd:enumeration value="JOD"/>
+      <xsd:enumeration value="KWD"/>
+      <xsd:enumeration value="LVL"/>
+      <xsd:enumeration value="LBP"/>
+      <xsd:enumeration value="LTL"/>
+      <xsd:enumeration value="MKD"/>
+      <xsd:enumeration value="MYR"/>
+      <xsd:enumeration value="MXN"/>
+      <xsd:enumeration value="MAD"/>
+      <xsd:enumeration value="NZD"/>
+      <xsd:enumeration value="NIO"/>
+      <xsd:enumeration value="NOK"/>
+      <xsd:enumeration value="OMR"/>
+      <xsd:enumeration value="PAB"/>
+      <xsd:enumeration value="PYG"/>
+      <xsd:enumeration value="PEN"/>
+      <xsd:enumeration value="PHP"/>
+      <xsd:enumeration value="PLN"/>
+      <xsd:enumeration value="QAR"/>
+      <xsd:enumeration value="RON"/>
+      <xsd:enumeration value="RUB"/>
+      <xsd:enumeration value="SAR"/>
+      <xsd:enumeration value="RSD"/>
+      <xsd:enumeration value="SGD"/>
+      <xsd:enumeration value="ZAR"/>
+      <xsd:enumeration value="SDG"/>
+      <xsd:enumeration value="SEK"/>
+      <xsd:enumeration value="CHF"/>
+      <xsd:enumeration value="SYP"/>
+      <xsd:enumeration value="TWD"/>
+      <xsd:enumeration value="TND"/>
+      <xsd:enumeration value="TRY"/>
+      <xsd:enumeration value="UAH"/>
+      <xsd:enumeration value="AED"/>
+      <xsd:enumeration value="GBP"/>
+      <xsd:enumeration value="USD"/>
+      <xsd:enumeration value="UYU"/>
+      <xsd:enumeration value="VEF"/>
+      <xsd:enumeration value="VND"/>
+      <xsd:enumeration value="YER"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="CountriesEnum">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="AL"/>
+      <xsd:enumeration value="DZ"/>
+      <xsd:enumeration value="AR"/>
+      <xsd:enumeration value="AU"/>
+      <xsd:enumeration value="AT"/>
+      <xsd:enumeration value="BH"/>
+      <xsd:enumeration value="BY"/>
+      <xsd:enumeration value="BE"/>
+      <xsd:enumeration value="BO"/>
+      <xsd:enumeration value="BA"/>
+      <xsd:enumeration value="BR"/>
+      <xsd:enumeration value="BG"/>
+      <xsd:enumeration value="CA"/>
+      <xsd:enumeration value="CL"/>
+      <xsd:enumeration value="CN"/>
+      <xsd:enumeration value="CO"/>
+      <xsd:enumeration value="CR"/>
+      <xsd:enumeration value="HR"/>
+      <xsd:enumeration value="CY"/>
+      <xsd:enumeration value="CZ"/>
+      <xsd:enumeration value="DK"/>
+      <xsd:enumeration value="DO"/>
+      <xsd:enumeration value="EC"/>
+      <xsd:enumeration value="EG"/>
+      <xsd:enumeration value="SV"/>
+      <xsd:enumeration value="EE"/>
+      <xsd:enumeration value="FI"/>
+      <xsd:enumeration value="FR"/>
+      <xsd:enumeration value="DE"/>
+      <xsd:enumeration value="GR"/>
+      <xsd:enumeration value="GT"/>
+      <xsd:enumeration value="HN"/>
+      <xsd:enumeration value="HK"/>
+      <xsd:enumeration value="HU"/>
+      <xsd:enumeration value="IS"/>
+      <xsd:enumeration value="IN"/>
+      <xsd:enumeration value="ID"/>
+      <xsd:enumeration value="IQ"/>
+      <xsd:enumeration value="IE"/>
+      <xsd:enumeration value="IL"/>
+      <xsd:enumeration value="IT"/>
+      <xsd:enumeration value="JP"/>
+      <xsd:enumeration value="JO"/>
+      <xsd:enumeration value="KW"/>
+      <xsd:enumeration value="LV"/>
+      <xsd:enumeration value="LB"/>
+      <xsd:enumeration value="LT"/>
+      <xsd:enumeration value="LU"/>
+      <xsd:enumeration value="MK"/>
+      <xsd:enumeration value="MY"/>
+      <xsd:enumeration value="MT"/>
+      <xsd:enumeration value="MX"/>
+      <xsd:enumeration value="MA"/>
+      <xsd:enumeration value="NL"/>
+      <xsd:enumeration value="NZ"/>
+      <xsd:enumeration value="NI"/>
+      <xsd:enumeration value="NO"/>
+      <xsd:enumeration value="OM"/>
+      <xsd:enumeration value="PA"/>
+      <xsd:enumeration value="PY"/>
+      <xsd:enumeration value="PE"/>
+      <xsd:enumeration value="PH"/>
+      <xsd:enumeration value="PL"/>
+      <xsd:enumeration value="PT"/>
+      <xsd:enumeration value="PR"/>
+      <xsd:enumeration value="QA"/>
+      <xsd:enumeration value="RO"/>
+      <xsd:enumeration value="RU"/>
+      <xsd:enumeration value="SA"/>
+      <xsd:enumeration value="CS"/>
+      <xsd:enumeration value="SG"/>
+      <xsd:enumeration value="SK"/>
+      <xsd:enumeration value="SI"/>
+      <xsd:enumeration value="ZA"/>
+      <xsd:enumeration value="ES"/>
+      <xsd:enumeration value="SD"/>
+      <xsd:enumeration value="SE"/>
+      <xsd:enumeration value="CH"/>
+      <xsd:enumeration value="SY"/>
+      <xsd:enumeration value="TW"/>
+      <xsd:enumeration value="TH"/>
+      <xsd:enumeration value="TN"/>
+      <xsd:enumeration value="TR"/>
+      <xsd:enumeration value="UA"/>
+      <xsd:enumeration value="AE"/>
+      <xsd:enumeration value="GB"/>
+      <xsd:enumeration value="US"/>
+      <xsd:enumeration value="UY"/>
+      <xsd:enumeration value="VE"/>
+      <xsd:enumeration value="VN"/>
+      <xsd:enumeration value="YE"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="UsRegionsEnum">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="MW"/>
+      <xsd:enumeration value="NE"/>
+      <xsd:enumeration value="SE"/>
+      <xsd:enumeration value="SW"/>
+      <xsd:enumeration value="W"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="RegionsEnum">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="NCSA"/>
+      <xsd:enumeration value="EU"/>
+      <xsd:enumeration value="EMEA"/>
+      <xsd:enumeration value="APJ"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="LanguagesEnum">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="ALB"/>
+      <xsd:enumeration value="ARA"/>
+      <xsd:enumeration value="BEL"/>
+      <xsd:enumeration value="BUL"/>
+      <xsd:enumeration value="CAT"/>
+      <xsd:enumeration value="CHI"/>
+      <xsd:enumeration value="SCR"/>
+      <xsd:enumeration value="CZE"/>
+      <xsd:enumeration value="DAN"/>
+      <xsd:enumeration value="DUT"/>
+      <xsd:enumeration value="ENG"/>
+      <xsd:enumeration value="FIN"/>
+      <xsd:enumeration value="FRE"/>
+      <xsd:enumeration value="GER"/>
+      <xsd:enumeration value="GRE"/>
+      <xsd:enumeration value="HEB"/>
+      <xsd:enumeration value="HIN"/>
+      <xsd:enumeration value="HUN"/>
+      <xsd:enumeration value="IND"/>
+      <xsd:enumeration value="GLE"/>
+      <xsd:enumeration value="ITA"/>
+      <xsd:enumeration value="JPN"/>
+      <xsd:enumeration value="LAV"/>
+      <xsd:enumeration value="LIT"/>
+      <xsd:enumeration value="MAC"/>
+      <xsd:enumeration value="MAY"/>
+      <xsd:enumeration value="MLT"/>
+      <xsd:enumeration value="NOR"/>
+      <xsd:enumeration value="POL"/>
+      <xsd:enumeration value="POR"/>
+      <xsd:enumeration value="RUM"/>
+      <xsd:enumeration value="RUS"/>
+      <xsd:enumeration value="SCC"/>
+      <xsd:enumeration value="SLO"/>
+      <xsd:enumeration value="SPA"/>
+      <xsd:enumeration value="THA"/>
+      <xsd:enumeration value="TUR"/>
+      <xsd:enumeration value="UKR"/>
+      <xsd:enumeration value="VIE"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="UsStatesEnum">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="AL"/>
+      <xsd:enumeration value="AK"/>
+      <xsd:enumeration value="AZ"/>
+      <xsd:enumeration value="AR"/>
+      <xsd:enumeration value="CA"/>
+      <xsd:enumeration value="CO"/>
+      <xsd:enumeration value="CT"/>
+      <xsd:enumeration value="DC"/>
+      <xsd:enumeration value="DE"/>
+      <xsd:enumeration value="FL"/>
+      <xsd:enumeration value="GA"/>
+      <xsd:enumeration value="HI"/>
+      <xsd:enumeration value="ID"/>
+      <xsd:enumeration value="IL"/>
+      <xsd:enumeration value="IN"/>
+      <xsd:enumeration value="IA"/>
+      <xsd:enumeration value="KS"/>
+      <xsd:enumeration value="KY"/>
+      <xsd:enumeration value="LA"/>
+      <xsd:enumeration value="ME"/>
+      <xsd:enumeration value="MD"/>
+      <xsd:enumeration value="MA"/>
+      <xsd:enumeration value="MI"/>
+      <xsd:enumeration value="MN"/>
+      <xsd:enumeration value="MS"/>
+      <xsd:enumeration value="MO"/>
+      <xsd:enumeration value="MT"/>
+      <xsd:enumeration value="NE"/>
+      <xsd:enumeration value="NV"/>
+      <xsd:enumeration value="NH"/>
+      <xsd:enumeration value="NJ"/>
+      <xsd:enumeration value="NM"/>
+      <xsd:enumeration value="NY"/>
+      <xsd:enumeration value="NC"/>
+      <xsd:enumeration value="ND"/>
+      <xsd:enumeration value="OH"/>
+      <xsd:enumeration value="OK"/>
+      <xsd:enumeration value="OR"/>
+      <xsd:enumeration value="PA"/>
+      <xsd:enumeration value="PR"/>
+      <xsd:enumeration value="RI"/>
+      <xsd:enumeration value="SC"/>
+      <xsd:enumeration value="SD"/>
+      <xsd:enumeration value="TN"/>
+      <xsd:enumeration value="TX"/>
+      <xsd:enumeration value="UT"/>
+      <xsd:enumeration value="VT"/>
+      <xsd:enumeration value="VA"/>
+      <xsd:enumeration value="WA"/>
+      <xsd:enumeration value="WV"/>
+      <xsd:enumeration value="WI"/>
+      <xsd:enumeration value="WY"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://runtime.openl.org" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://runtime.openl.org">
+  <xsd:complexType name="IRuntimeContext">
+    <xsd:sequence/>
+  </xsd:complexType>
+</xsd:schema>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://table.rules.openl.org" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://table.rules.openl.org">
+  <xsd:complexType name="Point">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="column" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="row" type="xsd:int"/>
+      <xsd:any maxOccurs="unbounded" minOccurs="0"/>
+    </xsd:sequence>
+    <xsd:anyAttribute/>
+  </xsd:complexType>
+</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="calcAltCoverage">
+    <wsdl:part element="tns:calcAltCoverage" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="calcCoverage">
+    <wsdl:part element="tns:calcCoverage" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="determineBandNumberResponse">
+    <wsdl:part element="tns:determineBandNumberResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="calcCoverageResponse">
+    <wsdl:part element="tns:calcCoverageResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="determineBandNumber">
+    <wsdl:part element="tns:determineBandNumber" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="DeterminePolicyPremiumResponse">
+    <wsdl:part element="tns:DeterminePolicyPremiumResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="calcDiscountPercForSafetyScore">
+    <wsdl:part element="tns:calcDiscountPercForSafetyScore" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="calcAltCoverageResponse">
+    <wsdl:part element="tns:calcAltCoverageResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="DetermineMVRPredictorResponse">
+    <wsdl:part element="tns:DetermineMVRPredictorResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="DeterminePolicyPremium">
+    <wsdl:part element="tns:DeterminePolicyPremium" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="DetermineMVRPredictor">
+    <wsdl:part element="tns:DetermineMVRPredictor" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="calcDiscountPercForSafetyScoreResponse">
+    <wsdl:part element="tns:calcDiscountPercForSafetyScoreResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="RatingServicePortType">
+    <wsdl:operation name="DetermineMVRPredictor">
+      <wsdl:input message="tns:DetermineMVRPredictor" name="DetermineMVRPredictor">
+    </wsdl:input>
+      <wsdl:output message="tns:DetermineMVRPredictorResponse" name="DetermineMVRPredictorResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="calcAltCoverage">
+      <wsdl:input message="tns:calcAltCoverage" name="calcAltCoverage">
+    </wsdl:input>
+      <wsdl:output message="tns:calcAltCoverageResponse" name="calcAltCoverageResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="calcDiscountPercForSafetyScore">
+      <wsdl:input message="tns:calcDiscountPercForSafetyScore" name="calcDiscountPercForSafetyScore">
+    </wsdl:input>
+      <wsdl:output message="tns:calcDiscountPercForSafetyScoreResponse" name="calcDiscountPercForSafetyScoreResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeterminePolicyPremium">
+      <wsdl:input message="tns:DeterminePolicyPremium" name="DeterminePolicyPremium">
+    </wsdl:input>
+      <wsdl:output message="tns:DeterminePolicyPremiumResponse" name="DeterminePolicyPremiumResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="determineBandNumber">
+      <wsdl:input message="tns:determineBandNumber" name="determineBandNumber">
+    </wsdl:input>
+      <wsdl:output message="tns:determineBandNumberResponse" name="determineBandNumberResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="calcCoverage">
+      <wsdl:input message="tns:calcCoverage" name="calcCoverage">
+    </wsdl:input>
+      <wsdl:output message="tns:calcCoverageResponse" name="calcCoverageResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="RatingServiceSoapBinding" type="tns:RatingServicePortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="DetermineMVRPredictor">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="DetermineMVRPredictor">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="DetermineMVRPredictorResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="calcAltCoverage">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="calcAltCoverage">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="calcAltCoverageResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeterminePolicyPremium">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="DeterminePolicyPremium">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="DeterminePolicyPremiumResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="calcDiscountPercForSafetyScore">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="calcDiscountPercForSafetyScore">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="calcDiscountPercForSafetyScoreResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="determineBandNumber">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="determineBandNumber">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="determineBandNumberResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="calcCoverage">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="calcCoverage">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="calcCoverageResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="RatingService">
+    <wsdl:port binding="tns:RatingServiceSoapBinding" name="RatingServicePortType">
+      <soap:address location="http://wgcc102253:8083/aaa-rating-engine-app/ws/ss"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

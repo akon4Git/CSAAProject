@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImportResponse xmlns="http://www.exigen.com/aaa/conv/response/1.0">
+    <sourcePolicyImportFileName>/ipb/import/Smoke/SIS_AZ_Manual_Prefill.xml</sourcePolicyImportFileName>
+    <ActionResultStatus action="Deserialization">
+        <status>Success</status>
+    </ActionResultStatus>
+    <ActionResultStatus action="MembershipHistoryDeserialization">
+        <status>Success</status>
+    </ActionResultStatus>
+    <ActionResultStatus action="CreditHistoryOrderDeserialization">
+        <status>Success</status>
+    </ActionResultStatus>
+    <importStatus>Failure</importStatus>
+    <errorCode>CONV_ERR_019</errorCode>
+    <errorMessage>Deserialization of "SourceUWDetails" failed, "totalUWScore" is mandatory and should occur only once</errorMessage>
+    <errorStackTrace/>
+    <importStartDt>2016-08-14T17:20:01</importStartDt>
+    <importEndDt>2016-08-14T17:20:02</importEndDt>
+    <importDuration>0.343</importDuration>
+</ImportResponse>

@@ -1,0 +1,9 @@
+Clarification sumamry link on confluence-
+
+https://csaatesting.atlassian.net/wiki/display/CSAATesting/Clarification+Work+Items
+
+release notes
+
+http://dev5aaa3mon601.eqxdev.exigengroup.com:9081/was/build_history.html
+
+

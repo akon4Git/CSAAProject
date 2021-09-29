@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="5" passed="4">
+  <reporter-output>
+    <line>
+      <![CDATA[-----> Selenium Server Started
+]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[Build: EIS_5.2.34-AAA_PAS07-20150807-68056
+]]>
+    </line>
+    <line>
+      <![CDATA[Instance: http://dev2aaa3was405.eqxdev.exigengroup.com
+
+]]>
+    </line>
+    <line>
+      <![CDATA[=====> AZ_testAssDocGenDataGathering: Started
+]]>
+    </line>
+    <line>
+      <![CDATA[==========================================
+]]>
+    </line>
+    <line>
+      <![CDATA[AZ Account created with number: 800036034
+]]>
+    </line>
+    <line>
+      <![CDATA[==========================================
+]]>
+    </line>
+    <line>
+      <![CDATA[Verification failed: Element: 'producContextInfoForm:policyDetail_policyStatusCdText' text expected [Policy Active] but found [Policy Expired]]]>
+    </line>
+    <line>
+      <![CDATA[Verify Screenshot created: <a href="../ScreenShots/PolicyCreator.testAssDocGenDataGathering(133)_98414.png">PolicyCreator.testAssDocGenDataGathering(133)_98414.png</a>]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[OK_active_policy_1--OKSS910091960is created.
+]]>
+    </line>
+    <line>
+      <![CDATA[Unable to create policy for the sequence 1
+]]>
+    </line>
+    <line>
+      <![CDATA[Error Screenshot created: <a href="../ScreenShots/AZ_testAssDocGenDataGathering_Error.png">AZ_testAssDocGenDataGathering_Error.png</a>]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[<===== AZ_testAssDocGenDataGathering: FAILED
+]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[=====> AZ_testAssDocGenDataGathering: Started
+]]>
+    </line>
+    <line>
+      <![CDATA[==========================================
+]]>
+    </line>
+    <line>
+      <![CDATA[AZ Account created with number: 800036035
+]]>
+    </line>
+    <line>
+      <![CDATA[==========================================
+]]>
+    </line>
+    <line>
+      <![CDATA[UT_active_policy_1--UTSS910091961is created.
+]]>
+    </line>
+    <line>
+      <![CDATA[Unable to create policy for the sequence 4
+]]>
+    </line>
+    <line>
+      <![CDATA[<===== AZ_testAssDocGenDataGathering: PASSED
+]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[=====> AZ_testAssDocGenDataGathering: Started
+]]>
+    </line>
+    <line>
+      <![CDATA[==========================================
+]]>
+    </line>
+    <line>
+      <![CDATA[AZ Account created with number: 800036036
+]]>
+    </line>
+    <line>
+      <![CDATA[==========================================
+]]>
+    </line>
+    <line>
+      <![CDATA[PA_active_policy_1--PASS910091962is created.
+]]>
+    </line>
+    <line>
+      <![CDATA[Unable to create policy for the sequence 5
+]]>
+    </line>
+    <line>
+      <![CDATA[<===== AZ_testAssDocGenDataGathering: PASSED
+]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[Time has been changed to 2015-11-03 22:25:48 MST -0700
+]]>
+    </line>
+    <line>
+      <![CDATA[=====> TimeChangeAndJobExecutor Started
+]]>
+    </line>
+    <line>
+      <![CDATA[Time has been changed to 2015-09-18 22:25:49 MST -0700
+]]>
+    </line>
+    <line>
+      <![CDATA[=====> JobExecutionParamTest: Started
+]]>
+    </line>
+    <line>
+      <![CDATA[Job Will be executed: aaaCancellationNoticeAsyncJob
+]]>
+    </line>
+    <line>
+      <![CDATA[======================================================
+]]>
+    </line>
+    <line>
+      <![CDATA[Job aaaCancellationNoticeAsyncJob executed: Success
+]]>
+    </line>
+    <line>
+      <![CDATA[======================================================
+]]>
+    </line>
+    <line>
+      <![CDATA[<===== JobExecutionParamTest: PASSED
+]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[<----- Selenium Server Stopped
+]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[-----> Selenium Server Started
+]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[Time has been changed to 2015-09-21 22:26:14 MST -0700
+]]>
+    </line>
+    <line>
+      <![CDATA[=====> JobExecutionParamTest: Started
+]]>
+    </line>
+    <line>
+      <![CDATA[Job Will be executed: aaaCancellationNoticeAsyncJob
+]]>
+    </line>
+    <line>
+      <![CDATA[======================================================
+]]>
+    </line>
+    <line>
+      <![CDATA[Job aaaCancellationNoticeAsyncJob executed: Success
+]]>
+    </line>
+    <line>
+      <![CDATA[======================================================
+]]>
+    </line>
+    <line>
+      <![CDATA[<===== JobExecutionParamTest: PASSED
+]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[<----- Selenium Server Stopped
+]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[<===== TimeChangeAndJobExecutor: PASSED
+]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+  </reporter-output>
+  <suite name="dc_Poc_MultipleTestData" duration-ms="284929" started-at="2015-08-13T12:16:40Z" finished-at="2015-08-13T12:21:25Z">
+    <groups>
+    </groups>
+    <test name="DD0, AZ Create Policy" duration-ms="233095" started-at="2015-08-13T12:16:40Z" finished-at="2015-08-13T12:20:33Z">
+      <class name="com.deloitte.automation.poc.PolicyCreator">
+        <test-method status="PASS" signature="beforeClass(org.testng.ITestContext)[pri:0, instance:com.deloitte.automation.poc.PolicyCreator@a23610]" name="beforeClass" is-config="true" duration-ms="4076" started-at="2015-08-13T23:16:40Z" finished-at="2015-08-13T23:16:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@69b25f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Build: EIS_5.2.34-AAA_PAS07-20150807-68056
+]]>
+            </line>
+            <line>
+              <![CDATA[Instance: http://dev2aaa3was405.eqxdev.exigengroup.com
+
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeClass(org.testng.ITestContext, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.deloitte.automation.poc.PolicyCreator@a23610]" name="beforeClass" is-config="true" duration-ms="3555" started-at="2015-08-13T23:16:44Z" finished-at="2015-08-13T23:16:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@69b25f]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[method]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[AZ]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[AzSmokeTests.xls]]>
+              </value>
+            </param>
+            <param index="4">
+              <value is-null="true"/>
+            </param>
+            <param index="5">
+              <value is-null="true"/>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[L41]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[04]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[04]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.deloitte.automation.poc.PolicyCreator@a23610]" name="beforeMethod" is-config="true" duration-ms="10" started-at="2015-08-13T23:16:48Z" finished-at="2015-08-13T23:16:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.deloitte.automation.poc.PolicyCreator.testAssDocGenDataGathering(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[=====> AZ_testAssDocGenDataGathering: Started
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="testAssDocGenDataGathering(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.deloitte.automation.poc.PolicyCreator@a23610]" name="testAssDocGenDataGathering" duration-ms="89839" started-at="2015-08-13T23:16:48Z" data-provider="test1" finished-at="2015-08-13T23:18:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[DC_OkFunctionalTests_2.xls]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dc_policy-numbers.txt]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[OK_active_policy_1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[BrokerFillData1]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[PrefillFillSmoke]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[PrefillValidateSmoke]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[InsuredFillSmoke]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[GeneralFillSmoke]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[DriverFillSmoke]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[VehicleFillSmoke]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[PolicyLvLCoveragesFillSmoke]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[DocumentsFillSmoke]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="15">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Verification failures:
+java.lang.AssertionError: Element: 'producContextInfoForm:policyDetail_policyStatusCdText' text expected [Policy Active] but found [Policy Expired]
+	at com.exigen.automation.helper.SoftAssert.verifyEquals(SoftAssert.java:133)
+	at com.exigen.automation.helper.ExtendedAssert.verifyEquals(ExtendedAssert.java:100)
+	at com.exigen.automation.helper.SeleniumUtils.verifyTextOfElementEquals(SeleniumUtils.java:1722)
+	at com.exigen.automation.helper.SeleniumUtils.verifyTextOfElementEquals(SeleniumUtils.java:1712)
+	at com.deloitte.automation.poc.PolicyCreator.testAssDocGenDataGathering(PolicyCreator.java:133)
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Verification failures:
+java.lang.AssertionError: Element: 'producContextInfoForm:policyDetail_policyStatusCdText' text expected [Policy Active] but found [Policy Expired]
+	at com.exigen.automation.helper.SoftAssert.verifyEquals(SoftAssert.java:133)
+	at com.exigen.automation.helper.ExtendedAssert.verifyEquals(ExtendedAssert.java:100)
+	at com.exigen.automation.helper.SeleniumUtils.verifyTextOfElementEquals(SeleniumUtils.java:1722)
+	at com.exigen.automation.helper.SeleniumUtils.verifyTextOfElementEquals(SeleniumUtils.java:1712)
+	at com.deloitte.automation.poc.PolicyCreator.testAssDocGenDataGathering(PolicyCreator.java:133)
+
+	at com.exigen.automation.helper.SoftAssert.checkForVerificationErrors(SoftAssert.java:218)
+	at com.exigen.automation.helper.ExtendedAssert.checkForVerificationErrors(ExtendedAssert.java:120)
+	at com.deloitte.automation.poc.PolicyCreator.testAssDocGenDataGathering(PolicyCreator.java:147)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[==========================================
+]]>
+            </line>
+            <line>
+              <![CDATA[AZ Account created with number: 800036034
+]]>
+            </line>
+            <line>
+              <![CDATA[==========================================
+]]>
+            </line>
+            <line>
+              <![CDATA[Verification failed: Element: 'producContextInfoForm:policyDetail_policyStatusCdText' text expected [Policy Active] but found [Policy Expired]]]>
+            </line>
+            <line>
+              <![CDATA[Verify Screenshot created: <a href="../ScreenShots/PolicyCreator.testAssDocGenDataGathering(133)_98414.png">PolicyCreator.testAssDocGenDataGathering(133)_98414.png</a>]]>
+            </line>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[OK_active_policy_1--OKSS910091960is created.
+]]>
+            </line>
+            <line>
+              <![CDATA[Unable to create policy for the sequence 1
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testAssDocGenDataGathering -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.deloitte.automation.poc.PolicyCreator@a23610]" name="afterMethod" is-config="true" duration-ms="290" started-at="2015-08-13T23:18:18Z" finished-at="2015-08-13T23:18:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAssDocGenDataGathering status=FAILURE method=PolicyCreator.testAssDocGenDataGathering(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.deloitte.automation.poc.PolicyCreator@a23610] output===========================================
+]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Error Screenshot created: <a href="../ScreenShots/AZ_testAssDocGenDataGathering_Error.png">AZ_testAssDocGenDataGathering_Error.png</a>]]>
+            </line>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[<===== AZ_testAssDocGenDataGathering: FAILED
+]]>
+            </line>
+            <line>
+              <![CDATA[
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.deloitte.automation.poc.PolicyCreator@a23610]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-08-13T23:18:19Z" finished-at="2015-08-13T23:18:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.deloitte.automation.poc.PolicyCreator.testAssDocGenDataGathering(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[=====> AZ_testAssDocGenDataGathering: Started
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testAssDocGenDataGathering(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.deloitte.automation.poc.PolicyCreator@a23610]" name="testAssDocGenDataGathering" duration-ms="64563" started-at="2015-08-13T23:18:19Z" data-provider="test1" finished-at="2015-08-13T23:19:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[DC_UtFunctionalTests_2.xls]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dc_policy-numbers.txt]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[UT_active_policy_1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[BrokerFillData1]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[PrefillFillSmoke]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[PrefillValidateSmoke]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[InsuredFillSmoke]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[GeneralFillSmoke]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[DriverFillSmoke]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[VehicleFillSmoke]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[PremiumFillData2]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[DocumentsFillSmoke]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="15">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[==========================================
+]]>
+            </line>
+            <line>
+              <![CDATA[AZ Account created with number: 800036035
+]]>
+            </line>
+            <line>
+              <![CDATA[==========================================
+]]>
+            </line>
+            <line>
+              <![CDATA[UT_active_policy_1--UTSS910091961is created.
+]]>
+            </line>
+            <line>
+              <![CDATA[Unable to create policy for the sequence 4
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testAssDocGenDataGathering -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.deloitte.automation.poc.PolicyCreator@a23610]" name="beforeMethod" is-config="true" duration-ms="10" started-at="2015-08-13T23:19:23Z" finished-at="2015-08-13T23:19:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.deloitte.automation.poc.PolicyCreator.testAssDocGenDataGathering(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[=====> AZ_testAssDocGenDataGathering: Started
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.deloitte.automation.poc.PolicyCreator@a23610]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-08-13T23:19:23Z" finished-at="2015-08-13T23:19:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAssDocGenDataGathering status=SUCCESS method=PolicyCreator.testAssDocGenDataGathering(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.deloitte.automation.poc.PolicyCreator@a23610] output===========================================
+]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<===== AZ_testAssDocGenDataGathering: PASSED
+]]>
+            </line>
+            <line>
+              <![CDATA[
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testAssDocGenDataGathering(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.deloitte.automation.poc.PolicyCreator@a23610]" name="testAssDocGenDataGathering" duration-ms="68929" started-at="2015-08-13T23:19:23Z" data-provider="test1" finished-at="2015-08-13T23:20:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[DC_PaCalendarTests.xls]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dc_policy-numbers.txt]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[PA_active_policy_1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[AgencyFillData1]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[PrefillFillData1]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[PrefillValidateAddress1]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[InsuredFillData1]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[GeneralFillData1]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[DriverFillData1]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[VehicleFillData1]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[PremiumPolicyFillData9]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[DocumentsFillData1]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="15">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[==========================================
+]]>
+            </line>
+            <line>
+              <![CDATA[AZ Account created with number: 800036036
+]]>
+            </line>
+            <line>
+              <![CDATA[==========================================
+]]>
+            </line>
+            <line>
+              <![CDATA[PA_active_policy_1--PASS910091962is created.
+]]>
+            </line>
+            <line>
+              <![CDATA[Unable to create policy for the sequence 5
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testAssDocGenDataGathering -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.deloitte.automation.poc.PolicyCreator@a23610]" name="afterMethod" is-config="true" duration-ms="10" started-at="2015-08-13T23:20:32Z" finished-at="2015-08-13T23:20:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAssDocGenDataGathering status=SUCCESS method=PolicyCreator.testAssDocGenDataGathering(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.deloitte.automation.poc.PolicyCreator@a23610] output===========================================
+]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<===== AZ_testAssDocGenDataGathering: PASSED
+]]>
+            </line>
+            <line>
+              <![CDATA[
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.deloitte.automation.poc.PolicyCreator@a23610]" name="afterClass" is-config="true" duration-ms="1282" started-at="2015-08-13T23:20:32Z" finished-at="2015-08-13T23:20:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTests()[pri:0, instance:com.deloitte.automation.poc.PolicyCreator@a23610]" name="afterTests" is-config="true" duration-ms="0" started-at="2015-08-13T23:20:33Z" finished-at="2015-08-13T23:20:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTests -->
+      </class> <!-- com.deloitte.automation.poc.PolicyCreator -->
+    </test> <!-- DD0, AZ Create Policy -->
+    <test name="DD3-10 Bill Generation" duration-ms="430" started-at="2015-08-13T12:20:33Z" finished-at="2015-08-13T12:20:34Z">
+      <class name="com.exigen.automation.testcase.commonTests.SetDateTimeParamTestNew">
+        <test-method status="PASS" signature="beforeClass(org.testng.ITestContext)[pri:0, instance:com.exigen.automation.testcase.commonTests.SetDateTimeParamTestNew@11e67ac]" name="beforeClass" is-config="true" duration-ms="0" started-at="2015-08-13T23:20:33Z" finished-at="2015-08-13T23:20:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4ba66]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="setDateTimeTest(java.lang.String, int, java.lang.Boolean, java.lang.Boolean, java.lang.Boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.exigen.automation.testcase.commonTests.SetDateTimeParamTestNew@11e67ac]" name="setDateTimeTest" duration-ms="420" started-at="2015-08-13T23:20:33Z" description="Changes date/time on application server using ssh connection" finished-at="2015-08-13T23:20:34Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[DD3-10]]>
+              </value>
+            </param>
+            <param index="6">
+              <value is-null="true"/>
+            </param>
+            <param index="7">
+              <value is-null="true"/>
+            </param>
+            <param index="8">
+              <value is-null="true"/>
+            </param>
+            <param index="9">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Time has been changed to 2015-11-03 22:25:48 MST -0700
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setDateTimeTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.exigen.automation.testcase.commonTests.SetDateTimeParamTestNew@11e67ac]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-08-13T23:20:34Z" finished-at="2015-08-13T23:20:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=setDateTimeTest status=SUCCESS method=SetDateTimeParamTestNew.setDateTimeTest(java.lang.String, int, java.lang.Boolean, java.lang.Boolean, java.lang.Boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.exigen.automation.testcase.commonTests.SetDateTimeParamTestNew@11e67ac] output=Time has been changed to 2015-11-03 22:25:48 MST -0700
+]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.exigen.automation.testcase.commonTests.SetDateTimeParamTestNew -->
+    </test> <!-- DD3-10 Bill Generation -->
+    <test name="Cancellation Notice" duration-ms="51364" started-at="2015-08-13T12:20:34Z" finished-at="2015-08-13T12:21:25Z">
+      <class name="com.deloitte.automation.poc.TimeChangeAndJobExecutor">
+        <test-method status="PASS" signature="timeAndJobExecutor(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.deloitte.automation.poc.TimeChangeAndJobExecutor@b1a4e2]" name="timeAndJobExecutor" duration-ms="51364" started-at="2015-08-13T23:20:34Z" finished-at="2015-08-13T23:21:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AZ|PA|IN]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[CancellationNotice]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- timeAndJobExecutor -->
+        <test-method status="PASS" signature="beforeClass(org.testng.ITestContext)[pri:0, instance:com.deloitte.automation.poc.TimeChangeAndJobExecutor@b1a4e2]" name="beforeClass" is-config="true" duration-ms="0" started-at="2015-08-13T23:20:34Z" finished-at="2015-08-13T23:20:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@69b7fe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[=====> TimeChangeAndJobExecutor Started
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.deloitte.automation.poc.TimeChangeAndJobExecutor@b1a4e2]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-08-13T23:21:25Z" finished-at="2015-08-13T23:21:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=timeAndJobExecutor status=SUCCESS method=TimeChangeAndJobExecutor.timeAndJobExecutor(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.deloitte.automation.poc.TimeChangeAndJobExecutor@b1a4e2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<===== TimeChangeAndJobExecutor: PASSED
+]]>
+            </line>
+            <line>
+              <![CDATA[
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.deloitte.automation.poc.TimeChangeAndJobExecutor -->
+      <class name="com.deloitte.automation.poc.PolicyCreator">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.deloitte.automation.poc.PolicyCreator@a23610]" name="beforeSuite" is-config="true" duration-ms="1352" started-at="2015-08-13T23:16:37Z" finished-at="2015-08-13T23:16:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[-----> Selenium Server Started
+]]>
+            </line>
+            <line>
+              <![CDATA[
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.exigen.automation.testcase.commonTests.SetDateTimeParamTestNew@11e67ac]" name="beforeSuite" is-config="true" duration-ms="2043" started-at="2015-08-13T23:16:38Z" finished-at="2015-08-13T23:16:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.deloitte.automation.poc.PolicyCreator@a23610]" name="afterSuite" is-config="true" duration-ms="0" started-at="2015-08-13T23:21:25Z" finished-at="2015-08-13T23:21:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.exigen.automation.testcase.commonTests.SetDateTimeParamTestNew@11e67ac]" name="afterSuite" is-config="true" duration-ms="0" started-at="2015-08-13T23:21:25Z" finished-at="2015-08-13T23:21:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.deloitte.automation.poc.PolicyCreator -->
+    </test> <!-- Cancellation Notice -->
+  </suite> <!-- dc_Poc_MultipleTestData -->
+  <suite name="Deloitte Conversion Test Suite" duration-ms="0" started-at="2015-08-13T12:21:25Z" finished-at="2015-08-13T12:21:25Z">
+    <groups>
+    </groups>
+  </suite> <!-- Deloitte Conversion Test Suite -->
+</testng-results>

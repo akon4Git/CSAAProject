@@ -1,0 +1,122 @@
+Test instance: http://dev2aaawas107.eqxdev.exigengroup.com:9081/aaa-app/
+Build: EIS_5.2.31.2.2-AAA_PAS06-20150904-68925
+
+[TestNG] Running:
+  C:\AAA_Property_Code\aaa-testng-maven_PAS06\aaa-property-tests\testSuites\regression\POC\CL_CP_100_DE.xml
+
+Test 'preconditions.SetTodayDate.setTimeToToday(DE)' has STARTED
+Current application date: 10/07/2015 19:24:47
+HTTP TimeSetter: +++++ Application date is set to 09/08/2015 19:52:26 +++++
+
+Test 'preconditions.SetTodayDate.setTimeToToday(DE)' has PASSED
+
+Test 'preconditions.CleanCache.cleanCache(DE)' has STARTED
+DB update +++++ Clean Cache is completed successfully ++++++
+
+Test 'preconditions.CleanCache.cleanCache(DE)' has PASSED
+
+Test 'regression.CommonPatterns.CP100_DE.TC_CreatePolicy(DE)' has STARTED
+-------> Selenuim Server Started
+
+
+
+============================
+DE Customer is created: 700031930
+============================
+==========================================
+DE Home policy is created: DEH3921202248
+==========================================
+
+Expiration date for state specific-09/08/2016
+Expiration date for state specific-09/08/2015
+Test 'regression.CommonPatterns.CP100_DE.TC_CreatePolicy(DE)' has PASSED
+
+Test 'regression.CommonPatterns.CP100_DE.TC_Bill_DD1(DE)' has STARTED
+-----> Incoming date is: 10/08/2015 <-----
+-----> Delta to be added is: -20 <-----
+-----> Returning shifted date is: 09/18/2015 <-----
+HTTP TimeSetter: +++++ Application date is set to 09/18/2015 19:52:26 +++++
+
+HTTP Job: ---> Started Job 'aaaBillingInvoiceAsyncTaskJob' execution
+HTTP Job: <--- Job 'aaaBillingInvoiceAsyncTaskJob' was executed successfully
+
+Test 'regression.CommonPatterns.CP100_DE.TC_Bill_DD1(DE)' has PASSED
+
+Test 'regression.CommonPatterns.CP100_DE.TC_PayDD1(DE)' has STARTED
+-----> Incoming date is: 10/08/2015 <-----
+-----> Delta to be added is: 0 <-----
+-----> Returning shifted date is: 10/08/2015 <-----
+HTTP TimeSetter: +++++ Application date is set to 10/08/2015 19:52:26 +++++
+
+HTTP Job: ---> Started Job 'aaaRecurringPaymentsProcessingJob' execution
+HTTP Job: <--- Job 'aaaRecurringPaymentsProcessingJob' was executed successfully
+
+Test 'regression.CommonPatterns.CP100_DE.TC_PayDD1(DE)' has PASSED
+
+Test 'regression.CommonPatterns.CP100_DE.TC_EndorseByRerating(DE)' has STARTED
+
+Test 'regression.CommonPatterns.CP100_DE.TC_EndorseByRerating(DE)' has PASSED
+
+Test 'regression.CommonPatterns.CP100_DE.TC_SetManualCancelNotice(DE)' has STARTED
+-----> Incoming date is: 10/08/2015 <-----
+-----> Delta to be added is: 5 <-----
+-----> Returning shifted date is: 10/13/2015 <-----
+HTTP TimeSetter: +++++ Application date is set to 10/13/2015 19:52:26 +++++
+
+
+SSH: Files from folder '/home/mp2/pas/sit/PAS_B_EXGPAS_DCMGMT_6500_D/outbound/' were removed.
+HTTP Job: ---> Started Job 'aaaDocGenBatchJob' execution
+HTTP Job: <--- Job 'aaaDocGenBatchJob' was executed successfully
+SSH: Session is created
+SSH: File '/home/mp2/pas/sit/PAS_B_EXGPAS_DCMGMT_6500_D/outbound/20151013_075607_PAS_B_EXGPAS_DCMGMT_6500_D_PROPERTY.xml' was downloaded to 'C:\AAA_Property_Code\aaa-testng-maven_PAS06\aaa-property-tests\src\test\resources\xmls\DocGen\temp\20151013_075607_PAS_B_EXGPAS_DCMGMT_6500_D_PROPERTY.xml'.
+SSH: Session is closed
+ - Xml extracted
+ -- src: 20151013_075607_PAS_B_EXGPAS_DCMGMT_6500_D_PROPERTY.xml
+ -- dst: src\test\resources\xmls\DocGen\DEH3921202248_1441705291846.xml
+ - Verifying that form is generated: AH61XX
+Test 'regression.CommonPatterns.CP100_DE.TC_SetManualCancelNotice(DE)' has PASSED
+
+Test 'regression.CommonPatterns.CP100_DE.TC_RemoveCancelNotice(DE)' has STARTED
+
+Test 'regression.CommonPatterns.CP100_DE.TC_RemoveCancelNotice(DE)' has PASSED
+
+Test 'regression.CommonPatterns.CP100_DE.TC_EndorsementDD2_20(DE)' has STARTED
+-----> Incoming date is: 11/08/2015 <-----
+-----> Delta to be added is: -20 <-----
+-----> Returning shifted date is: 10/19/2015 <-----
+HTTP TimeSetter: +++++ Application date is set to 10/19/2015 19:52:26 +++++
+
+
+Test 'regression.CommonPatterns.CP100_DE.TC_EndorsementDD2_20(DE)' has PASSED
+
+Test 'regression.CommonPatterns.CP100_DE.TC_Bill_DD2(DE)' has STARTED
+-----> Incoming date is: 11/08/2015 <-----
+-----> Delta to be added is: -20 <-----
+-----> Returning shifted date is: 10/19/2015 <-----
+HTTP TimeSetter: +++++ Application date is set to 10/19/2015 19:52:26 +++++
+
+HTTP Job: ---> Started Job 'aaaBillingInvoiceAsyncTaskJob' execution
+HTTP Job: <--- Job 'aaaBillingInvoiceAsyncTaskJob' was executed successfully
+
+Test 'regression.CommonPatterns.CP100_DE.TC_Bill_DD2(DE)' has PASSED
+
+Test 'regression.CommonPatterns.CP100_DE.TC_Cancellation_InsuredRequest(DE)' has STARTED
+-----> Incoming date is: 11/08/2015 <-----
+-----> Delta to be added is: -20 <-----
+-----> Returning shifted date is: 10/19/2015 <-----
+-----> Incoming date is: 11/08/2015 <-----
+-----> Delta to be added is: 0 <-----
+-----> Returning shifted date is: 11/09/2015 <-----
+
+Test 'regression.CommonPatterns.CP100_DE.TC_Cancellation_InsuredRequest(DE)' has PASSED
+
+Test 'regression.CommonPatterns.CP100_DE.TC_EndorsementafterAutopay(DE)' has STARTED
+-----> Incoming date is: 10/08/2015 <-----
+-----> Delta to be added is: 5 <-----
+-----> Returning shifted date is: 10/13/2015 <-----
+-----> Incoming date is: 10/13/2015 <-----
+-----> Delta to be added is: 13 <-----
+-----> Returning shifted date is: 10/26/2015 <-----
+HTTP TimeSetter: +++++ Application date is set to 10/26/2015 19:52:26 +++++
+
+

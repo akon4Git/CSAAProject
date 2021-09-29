@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Policy xmlns="http://www.exigeninsurance.com/eis/data/product/AAA_SS/1.0" name="AAA_SS" version="1">
+	<AAACSAAutoPolicy state="Created">
+		<aaaProgramCode>LegacyConv</aaaProgramCode>
+		<agentCd>500013270</agentCd>
+		<effective>2015-10-26T00:00:00</effective>
+		<expiration>2016-10-26T00:00:00</expiration>
+		<importedFrom>MAIG</importedFrom>
+		<inceptionDate>2009-07-29T00:00:00</inceptionDate>
+		<preConversionPolicyNumber>022345008</preConversionPolicyNumber>
+		<preConversionPolicyPremium>437</preConversionPolicyPremium>
+		<producerCd>500001003</producerCd>
+		<productCd>AAA_SS</productCd>
+		<riskStateCd>PA</riskStateCd>
+		<sourcePolicyNum>022345008</sourcePolicyNum>
+		<subProducerCd>500013270</subProducerCd>
+		<OtherOrPriorPolicy>
+			<productCd>membership</productCd>
+		</OtherOrPriorPolicy>
+		<AAAPaymentOption state="Created">
+			<paymentPlanCd>standartSS_R</paymentPlanCd>
+		</AAAPaymentOption>
+		<AAAInsured oid="109367" state="Created">
+			<firstName>THEODORE</firstName>
+			<lastName>DUGGAN</lastName>
+			<mainInsured>true</mainInsured>
+			<middleName>F</middleName>
+			<AAAInsuredPrimaryAddress state="Created">
+				<addressDisplayValue>2078 SR 307 , DALTON, PA, 18414</addressDisplayValue>
+				<addressLine1>2078 SR 307</addressLine1>
+				<city>DALTON</city>
+				<countryCd>US</countryCd>
+				<postalCode>18414</postalCode>
+				<stateProvCd>PA</stateProvCd>
+				<usageType>mailing</usageType>
+			</AAAInsuredPrimaryAddress>
+		</AAAInsured>
+	</AAACSAAutoPolicy>
+	<billingAccount>
+		<paymentDetailsEFT>
+			<profileId>9B98AFF6-11F7-32F9-C898-A</profileId>
+			<accountNumber>7890</accountNumber>
+			<accountTypeCd>checking</accountTypeCd>
+			<bankAccountHolderName>Micah Heatwole</bankAccountHolderName>
+			<bankName>PARK VIEW FEDERAL CREDIT UNION</bankName>
+			<signedAuthorizationOnFile>TRUE</signedAuthorizationOnFile>
+			<transitNumber>251480806</transitNumber>
+		</paymentDetailsEFT>
+	</billingAccount>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2011-12-02T00:00:00</updatedOn>
+		<userText>11:12 S/W THEODORE TO ADD 99 FORD VIN 3FAKP1138XR217556 9950 MILES, PLEASURE USE, DIDNT KNOW PRICE, NO LIEN, REG/THEODORE, GARAGED AT HOME, NO OTHER DRIVERS. GAVE QUOTE OF $686 FOR 100/COMP AND $676 FOR 250/COMP AND $733 FOR 100/COMP ON 99 FORD AND 97 NISSAN. HE WILL HAVE WRITTEN REQUEST FAXED OVER FOR 100/COMP ON BOTH VEHICLES  570-561-5412 NO EMAIL</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2012-05-14T00:00:00</updatedOn>
+		<userText>11:57 THEODORE CALLED TO REMOVE 99 FORD ADV SOLD 5/10 PROCESSED CHANGE. HE WCB WHEN PURCHASES NEW VEHICLE       570-561-5412 OFFERED HO- ADV MOBILE HOME IS TOO OLD</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2012-06-08T00:00:00</updatedOn>
+		<userText>9:18 S/W THEODORE CALLED TO ADD A 2005 FORD FOCUS, VIN# 1FAFP34N45W138311, LIAB ONLY, PLEASURE USE, TITLED TO THEODORE, THEODORE IS PRIM DRVR, NO ADD'L DRVRS IN/OUT OF HOUSEHOLD, SAME GARAGE LOC., ADDED EFF 6/7/12  570-561-5412 NOT ELIGIBLE FOR HO</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2012-07-30T00:00:00</updatedOn>
+		<userText>S/W THEODORE, 3:28 DELETE 2005 FORD EFF 7/26/2012, VEH SOLD</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2012-08-10T00:00:00</updatedOn>
+		<userText>1208P MS DUGGAN CALLED VERIFIED THAT POLICY IS PIF ORDERED DEC PAGE  - EMAILED CREDITS AND WAIVES TO WAVIE $14 FROM THE POLICY KEVIN DUGGAN 1051 COTTAGE AVE SCRANTON PA 18508-2513</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2012-08-16T00:00:00</updatedOn>
+		<userText>5:40PM MR. DUGGAN CALLED AGAIN, FORD FOCUS STILL ON THE POLICY DELETED EFFECTIVE 7/28/12 VEHICLE SOLD ON THE 25TH.</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2013-03-11T00:00:00</updatedOn>
+		<userText>KEVIN DUGGAN (SON) CALLED - SAID MR. DUGGAN IS DECEASED @ END OF JULY 2012. HE SAID HIS BROTHER - THEODORE D. DUGGAN - IS DRIVING THE 1997 NISSAN AND THEODORE IS ALSO EXECUTOR OF MR. DUGGAN'S ESTATED.  KEVIN DID NOT NOT HAVE THEODORE'S ADDRESS - THINKS HE LIVES IN DUNMORE, PA I EMAILED OKC U/W AS FYI.  ********************************************************************** *************DO NOT REINSTATE - NAMED INSURED IS DECEASED************* ********************************************************************** 9:25 AM</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2013-04-29T00:00:00</updatedOn>
+		<userText>04/29/13 DCOLEMAN NTBR NTBR SET DUE TO THE INSURED HAS DECEASED JULY 2012.  SEE PREVIOUS NOTE IN SCRATCHPAD.</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2009-07-24T00:00:00</updatedOn>
+		<userText>NEW BUSINESS - JEAN RACHKO/AGENT MVR/CLUE W/APP  AAA MEMBER #222-0257318  H}570-586-2992</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2009-08-04T00:00:00</updatedOn>
+		<userText>@920AM REC'VD CALL FROM THEODORE REQUESTED SEX TO BE CHANGED TO MALE &amp;amp GAVE CORRECTION TO ZIP CODE</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2009-08-11T00:00:00</updatedOn>
+		<userText>PH #570-561-9412 EMAIL:  NONE  THEODORE DUGGAN CALLED - MIDDLE INITIAL IS REPEATED.</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2009-08-19T00:00:00</updatedOn>
+		<userText>NBC PA NEW BUSINESS REVIEW COMPLETE AND COMPLIANT</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2009-09-01T00:00:00</updatedOn>
+		<userText>RECVD AUTO NEW BUSINESS DRIVER QUESTIONAIRE NO CHANGES SENT TO FILE</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2009-11-17T00:00:00</updatedOn>
+		<userText>2:05 MR DUGGAN CALLED TO DELETE 08 HY ACCENT - SOLD VEHICLE TODAY  PH # 570-586-2992 570-561-9412 NO EMAIL</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2009-12-09T00:00:00</updatedOn>
+		<userText>11:24AM MR DUGGAN CALLED AND ADDED 1G4HP54C4KH501389 BU LESABRE CU SEDAN 4D 89 LIAB ONLY EFF 12-9-09</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2010-06-15T00:00:00</updatedOn>
+		<userText>PH #570-561-9412 EMAIL:  MR. DUGGAN CALLED TO DELETE 1989 BUICK - SOLD YESTERDAY. ALL CHANGES ENTERED.</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2010-09-20T00:00:00</updatedOn>
+		<userText>C570-561-9412 MR CALLED TO ADD 3RD VEH 97 FORD 1FALP13P3VW175246 $500 MI APROX 55000 LIAB ONLY MR HAS STACKING NO NEED FOR CHANGE OR FORMS MR REQ QUOTE TO ADD COL COV BACK ONTO 06 FORD, 500 DED ADDS 213 PER YR. MR WILL THINK ABOUT MAKING THAT CHANGE 142PM</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2010-10-09T00:00:00</updatedOn>
+		<userText>THEODORE CALLED SOLD 97 FORD ESC, TODAY, REMOVED- 10:40</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2010-11-05T00:00:00</updatedOn>
+		<userText>MR DUGGAN CALLED TO VER THE REFD 10/27/10 3;32PM</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2011-02-28T00:00:00</updatedOn>
+		<userText>4:46 THEODORE CALLED TO ADD 2006 FORD FOCUS 1FAFP34N46W109120 NO LEIN REG THEODORE PLEASURE USE 100/500 ODM 68442 EFF 2/28/11 ALREADY HAS STACKING</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2011-06-08T00:00:00</updatedOn>
+		<userText>1114AM S/W MR. DUGGAN  PH: 570-561-5412 INS CALLED TO CHANGE ADDRESS, CHANGED IN SYSTEM. INS ASKED TO REMOVE VEH 3, FORD FOCUS VIN: 9120 REMOVED VEHICLE. INS MAY WANT INS ON THE OTHER FORD FOCUS, WILL THINK ABOUT IT AND C/B. ADVISED OF ACT 6 FOR COVERAGE ADDITION, INS U/S</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2011-07-08T00:00:00</updatedOn>
+		<userText>PH: 570-561-5412 EMAIL:NONE 10:33AM MR DUGGAN CALLED TO VEHICLE 10:36AM MR DUGGAN CALLED TO REMOVE 1FAHP34N26W235355 FO FOCUS      SEDAN 4D 06 EFF 7-8-11 VEHICLE SOLD</userText>
+	</userNote>
+</Policy>

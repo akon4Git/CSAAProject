@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Policy xmlns="http://www.exigeninsurance.com/eis/data/product/AAA_SS/1.0" name="AAA_SS" version="1">
+	<AAACSAAutoPolicy state="Created">
+		<aaaProgramCode>LegacyConv</aaaProgramCode>
+		<agentCd>500013270</agentCd>
+		<effective>2015-10-26T00:00:00</effective>
+		<expiration>2016-10-26T00:00:00</expiration>
+		<importedFrom>MAIG</importedFrom>
+		<inceptionDate>2000-04-12T00:00:00</inceptionDate>
+		<preConversionPolicyNumber>015332172</preConversionPolicyNumber>
+		<preConversionPolicyPremium>2058</preConversionPolicyPremium>
+		<producerCd>500001003</producerCd>
+		<productCd>AAA_SS</productCd>
+		<riskStateCd>MD</riskStateCd>
+		<sourcePolicyNum>015332172</sourcePolicyNum>
+		<subProducerCd>500013270</subProducerCd>
+		<OtherOrPriorPolicy>
+			<productCd>membership</productCd>
+		</OtherOrPriorPolicy>
+		<AAAPaymentOption state="Created">
+			<paymentPlanCd>standartSS_R</paymentPlanCd>
+		</AAAPaymentOption>
+		<AAAInsured oid="109060" state="Created">
+			<firstName>JOYCE</firstName>
+			<lastName>TIMMONS</lastName>
+			<mainInsured>true</mainInsured>
+			<middleName>LORRAINE</middleName>
+			<AAAInsuredPrimaryAddress state="Created">
+				<addressDisplayValue>4401 MAPLE ROAD , SUITLAND, MD, 20746</addressDisplayValue>
+				<addressLine1>4401 MAPLE ROAD</addressLine1>
+				<city>SUITLAND</city>
+				<countryCd>US</countryCd>
+				<postalCode>20746</postalCode>
+				<stateProvCd>MD</stateProvCd>
+				<usageType>mailing</usageType>
+			</AAAInsuredPrimaryAddress>
+		</AAAInsured>
+	</AAACSAAutoPolicy>
+	<billingAccount>
+		<paymentDetailsEFT>
+			<profileId>67E29117-E75C-D45B-B1B2-0</profileId>
+			<accountNumber>7890</accountNumber>
+			<accountTypeCd>checking</accountTypeCd>
+			<bankAccountHolderName>LOUIS DUNKLE</bankAccountHolderName>
+			<bankName>TD BANK, NA</bankName>
+			<signedAuthorizationOnFile>TRUE</signedAuthorizationOnFile>
+			<transitNumber>031201360</transitNumber>
+		</paymentDetailsEFT>
+	</billingAccount>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2009-12-21T00:00:00</updatedOn>
+		<userText>11:31AM MS TIMMONS CALLED TO SEE WHAT IS NEEDED TO ADD A VEHICLE TO TAKE THE PLACE OF THE 96 TOYOTA...SHE ADVISED SHE TURNED THE LICENSE PLATES IN A COUPLE OF WEEKS AGO...I SUGGESTED WHEN SHE CALLS BACK WITH THE VIN# FOR THE NEW VEHICLE, SHE ALSO HAVE THE RECEIPT FROM TURNING IN HER LICENSE PLATES AND WE WILL REMOVE THE VEHICLE EFFECTIVE THE DAY AFTER SHE TURNED IN THE PLATES, THEN WE CAN ADD THE NEW VEHICLE EFFECTIVE THE DATE SHE PURCHASES THE VEHICLE 301-736-3041</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2009-12-30T00:00:00</updatedOn>
+		<userText>9:30AM JOYCE WILL FAX ME RETURN RECPT FOR '96 TOYO TOMORROW SO CAR CAN BE REMOVED FROM POLICY DAY AFTER TAGS RETURNED</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2009-12-31T00:00:00</updatedOn>
+		<userText>12/31/09 STIBERI INSRUED CLLD ABT FAX.. 10:50 FAX RCVD. CHANGE WILL BE PROCESSED 1:13PM RECVD FAXED RECPT FROM MVA SHOWING '96 TOYO VIN 2T1BA02E3TC135059 TAGS WERE RETURNED 12/11/09</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2010-01-22T00:00:00</updatedOn>
+		<userText>1/22/10 LGAUTHIER POLICY ? 9:26 JOYCE TIMMONS CALLED TO REVIEW PREMIUM AMOUNTS WITH CHANGE IN VEH. THE TIER CHANGED FROM 3 TO 1 IT LOOKS LIKE THE SYSTEM IS PULLING THE $0 PAY OUT FROM 12/07 EMAILING U/W TO UPDATE IN SYSTEM</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2010-02-01T00:00:00</updatedOn>
+		<userText>12:56PM CLL FROM JOYCE @ MVA NEED FR19 DONE (WAITING) PROCD MANUALLY FOR 99 CAMRY CASE# 04265223 FROM 12/22/09 TO 4/12/10 FAXING TO 301-333-1556 2/1/10 STIBERI FAX ALREADY SENT TO MVA 1:13 FOR FR19</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2010-04-20T00:00:00</updatedOn>
+		<userText>4/20/10 STIBERI RCVD PYMNT ON 4/15/10 9:56 AM 10:29 VIA BILL MATRIX..SYSTEM CANCELLED POLICY 4/15/10 - MIDNIGHT..REINSTATED POLICY W/OUT LAPSE SENDING EMAIL TO HAVE PY PLAN REINSTATE.. -NO LOSSES SINCE CANCELLATION..NO PRIOR REINSTTTMENT POLICY WRITTEN 2000.</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2010-05-10T00:00:00</updatedOn>
+		<userText>2:54 INSD, JOYCE TIMMONS PAID $199.86 BY VISA, AUTH 195343 ADRS IS CORR 301-736-3081</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2011-02-21T00:00:00</updatedOn>
+		<userText>9:13AM MS TIMMONS CALLED - PAYMENT DUE? ADVISED NEXT PAYMENT IS AT RENEWAL BY 4/11/11 FOR 300.50</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2011-04-22T00:00:00</updatedOn>
+		<userText>12:20 JOYCE TIMMONS VERIFIED POL CANCELLED 4/12 RENEWAL FOR NON PAY INSD ADV NO LOSSES SINCE CANCELLATION AND SHE IS DOING SOME COMPARISON SHOPPING. REVIEWED FOR REINSTATEMENT.  INCEPTION DATE 2000 NO HOME NO PRIOR REINSTATEMENTS.  ONE AFA WITHIN PAST 3 YEARS $2500.00 PAID OUT APPROVED REINSTATEMENT WITH LAPSE AND PMT. ADV NOT TO BE DRIVING AS THERE IS NO COVERAGE. 12:39 MRS TIMMONS VERIFIED PREM $1970/YR QUOTED SAVINGS OF $498 IF SHE REMOVES COMP/COLL FROM 98 NI. 4:28PM CALL FROM JOYCE...FRM PRIOR NOTES ADVISED REINSTATMNT W/LAPSE APPROVED TOOK CRD PAYMNT FOR $300.50 CNF# 052750 SNT TO HAVE PAY PLAN RESET  ***DISCUSSED FR19 FROM MVA** 301-736-3041</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2011-05-17T00:00:00</updatedOn>
+		<userText>3:50PM TRANSFERRED MR TIMMONS TO BARBARA K FOR NOC..... 3:51 MR CALLED TO GO OVER BILLING AND PAYMENT DATE</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2012-04-16T00:00:00</updatedOn>
+		<userText>AUTHORIZATION CODE:  02504Z RECEIPT NUMBER:  678624-54601-84 MESSAGE FROM BANK:  APPROVAL POLICY ID:  15332172 CUSTOMER NAME:  TIMMONS, CHARGE DATE:  4/16/2012 11:20:43 AM CREDIT CARD TYPE:  MASTER CARD CREDIT CARD EXPIRATION:  04/1/2015 CREDIT CARD:  ****-5591 AMOUNT:  $314.30</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2012-04-19T00:00:00</updatedOn>
+		<userText>1:38 ALLEN CALLED TO REINSTATE HIS POLICY REVIEWED HIS ACCOUNT AND WE RECEIVED PAYMENT ON 4/15/12 FOR 314.30 REVIEWED HIS ACCOUNT AND NO LOSSES SINCE THE POLICY CANCELLED, NOT CANCELLED LONGER THAN 30 DAYS, 2 PRIOR REINSTATEMENTS, 0 INCIDENTS REINSTATED WITHOUT A LAPSE SENT RMAIL TO PP NORTH</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2013-04-29T00:00:00</updatedOn>
+		<userText>MS TIMMONS RETURNING CALL RECD ON MACHINE... NO RECORD THAT WE CALLED INSURED... PER DD..... ACC 4/26/13.... TRANSFERRED TO CLAIMS /INSURED NOT AWARE OF ACC..... DEB P/U CALL 1:55 PM</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2014-01-31T00:00:00</updatedOn>
+		<userText>NTBR - DON REIST IF CX NON PAY -DRVG HISTORY JOYCE L. TIMMONS DRIVING HISTORY: 4/26/13 INSURED REARENDED CLAIMANT'S CAR PAID PROPERTY DAMAGE $2917.93; 2/8/13 INSURED REARENDED CLAIMANT' S CAR PAID PROPERTY DAMAGE $7748.56; BODILY INJURY $47,900; 2/8/13[2ND LOSS] INSURED REARENDED CLAIMANT'S CAR PAID PROPERTY DAMAGE $4274.69, BODILY INJURY $11,500. PER UNDERWRITING GUIDELINES, A DRIVER WITH 2 OR MORE AT FAULTS EACH EXCEEDING $1500 IN 24 MONTH PERIOD IS INELIGIBLE.  NOTIICE MAILED W/ EXCLUSION</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2014-02-08T00:00:00</updatedOn>
+		<userText>12:21 SPOKE WITH JOYCE WHO CALLED AS SHE RECEIVED A NON-RENEWAL NOTICE I ADVISED THAT THEY WERE NON RENEWED DUE TO AT FAULT LOSSES ON 4/26/13 $2,917 PD, 2/8/13 $7,748 PD, $47,900 BI AND 2/8/13 $4,274 PD $11,500 BI. I ADVISED THAT SHE NEEDED TO OBTAIN INSURANCE WITH ANOTHER CARRIER,AS OF 4/12/14.    (301)456-8257 1253P S/W JOYCE CALLING ABOUT NO RENEWAL OF POLICY .. EXP NOT TO BE RENEWED DRIVING RECORD.. ADVISED THAT SHE NEEDED TO OBTAIN A NEW INSURANCE  AS OF 4/12/14.     (301)456-8257</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2014-03-12T00:00:00</updatedOn>
+		<userText>INSURED CALLED AGAIN ADV THE SAME THING AS PRIOR REPS - NON RENEWED FOR DRIVING RECORD, WENT OVER AT FAULT ACCIDENTS</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2013-02-21T00:00:00</updatedOn>
+		<userText>C50 REVIEW PER CLAIMS INSURED WAS IN TWO ACCIDENTS ON 2/8/13 RECEIVED A DUI AND LEFT THE SCENE OF A ACCIDENT TO CLOSE TO NON RENEW FOR APRIL WILL REVIEW AND POSSIBLE NON RENEW NEXT YEAR</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2000-04-19T00:00:00</updatedOn>
+		<userText>APP ENTERED AND RELEASED. MEMBERS - JOYCE GREEN  2223616 SINCE 5/15/89 AND ALLEN TIMMONS 2223616 SINCE 5/15/97. HOMEOWNERS 15229811 301-341-1675 QUOTE INDICATES ANTI THEFT DEVICE CREDIT FOR 98 NISSAN - NO PROOF ATTACHED.</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2000-04-25T00:00:00</updatedOn>
+		<userText>NB CHECK - POLICY ISSUED HIGHER THAN QUOTED - QUOTED WITH 30 PRD ON 96 TOYOTA, ISSUED WITHOUT (VIN INCORRECT), QUOTED WITH 15% ATD ON THE 98 NISSAN, ISSUED WITHOUT - NO PROOF ATTACHED. RECD STAUS REPORT REQUESTING CORRECT VIN FOR THE 96 TOYOTA..UNABLE TO CORRECT USING INFO ON APP...SENDING VIN LTR TO INSD</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2000-05-13T00:00:00</updatedOn>
+		<userText>RECD VIN INFO FROM INSD..VIN IS STILL INCORRECT...</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2000-06-01T00:00:00</updatedOn>
+		<userText>MR. TIMMONS CALLED. NEEDS ID CARDS FOR BOTH VEHICLES. ALSO ADVISED PAYMENT DUE 6/25/00 IN THE AMOUNT OF $251.00. SENDING ID CARDS TO INSD. CANNOT SEND ONE FOR 96 TOYOTA WITHOUT CORRECT VIN#.. SENDING LETTER</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2000-06-07T00:00:00</updatedOn>
+		<userText>RECD ANOTHER STATUS REPORT REQUESITNG CORRECT VIN FOR THE 96 TOYOTA PER PRIOR SCR1, A LTR HAS RECENTLY BEEN SENT TO INSD</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2000-06-10T00:00:00</updatedOn>
+		<userText>INSURED CALLED FOR FR-19 ADVISE WE NEED VIN FOR 96TOY, SHE GAVE ME THE # OFF OLD DEC PAGE WHICH IS WRONG, ASKED INSURED TO READ THE # IN THE WINDOW OF HER DASH BOARD SHE WILL CALL ME BACK. BMWRIGHT INSURED CALLED BACK(JOYCE) GAVE CORRECT VIN#2T1BA02E3TC135059 CASE#032 10357 VERIFY #4/12/00 COMPLETED FR-19'S MAILED TO INSURED, ALSO MAILED HER ID CARDS.BMWRIGHT</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2002-03-15T00:00:00</updatedOn>
+		<userText>MRS. TIMMONS CALLED STATED THEY GOT MARRIED IN OCT OF 2002, WHY IS THE RATE SO HIGH. I WILL PULL MVR'S AND CALL U/W TO SEE IF WE CAN UPGRADE CAR2 TO SPECIAL PREF.BMRIGHT WORK#202-479-6396, 301-442-1920 MR. TIMMONS WILL NOT HAVE 5YRS EXP. UNTIL 9/2002, EXPLAINED SHE HAVE TO WORK UNTIL RENEWAL 0F 2003.BMWRIGHT</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2004-01-07T00:00:00</updatedOn>
+		<userText>REC'D MAILED COPY OF VIN # FOR 96 TOYOTA COROLLA, VERIFIED AS CORRECT IN OUR SYSTEM.</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2004-02-10T00:00:00</updatedOn>
+		<userText>LETTER REQUESTING COPY OF JOYCE'S DRIVERS LICENSE</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2004-02-18T00:00:00</updatedOn>
+		<userText>RECVD UPDATED DL# ON JOYCE...T 552 447 546 192</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2004-07-09T00:00:00</updatedOn>
+		<userText>10:33 MR CALLED VERIFIED $188.56 DUE 6/26.  OFFERED TO TAKE CC PMT OVER PHONE INSD DID NOT HAVE CC W/HIM WILL CALL TOMORROW TO MAKE AUTOMATED CC PMT</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2004-07-13T00:00:00</updatedOn>
+		<userText>7-13-04 PDHURIEUX _$188.56 PAID USING BILL MATRIX ON 7-10-04</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2005-03-21T00:00:00</updatedOn>
+		<userText>MRS ADV MOVING TO 4401 MAPLE ROAD SUITELAND MD 20746-3520 MRS RECENTLY MARRIED, SIR NAME TIMMONS  PROCESSED ON LINE ALSO CHANGED MARITAL STATUS TO MARRIED FOR JOYCE AND ALLEN  MRS CALLED RE INC IN PREM AT RENEWAL,  JOYCE TIER 3 ALLEN TIER 2 THIS TERM, LAST TERM JOYCE TIER 4 ALLEN TERI 2, NO VIO/ACC ON DD W/DISCUSS U/W  202-680-6184 (W) 301-341-1675 (H) REVIEWED ACCT FOR K. STACY -- TIER WENT FROM 4 TO 3 -- UNSURE WHY -- NO ACTIVITY ON ACCT -- ADVSD TO CHANGE BACK TO 4.</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2005-04-02T00:00:00</updatedOn>
+		<userText>12:56-RECD RET AMEND-SENT TO NEW ADDRESS</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2005-04-04T00:00:00</updatedOn>
+		<userText>PER PRIOR NOTES - TIER CHG WAS DUE TO COVERAGE AMT - 50/100 - REQUIREMENT FOR HIGHER TIER IS 100/300 -- OVERLOOKED THIS - WILL LEAVE TIER AS IS FOR THIS TERM.</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2005-04-11T00:00:00</updatedOn>
+		<userText>4/11/05 BWALLA1...PYMT ? 10:53AM INSD ASKED IF PYMT HAD BEEN RCVD...MAILED TO PA ON 4/5/05...ADV'D NO, OFFERED TO TAKE CC PYMT, SHE STATED THEY WILL CALL BACK LATER. 2:30 TOOK CC PMT $220.72 REC 192281 301-341-1675 (H)</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2005-04-15T00:00:00</updatedOn>
+		<userText>04/15/05/DMAJEWS/DISHONORED CHECK DISHONORED CHECK # 128., $ 282.47..BACK FROM THE BANK AS NSF</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2005-06-22T00:00:00</updatedOn>
+		<userText>6-22-05 SRIDER TOOK CC PMNT 10:18 AM - INSURED CLLED AND MADE CC PMNT OF $170.00 /AUTH# 141241 NEW HOME PHONE# 301-736-3041 PROCESSED ONLINE EFFECTIVE 6-22-05 - CHANGED ADDRESS TO: 4401 MAPLE ROAD, SUITLAND, MD  20746 / PH# 301-736-3041 NO CHANGE IN TERRITORY.</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2006-01-25T00:00:00</updatedOn>
+		<userText>COMPANION REVIEW HO 15229811, NONRENEWED 04/2005 REMOVE DISCOUNT, AUD NOTICE TO FOLLOW</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2006-01-30T00:00:00</updatedOn>
+		<userText>MRS CALLED FOR TRAVEL ACC POL/PROVIDED NUMBER</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2006-02-01T00:00:00</updatedOn>
+		<userText>SENT AUD NOTICE TO REMOVE COMPANION DISC EFF 4/12/06 -- PROCESSED ON LINE.</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2006-02-04T00:00:00</updatedOn>
+		<userText>12:51 PM  POSSIBLE CLAIM JOYCE TIMMONS CALLED -- STATED HER HUSBAND, ALLEN, WAS JUST INVOLVED IN ACCIDENT -- OTHER PULLED OUT IN FRONT OF HIM FROM PARKING LOT --  POLICE REPORT TAKEN / OTHER PERSON CHARGED *************** PH # 301-736-3041  **************************** ADVICED HER: CALL OTHER INS CARRIER TO SUBMIT CLAIM &amp;amp IF THERE WAS ANY TROUBLE COULD CONTACT " KIC " CLAIM OFFICE &amp;amp IF NEEDED RENTAL VEH &amp;amp COULD NOT GET AHOLD OF INS CO / THEN TO SAVE HER RECEIPTS FOR REIMBUSEMENT -- SHE STATED UNDERSTOOD</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2006-02-13T00:00:00</updatedOn>
+		<userText>2.13.06 TSEIVWR COMPANION DISC ADVSD W/ RENTERS CANCELLD 4/05 CUST IS HO NOW SUGGESTED TO BRING POLCY TO US FOR DISC CUST NOT WANT TO BE XSFERD TO SALES GAVE HER NOC SALES DIRECT TEL#   301736 3041</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2006-02-14T00:00:00</updatedOn>
+		<userText>PREVS SPADS CONT ***************************************************** DID CROSS SELL CUST AND GAVE HER SALES TEL TO CALL DIRECT REFERD TO KURT AS CUST IS NOW A HOME OWNER AND NEEDS HO POLCY FORMER RENTERS POLC = 1522 9811</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2006-04-10T00:00:00</updatedOn>
+		<userText>04/10/06 RFOSTER REN RET LEFT MESSAGE</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2006-04-18T00:00:00</updatedOn>
+		<userText>MR ADV HAD ACCIDENT IN 96 TOY/TRANSFERRED TO CLAIMS  301-736 3041</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2006-05-05T00:00:00</updatedOn>
+		<userText>RECD C-50..ASSIGNED TO MYSELF FOR REVIEW</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2006-05-11T00:00:00</updatedOn>
+		<userText>RECD C50..OCCURENCE 190002...D/O/L 4/17/06 1996 TOYOTA COROLLA TOTAL LOSS - INSURED IS RETAINING THE SALVAGE NOTICE TO INSD - EFF 6/29/06 COMP/COLL ARE BEING REMOVED FROM THE '96 TOYOTA.. REVIEWED LOSS HISTORY:  2/4/06 NAF $0 4/17/06 AFA $5866.16</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2006-05-18T00:00:00</updatedOn>
+		<userText>5/16/06 STIBERI PH CLLD FOR RATE 11:51 SEE THAT SHE IS KEEPING THE SALAGE VEH AND WE ARE REMOVING COMP &amp;amp COLL FROM IT, BUT CHANGE IS PENDING. A. LYNN ON VACATION</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2006-07-15T00:00:00</updatedOn>
+		<userText>10:52 INSURED CALLED WITH CAR RENTAL PLACE TO VERIFY COVERAGE</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2007-02-05T00:00:00</updatedOn>
+		<userText>10:26AM LATOYA W/ENTERPRISE &amp;amp MS TIMMONS THERE TO RENT PASSENGER CA VERIFIED DEDS.</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2007-02-21T00:00:00</updatedOn>
+		<userText>NOTICE OF PREMIUM INCREASE SENT TO INSD EFF FOR 4/12/07 - DUE TO TIER CHG ON THE 96 TOYOTA FROM 3 TO 2 -- AND 1 SDIP PT FOR JOYCE - 4/18/06 AF LOSS - $7162.07 PD... TOTAL PREMIUM INCREASE $172 OFFER TO EXCLUDE JOYCE AT $1502</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2007-03-13T00:00:00</updatedOn>
+		<userText>COMMENT NARRATIVE  3.13.07 LPUGH PYMT  10:11 AM RECD 1776.00 PAID IN FULL AUTH 121231 POLICY REVIEW ALL INFO  CORRECT EXCEPT NO LIEN SHOULD BE ON VEH 2 REMOVED, OFFERED HO QUOTE  WITH TRAVELERS NOW WILL STAY THERE...PH 301 736 3041</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2008-01-15T00:00:00</updatedOn>
+		<userText>OK TO RENEW</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2008-02-20T00:00:00</updatedOn>
+		<userText>SYSTEM PULLED 2/4/06 $0.00 PAID LOSS AND 12/31/07 $0.00 PAID LOSS CORRECTED VEH#2 BACK INTO TIER 3</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2008-02-23T00:00:00</updatedOn>
+		<userText>11:28AM MRS CALLED TO DISCUSS RENEWAL BILLING...ADVISED MRS RENEWAL PREMIUM REDUCED DUE TO UW REVIEW AND LOSSES THAT WERE NOT PAID OUT WERE REMOVED WHICH CAUSED TIER TO CHANGE AND PREMIUM TO DECREASE MRS UNDERSTOOD 301-736-3041</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2008-04-04T00:00:00</updatedOn>
+		<userText>4/4/08 LGAUTHIER PAYMENT 4:33 MR TIMMONS MADE CC PAYMENT FOR $1735 TO PAY IN FULL AUTH # 183221  INSURED REQUESTED RECEIPT, PULLED FROM CHARGINS AND MAILED TO INSURED</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2009-01-15T00:00:00</updatedOn>
+		<userText>OK TO RENEW</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2009-11-13T00:00:00</updatedOn>
+		<userText>PH #301-736-3041 EMAIL: JOYCE.TIMMONS@CAREFIRST.COM  JOYCE TIMMONS CALLED FOR POLICY NUMBER.  10:09 AM</userText>
+	</userNote>
+	<userNote>
+		<version>0</version>
+		<title>Conversion</title>
+		<updatedOn>2009-11-16T00:00:00</updatedOn>
+		<userText>9:19 JOYCE CALLED OFFICE TO DELETE THE 96 TOYOTA- SHE HAS NOT SURRNDER THE TAGS AS OF YET ADVISED HER TO CALL US BACK TO REMOVE THE CAR ONCE SHE TURNS IN THE TAGS-- HOME-301-736-3041 NO EMAIL</userText>
+	</userNote>
+</Policy>

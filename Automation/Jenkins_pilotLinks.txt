@@ -1,0 +1,9 @@
+
+Auto job-
+http://dev5aaa3jnk601.eqxdev.exigengroup.com:8080/view/All/job/AAA-Auto-Mini-Iterative-Test_Param_Pilot/
+
+
+RCA query
+
+type="Script Ticket" and labels="factory_script_ticket"
+

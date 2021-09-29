@@ -1,0 +1,37 @@
+BaseTest:<clinit>:95  Test instance: http://dev5aaa3was701.eqxdev.exigengroup.com:9081/aaa-app/
+BaseTest:<clinit>:96  Build: EIS_5.2.23.5-AAA_PAS04-20150307-63563
+
+[TestNG] Running:
+  C:\AAA_Property_Code_RatingTestingTool\AAA_Property_Maven\aaa-property-tests\testSuites\deloitte\demo_rating_test_suite_IN.xml
+
+CustomTestListener:onTestStart:38  Test 'rating.hss.CreateAccount.createAccount(IN)' has STARTED
+SeleniumServerController:startSeleniumServer:182  -------> Selenuim Server Started
+
+
+
+CustomerHelper:createCustomer:43  ============================
+CustomerHelper:createCustomer:44  IN Customer is created: 700020954
+CustomerHelper:createCustomer:45  ============================
+CustomTestListener:onTestSuccess:45  Test 'rating.hss.CreateAccount.createAccount(IN)' has PASSED
+
+CustomTestListener:onTestStart:38  Test 'demorating.hss.HssCreatePolicyHO3.HO3_SC1(IN)' has STARTED
+
+HssCreatePolicyHO3:HO3_SC1:109  ==================================================
+HssCreatePolicyHO3:HO3_SC1:110  IN Home policy SC1 with HO3_Dataset1 is created: INH3910024663
+HssCreatePolicyHO3:HO3_SC1:112  ==================================================
+HssCreatePolicyHO3:HO3_SC1:115  Bundle is Heritage
+Ssh:downloadFile:89  SSH: File '/logs/aaa-rating-engine-app-soap.log' was downloaded to 'C:\AAA_Property_Code_RatingTestingTool\AAA_Property_Maven\aaa-property-tests\target\classes\toolkit\ratingtest'.
+ReflectionServiceFactoryBean:buildServiceFromClass:445  Creating Service {http://home.property.rating.aaa.exigen.com/}RatingService from class com.exigen.aaa.rating.property.home.RatingService
+Java5TypeCreator:getOrCreateParameterizedType:181  Could not map TypeVariable named T from java.util.Map<java.lang.String, T> with initial mapping null to a known class.  Using Object.
+ReflectionServiceFactoryBean:buildServiceFromClass:445  Creating Service {http://home.property.rating.aaa.exigen.com/}RatingService from class com.exigen.aaa.rating.property.home.RatingService
+Java5TypeCreator:getOrCreateParameterizedType:181  Could not map TypeVariable named T from java.util.Map<java.lang.String, T> with initial mapping null to a known class.  Using Object.
+RatingToolkitManager:validatePremiums:43  Log for policy #QINH3910024663 has been successfully parsed.
+RaterPremiumCalculatorHOUTImpl:fillRater:225  Comparison for policy #QINH3910024663 was success.
+CustomTestListener:onTestSuccess:45  Test 'demorating.hss.HssCreatePolicyHO3.HO3_SC1(IN)' has PASSED
+
+
+===============================================
+IN Rating Tests Suite
+Total tests run: 2, Failures: 0, Skips: 0
+===============================================
+

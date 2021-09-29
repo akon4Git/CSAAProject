@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [dc_Poc_MultipleTestData]">
+  <parameter name="transaction" value="CancellationNotice"/>
+  <parameter name="stateList" value="AZ|PA|IN"/>
+  <parameter name="month" value="1"/>
+  <parameter name="checkWeekend" value="true"/>
+  <parameter name="fromFile" value="DD3-10"/>
+  <test name="DD0, AZ Create Policy(failed)">
+    <classes>
+      <class name="com.deloitte.automation.poc.PolicyCreator">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="afterTests"/>
+          <include name="afterSuite"/>
+          <include name="testAssDocGenDataGathering" invocation-numbers="0"/>
+          <include name="beforeClass"/>
+          <include name="beforeSuite"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.deloitte.automation.poc.PolicyCreator -->
+      <class name="com.deloitte.automation.poc.TimeChangeAndJobExecutor">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.deloitte.automation.poc.TimeChangeAndJobExecutor -->
+      <class name="com.exigen.automation.testcase.commonTests.SetDateTimeParamTestNew">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="afterMethod"/>
+          <include name="beforeSuite"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.exigen.automation.testcase.commonTests.SetDateTimeParamTestNew -->
+    </classes>
+  </test> <!-- DD0, AZ Create Policy(failed) -->
+</suite> <!-- Failed suite [dc_Poc_MultipleTestData] -->

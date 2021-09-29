@@ -1,0 +1,9 @@
+[2016-04-23 02:21:22,751] [%PARSER_ERROR[x]] [c.e.i.a.t.p.i.BaseAsyncTaskProcessingManager] [:] [server.startup : 1] initialization completed: task executor ready
+[2016-04-23 02:21:22,752] [%PARSER_ERROR[x]] [c.e.i.a.t.p.i.BaseAsyncTaskProcessingManager] [:] [Thread-51] starting thread.
+[2016-04-23 02:21:22,754] [%PARSER_ERROR[x]] [c.e.i.a.t.p.i.BaseAsyncTaskProcessingManager] [:] [Thread-51] Starting Async Task Processing manager of class= DbBasedAsyncTaskProcessingManager
+[2016-04-23 02:48:04,414] [%PARSER_ERROR[x]] [c.e.i.a.t.p.i.BaseAsyncTaskProcessingManager] [:] [Non-deferrable Alarm : 1] Stopping async task processing manager
+[2016-04-23 02:48:04,416] [%PARSER_ERROR[x]] [c.e.i.a.t.p.i.BaseAsyncTaskProcessingManager] [:] [Non-deferrable Alarm : 1] Stopping async task processing manager
+[2016-04-23 02:48:04,961] [%PARSER_ERROR[x]] [c.e.i.a.t.p.i.BaseAsyncTaskProcessingManager] [:] [Thread-51] Async task processing manager exited
+[2016-04-23 03:36:23,208] [%PARSER_ERROR[x]] [c.e.i.a.t.p.i.BaseAsyncTaskProcessingManager] [:] [server.startup : 2] initialization completed: task executor ready
+[2016-04-23 03:36:23,211] [%PARSER_ERROR[x]] [c.e.i.a.t.p.i.BaseAsyncTaskProcessingManager] [:] [Thread-51] starting thread.
+[2016-04-23 03:36:23,216] [%PARSER_ERROR[x]] [c.e.i.a.t.p.i.BaseAsyncTaskProcessingManager] [:] [Thread-51] Starting Async Task Processing manager of class= DbBasedAsyncTaskProcessingManager
